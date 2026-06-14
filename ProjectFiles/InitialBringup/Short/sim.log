@@ -1,0 +1,913 @@
+checking package dependencies
+compiling ./ViterbiDecoder.bsv
+compiling tbViterbiDecoder.bsv
+code generation for mkTbViterbiDecoder starts
+Elaborated module file created: intermediate//mkTbViterbiDecoder.ba
+All packages are up to date.
+Bluesim object reused: intermediate//mkFpAdder.{h,o}
+Bluesim object reused: intermediate//mkKs.{h,o}
+Bluesim object reused: intermediate//mkgg.{h,o}
+Bluesim object reused: intermediate//mkgp.{h,o}
+Bluesim object created: intermediate//mkTbViterbiDecoder.{h,o}
+Bluesim object created: intermediate//model_mkTbViterbiDecoder.{h,o}
+Simulation shared library created: intermediate//mkTbViterbiDecoder_bsim.so
+Simulation executable created: intermediate//mkTbViterbiDecoder_bsim
+Warning: file 'A_small.dat' for memory 'aRegFile' has a gap at addresses 56 to 991.
+Warning: file 'B_small.dat' for memory 'bRegFile' has a gap at addresses 21 to 960.
+Warning: file 'input_small.dat' for memory 'inputRegFile' has a gap at addresses 4 to 1023.
+[DUT] Time=10: Viterbi decoder started
+[TB] Time=10: Test started
+[DUT] Time=20: Current State = IDLE
+[DUT] Time=30: Current State = START
+[DUT] Time=40: Current State = INIT_GET_NM
+[DUT] Time=40: Requesting N & M
+[TB] Time=50: nReg_Read_Port_1: addr=0, data=00000007 
+[TB] Time=50: nReg_Read_Port_2: addr=1, data=00000003 
+[DUT] Time=60: Current State = DONE_GET_NM
+[DUT] Time=60: Received N =          7
+[DUT] Time=60: Received M =          3
+[DUT] Time=70: Current State = V1_CALC_START
+[DUT] Time=70: Requesting Input-1
+[TB] Time=80: inputReg_Read_Port_1: addr=   0, data=00000001 
+[DUT] Time=90: Current State = GET_INPUT_V1
+[DUT] Time=90: Received Input-1 =          1
+[DUT] Time=100: Current State = INIT_COMPUTE_V1
+[DUT] Time=100: Starting V1 Computation for N=         7 states
+[DUT] Time=110: Current State = LOOP_V1_INIT_GET_AB
+[DUT] Time=110: Computing V1[ 1]
+[DUT] Time=110: Requesting A[0][ 1] @ addr=   0
+[DUT] Time=110: Requesting B[ 1][         1] @ addr=   0
+[TB] Time=120: aReg_Read_Port_1: addr=   0, data=bf65c908 
+[TB] Time=120: bReg_Read_Port_1: addr=   0, data=bf65c908 
+[DUT] Time=130: Current State = LOOP_V1_DONE_GET_AB
+[DUT] Time=130: Received A[0][ 1] = bf65c908 (log prob)
+[DUT] Time=130: Received B[ 1][         1] = bf65c908 (log prob)
+[DUT] Time=140: Current State = LOOP_V1_INIT_FP_ADD
+[DUT] Time=140: Computing V1[ 1] = A + B
+[DUT] Time=150: Current State = LOOP_V1_DONE_FP_ADD
+[DUT] Time=150: V1[ 1] = bfe5c908
+[DUT] Time=160: Current State = LOOP_V1_NEXT_STATE
+[DUT] Time=160: Moving to next state  2
+[DUT] Time=170: Current State = LOOP_V1_INIT_GET_AB
+[DUT] Time=170: Computing V1[ 2]
+[DUT] Time=170: Requesting A[0][ 2] @ addr=   1
+[DUT] Time=170: Requesting B[ 2][         1] @ addr=   3
+[TB] Time=180: aReg_Read_Port_1: addr=   1, data=c02b7b98 
+[TB] Time=180: bReg_Read_Port_1: addr=   3, data=bf5f8135 
+[DUT] Time=190: Current State = LOOP_V1_DONE_GET_AB
+[DUT] Time=190: Received A[0][ 2] = c02b7b98 (log prob)
+[DUT] Time=190: Received B[ 2][         1] = bf5f8135 (log prob)
+[DUT] Time=200: Current State = LOOP_V1_INIT_FP_ADD
+[DUT] Time=200: Computing V1[ 2] = A + B
+[DUT] Time=210: Current State = LOOP_V1_DONE_FP_ADD
+[DUT] Time=210: V1[ 2] = c0635be5
+[DUT] Time=220: Current State = LOOP_V1_NEXT_STATE
+[DUT] Time=220: Moving to next state  3
+[DUT] Time=230: Current State = LOOP_V1_INIT_GET_AB
+[DUT] Time=230: Computing V1[ 3]
+[DUT] Time=230: Requesting A[0][ 3] @ addr=   2
+[DUT] Time=230: Requesting B[ 3][         1] @ addr=   6
+[TB] Time=240: aReg_Read_Port_1: addr=   2, data=bf4ab8f7 
+[TB] Time=240: bReg_Read_Port_1: addr=   6, data=bf4897bc 
+[DUT] Time=250: Current State = LOOP_V1_DONE_GET_AB
+[DUT] Time=250: Received A[0][ 3] = bf4ab8f7 (log prob)
+[DUT] Time=250: Received B[ 3][         1] = bf4897bc (log prob)
+[DUT] Time=260: Current State = LOOP_V1_INIT_FP_ADD
+[DUT] Time=260: Computing V1[ 3] = A + B
+[DUT] Time=270: Current State = LOOP_V1_DONE_FP_ADD
+[DUT] Time=270: V1[ 3] = bfc9a85a
+[DUT] Time=280: Current State = LOOP_V1_NEXT_STATE
+[DUT] Time=280: Moving to next state  4
+[DUT] Time=290: Current State = LOOP_V1_INIT_GET_AB
+[DUT] Time=290: Computing V1[ 4]
+[DUT] Time=290: Requesting A[0][ 4] @ addr=   3
+[DUT] Time=290: Requesting B[ 4][         1] @ addr=   9
+[TB] Time=300: aReg_Read_Port_1: addr=   3, data=c0346a18 
+[TB] Time=300: bReg_Read_Port_1: addr=   9, data=bfeed1e6 
+[DUT] Time=310: Current State = LOOP_V1_DONE_GET_AB
+[DUT] Time=310: Received A[0][ 4] = c0346a18 (log prob)
+[DUT] Time=310: Received B[ 4][         1] = bfeed1e6 (log prob)
+[DUT] Time=320: Current State = LOOP_V1_INIT_FP_ADD
+[DUT] Time=320: Computing V1[ 4] = A + B
+[DUT] Time=330: Current State = LOOP_V1_DONE_FP_ADD
+[DUT] Time=330: V1[ 4] = c095e986
+[DUT] Time=340: Current State = LOOP_V1_NEXT_STATE
+[DUT] Time=340: Moving to next state  5
+[DUT] Time=350: Current State = LOOP_V1_INIT_GET_AB
+[DUT] Time=350: Computing V1[ 5]
+[DUT] Time=350: Requesting A[0][ 5] @ addr=   4
+[DUT] Time=350: Requesting B[ 5][         1] @ addr=  12
+[TB] Time=360: aReg_Read_Port_1: addr=   4, data=c0960ce4 
+[TB] Time=360: bReg_Read_Port_1: addr=  12, data=bffbb077 
+[DUT] Time=370: Current State = LOOP_V1_DONE_GET_AB
+[DUT] Time=370: Received A[0][ 5] = c0960ce4 (log prob)
+[DUT] Time=370: Received B[ 5][         1] = bffbb077 (log prob)
+[DUT] Time=380: Current State = LOOP_V1_INIT_FP_ADD
+[DUT] Time=380: Computing V1[ 5] = A + B
+[DUT] Time=390: Current State = LOOP_V1_DONE_FP_ADD
+[DUT] Time=390: V1[ 5] = c0d4f902
+[DUT] Time=400: Current State = LOOP_V1_NEXT_STATE
+[DUT] Time=400: Moving to next state  6
+[DUT] Time=410: Current State = LOOP_V1_INIT_GET_AB
+[DUT] Time=410: Computing V1[ 6]
+[DUT] Time=410: Requesting A[0][ 6] @ addr=   5
+[DUT] Time=410: Requesting B[ 6][         1] @ addr=  15
+[TB] Time=420: aReg_Read_Port_1: addr=   5, data=c0c6e8a0 
+[TB] Time=420: bReg_Read_Port_1: addr=  15, data=bf33455a 
+[DUT] Time=430: Current State = LOOP_V1_DONE_GET_AB
+[DUT] Time=430: Received A[0][ 6] = c0c6e8a0 (log prob)
+[DUT] Time=430: Received B[ 6][         1] = bf33455a (log prob)
+[DUT] Time=440: Current State = LOOP_V1_INIT_FP_ADD
+[DUT] Time=440: Computing V1[ 6] = A + B
+[DUT] Time=450: Current State = LOOP_V1_DONE_FP_ADD
+[DUT] Time=450: V1[ 6] = c0dd514b
+[DUT] Time=460: Current State = LOOP_V1_NEXT_STATE
+[DUT] Time=460: Moving to next state  7
+[DUT] Time=470: Current State = LOOP_V1_INIT_GET_AB
+[DUT] Time=470: Computing V1[ 7]
+[DUT] Time=470: Requesting A[0][ 7] @ addr=   6
+[DUT] Time=470: Requesting B[ 7][         1] @ addr=  18
+[TB] Time=480: aReg_Read_Port_1: addr=   6, data=c15d0c55 
+[TB] Time=480: bReg_Read_Port_1: addr=  18, data=bf3a93c2 
+[DUT] Time=490: Current State = LOOP_V1_DONE_GET_AB
+[DUT] Time=490: Received A[0][ 7] = c15d0c55 (log prob)
+[DUT] Time=490: Received B[ 7][         1] = bf3a93c2 (log prob)
+[DUT] Time=500: Current State = LOOP_V1_INIT_FP_ADD
+[DUT] Time=500: Computing V1[ 7] = A + B
+[DUT] Time=510: Current State = LOOP_V1_DONE_FP_ADD
+[DUT] Time=510: V1[ 7] = c168b591
+[DUT] Time=520: Current State = LOOP_V1_NEXT_STATE
+[DUT] Time=520: Completed V1 computation for all  7 states
+[DUT] Time=530: Current State = V1_CALC_END
+[DUT] Time=530: V1 calculation complete
+[DUT] Time=540: Current State = VT_CALC_START
+[DUT] Time=540: Starting Vt calculation for t= 2
+[DUT] Time=540: Requesting observation at index    1
+[TB] Time=550: inputReg_Read_Port_1: addr=   1, data=00000003 
+[DUT] Time=560: Current State = VT_GET_INPUT
+[DUT] Time=560: Received Input = 00000003
+[DUT] Time=560: Received observation o_ 2 =          3
+[DUT] Time=570: Current State = VT_INIT_J_LOOP
+[DUT] Time=570: j-loop : Starting Vt computation for t= 2, N=         7 states
+[DUT] Time=580: Current State = VT_INIT_I_LOOP
+[DUT] Time=580: i-loop: Computing max path metric to state j= 1
+[DUT] Time=580: i-loop: Checking prevStates i=1 to          7
+[DUT] Time=590: Current State = VT_GET_PREV_PROB
+[DUT] Time=590: i-loop: V_{t-1}[i= 1] = bfe5c908
+[DUT] Time=600: Current State = VT_INIT_GET_AB
+[DUT] Time=600: i-loop: Requesting A[ 1][ 1] @ address    7, B[ 1][         3] @ address    2
+[TB] Time=610: aReg_Read_Port_1: addr=   7, data=bf4897bc 
+[TB] Time=610: bReg_Read_Port_1: addr=   2, data=bf258450 
+[DUT] Time=620: Current State = VT_DONE_GET_AB
+[DUT] Time=620: i-loop: Received A[ 1][ 1] = bf4897bc (log prob)
+[DUT] Time=620: Received B[ 1][         3] = bf258450 (log prob)
+[DUT] Time=630: Current State = VT_INIT_FP_ADD
+[DUT] Time=640: Current State = VT_PROC_FP_ADD
+[DUT] Time=650: Current State = VT_DONE_FP_ADD
+[DUT] Time=650: i-loop: Current path probability via prevState  1 = c04e6b87
+[DUT] Time=660: Current State = VT_LOOP_I_LOOP
+[DUT] Time=670: Current State = VT_GET_PREV_PROB
+[DUT] Time=670: i-loop: V_{t-1}[i= 2] = c0635be5
+[DUT] Time=680: Current State = VT_INIT_GET_AB
+[DUT] Time=680: i-loop: Requesting A[ 2][ 1] @ address   14, B[ 1][         3] @ address    2
+[TB] Time=690: aReg_Read_Port_1: addr=  14, data=c016a57e 
+[TB] Time=690: bReg_Read_Port_1: addr=   2, data=bf258450 
+[DUT] Time=700: Current State = VT_DONE_GET_AB
+[DUT] Time=700: i-loop: Received A[ 2][ 1] = c016a57e (log prob)
+[DUT] Time=700: Received B[ 1][         3] = bf258450 (log prob)
+[DUT] Time=710: Current State = VT_INIT_FP_ADD
+[DUT] Time=720: Current State = VT_PROC_FP_ADD
+[DUT] Time=730: Current State = VT_DONE_FP_ADD
+[DUT] Time=730: i-loop: Current path probability via prevState  2 = c0d1b13c
+[DUT] Time=740: Current State = VT_LOOP_I_LOOP
+[DUT] Time=750: Current State = VT_GET_PREV_PROB
+[DUT] Time=750: i-loop: V_{t-1}[i= 3] = bfc9a85a
+[DUT] Time=760: Current State = VT_INIT_GET_AB
+[DUT] Time=760: i-loop: Requesting A[ 3][ 1] @ address   21, B[ 1][         3] @ address    2
+[TB] Time=770: aReg_Read_Port_1: addr=  21, data=bf3a93c2 
+[TB] Time=770: bReg_Read_Port_1: addr=   2, data=bf258450 
+[DUT] Time=780: Current State = VT_DONE_GET_AB
+[DUT] Time=780: i-loop: Received A[ 3][ 1] = bf3a93c2 (log prob)
+[DUT] Time=780: Received B[ 1][         3] = bf258450 (log prob)
+[DUT] Time=790: Current State = VT_INIT_FP_ADD
+[DUT] Time=800: Current State = VT_PROC_FP_ADD
+[DUT] Time=810: Current State = VT_DONE_FP_ADD
+[DUT] Time=810: i-loop: Current path probability via prevState  3 = c03cda32
+[DUT] Time=820: Current State = VT_LOOP_I_LOOP
+[DUT] Time=830: Current State = VT_GET_PREV_PROB
+[DUT] Time=830: i-loop: V_{t-1}[i= 4] = c095e986
+[DUT] Time=840: Current State = VT_INIT_GET_AB
+[DUT] Time=840: i-loop: Requesting A[ 4][ 1] @ address   28, B[ 1][         3] @ address    2
+[TB] Time=850: aReg_Read_Port_1: addr=  28, data=bf391243 
+[TB] Time=850: bReg_Read_Port_1: addr=   2, data=bf258450 
+[DUT] Time=860: Current State = VT_DONE_GET_AB
+[DUT] Time=860: i-loop: Received A[ 4][ 1] = bf391243 (log prob)
+[DUT] Time=860: Received B[ 1][         3] = bf258450 (log prob)
+[DUT] Time=870: Current State = VT_INIT_FP_ADD
+[DUT] Time=880: Current State = VT_PROC_FP_ADD
+[DUT] Time=890: Current State = VT_DONE_FP_ADD
+[DUT] Time=890: i-loop: Current path probability via prevState  4 = c0c1bc58
+[DUT] Time=900: Current State = VT_LOOP_I_LOOP
+[DUT] Time=910: Current State = VT_GET_PREV_PROB
+[DUT] Time=910: i-loop: V_{t-1}[i= 5] = c0d4f902
+[DUT] Time=920: Current State = VT_INIT_GET_AB
+[DUT] Time=920: i-loop: Requesting A[ 5][ 1] @ address   35, B[ 1][         3] @ address    2
+[TB] Time=930: aReg_Read_Port_1: addr=  35, data=c038adc0 
+[TB] Time=930: bReg_Read_Port_1: addr=   2, data=bf258450 
+[DUT] Time=940: Current State = VT_DONE_GET_AB
+[DUT] Time=940: i-loop: Received A[ 5][ 1] = c038adc0 (log prob)
+[DUT] Time=940: Received B[ 1][         3] = bf258450 (log prob)
+[DUT] Time=950: Current State = VT_INIT_FP_ADD
+[DUT] Time=960: Current State = VT_PROC_FP_ADD
+[DUT] Time=970: Current State = VT_DONE_FP_ADD
+[DUT] Time=970: i-loop: Current path probability via prevState  5 = c1230036
+[DUT] Time=980: Current State = VT_LOOP_I_LOOP
+[DUT] Time=990: Current State = VT_GET_PREV_PROB
+[DUT] Time=990: i-loop: V_{t-1}[i= 6] = c0dd514b
+[DUT] Time=1000: Current State = VT_INIT_GET_AB
+[DUT] Time=1000: i-loop: Requesting A[ 6][ 1] @ address   42, B[ 1][         3] @ address    2
+[TB] Time=1010: aReg_Read_Port_1: addr=  42, data=bfc6e074 
+[TB] Time=1010: bReg_Read_Port_1: addr=   2, data=bf258450 
+[DUT] Time=1020: Current State = VT_DONE_GET_AB
+[DUT] Time=1020: i-loop: Received A[ 6][ 1] = bfc6e074 (log prob)
+[DUT] Time=1020: Received B[ 1][         3] = bf258450 (log prob)
+[DUT] Time=1030: Current State = VT_INIT_FP_ADD
+[DUT] Time=1040: Current State = VT_PROC_FP_ADD
+[DUT] Time=1050: Current State = VT_DONE_FP_ADD
+[DUT] Time=1050: i-loop: Current path probability via prevState  6 = c111dcf9
+[DUT] Time=1060: Current State = VT_LOOP_I_LOOP
+[DUT] Time=1070: Current State = VT_GET_PREV_PROB
+[DUT] Time=1070: i-loop: V_{t-1}[i= 7] = c168b591
+[DUT] Time=1080: Current State = VT_INIT_GET_AB
+[DUT] Time=1080: i-loop: Requesting A[ 7][ 1] @ address   49, B[ 1][         3] @ address    2
+[TB] Time=1090: aReg_Read_Port_1: addr=  49, data=bfb04269 
+[TB] Time=1090: bReg_Read_Port_1: addr=   2, data=bf258450 
+[DUT] Time=1100: Current State = VT_DONE_GET_AB
+[DUT] Time=1100: i-loop: Received A[ 7][ 1] = bfb04269 (log prob)
+[DUT] Time=1100: Received B[ 1][         3] = bf258450 (log prob)
+[DUT] Time=1110: Current State = VT_INIT_FP_ADD
+[DUT] Time=1120: Current State = VT_PROC_FP_ADD
+[DUT] Time=1130: Current State = VT_DONE_FP_ADD
+[DUT] Time=1130: i-loop: Current path probability via prevState  7 = c1848b12
+[DUT] Time=1140: Current State = VT_LOOP_I_LOOP
+[DUT] Time=1150: Current State = VT_SAVE_STATE
+[DUT] Time=1150: j-loop: Storing V_t[ 1] = c03cda32, backtrace[ 2][ 1] =  3 @ btAddr   14
+[DUT] Time=1160: Current State = VT_LOOP_J_LOOP
+[DUT] Time=1170: Current State = VT_INIT_I_LOOP
+[DUT] Time=1170: i-loop: Computing max path metric to state j= 2
+[DUT] Time=1170: i-loop: Checking prevStates i=1 to          7
+[DUT] Time=1180: Current State = VT_GET_PREV_PROB
+[DUT] Time=1180: i-loop: V_{t-1}[i= 1] = bfe5c908
+[DUT] Time=1190: Current State = VT_INIT_GET_AB
+[DUT] Time=1190: i-loop: Requesting A[ 1][ 2] @ address    8, B[ 2][         3] @ address    5
+[TB] Time=1200: aReg_Read_Port_1: addr=   8, data=c00c8417 
+[TB] Time=1200: bReg_Read_Port_1: addr=   5, data=bf2868ca 
+[DUT] Time=1210: Current State = VT_DONE_GET_AB
+[DUT] Time=1210: i-loop: Received A[ 1][ 2] = c00c8417 (log prob)
+[DUT] Time=1210: Received B[ 2][         3] = bf2868ca (log prob)
+[DUT] Time=1220: Current State = VT_INIT_FP_ADD
+[DUT] Time=1230: Current State = VT_PROC_FP_ADD
+[DUT] Time=1240: Current State = VT_DONE_FP_ADD
+[DUT] Time=1240: i-loop: Current path probability via prevState  1 = c094c166
+[DUT] Time=1250: Current State = VT_LOOP_I_LOOP
+[DUT] Time=1260: Current State = VT_GET_PREV_PROB
+[DUT] Time=1260: i-loop: V_{t-1}[i= 2] = c0635be5
+[DUT] Time=1270: Current State = VT_INIT_GET_AB
+[DUT] Time=1270: i-loop: Requesting A[ 2][ 2] @ address   15, B[ 2][         3] @ address    5
+[TB] Time=1280: aReg_Read_Port_1: addr=  15, data=bfa5c309 
+[TB] Time=1280: bReg_Read_Port_1: addr=   5, data=bf2868ca 
+[DUT] Time=1290: Current State = VT_DONE_GET_AB
+[DUT] Time=1290: i-loop: Received A[ 2][ 2] = bfa5c309 (log prob)
+[DUT] Time=1290: Received B[ 2][         3] = bf2868ca (log prob)
+[DUT] Time=1300: Current State = VT_INIT_FP_ADD
+[DUT] Time=1310: Current State = VT_PROC_FP_ADD
+[DUT] Time=1320: Current State = VT_DONE_FP_ADD
+[DUT] Time=1320: i-loop: Current path probability via prevState  2 = c0b02bcd
+[DUT] Time=1330: Current State = VT_LOOP_I_LOOP
+[DUT] Time=1340: Current State = VT_GET_PREV_PROB
+[DUT] Time=1340: i-loop: V_{t-1}[i= 3] = bfc9a85a
+[DUT] Time=1350: Current State = VT_INIT_GET_AB
+[DUT] Time=1350: i-loop: Requesting A[ 3][ 2] @ address   22, B[ 2][         3] @ address    5
+[TB] Time=1360: aReg_Read_Port_1: addr=  22, data=bf39d5d1 
+[TB] Time=1360: bReg_Read_Port_1: addr=   5, data=bf2868ca 
+[DUT] Time=1370: Current State = VT_DONE_GET_AB
+[DUT] Time=1370: i-loop: Received A[ 3][ 2] = bf39d5d1 (log prob)
+[DUT] Time=1370: Received B[ 2][         3] = bf2868ca (log prob)
+[DUT] Time=1380: Current State = VT_INIT_FP_ADD
+[DUT] Time=1390: Current State = VT_PROC_FP_ADD
+[DUT] Time=1400: Current State = VT_DONE_FP_ADD
+[DUT] Time=1400: i-loop: Current path probability via prevState  3 = c03d63d3
+[DUT] Time=1410: Current State = VT_LOOP_I_LOOP
+[DUT] Time=1420: Current State = VT_GET_PREV_PROB
+[DUT] Time=1420: i-loop: V_{t-1}[i= 4] = c095e986
+[DUT] Time=1430: Current State = VT_INIT_GET_AB
+[DUT] Time=1430: i-loop: Requesting A[ 4][ 2] @ address   29, B[ 2][         3] @ address    5
+[TB] Time=1440: aReg_Read_Port_1: addr=  29, data=bf365168 
+[TB] Time=1440: bReg_Read_Port_1: addr=   5, data=bf2868ca 
+[DUT] Time=1450: Current State = VT_DONE_GET_AB
+[DUT] Time=1450: i-loop: Received A[ 4][ 2] = bf365168 (log prob)
+[DUT] Time=1450: Received B[ 2][         3] = bf2868ca (log prob)
+[DUT] Time=1460: Current State = VT_INIT_FP_ADD
+[DUT] Time=1470: Current State = VT_PROC_FP_ADD
+[DUT] Time=1480: Current State = VT_DONE_FP_ADD
+[DUT] Time=1480: i-loop: Current path probability via prevState  4 = c0c1c0cc
+[DUT] Time=1490: Current State = VT_LOOP_I_LOOP
+[DUT] Time=1500: Current State = VT_GET_PREV_PROB
+[DUT] Time=1500: i-loop: V_{t-1}[i= 5] = c0d4f902
+[DUT] Time=1510: Current State = VT_INIT_GET_AB
+[DUT] Time=1510: i-loop: Requesting A[ 5][ 2] @ address   36, B[ 2][         3] @ address    5
+[TB] Time=1520: aReg_Read_Port_1: addr=  36, data=bfb4f966 
+[TB] Time=1520: bReg_Read_Port_1: addr=   5, data=bf2868ca 
+[DUT] Time=1530: Current State = VT_DONE_GET_AB
+[DUT] Time=1530: i-loop: Received A[ 5][ 2] = bfb4f966 (log prob)
+[DUT] Time=1530: Received B[ 2][         3] = bf2868ca (log prob)
+[DUT] Time=1540: Current State = VT_INIT_FP_ADD
+[DUT] Time=1550: Current State = VT_PROC_FP_ADD
+[DUT] Time=1560: Current State = VT_DONE_FP_ADD
+[DUT] Time=1560: i-loop: Current path probability via prevState  5 = c10ba23b
+[DUT] Time=1570: Current State = VT_LOOP_I_LOOP
+[DUT] Time=1580: Current State = VT_GET_PREV_PROB
+[DUT] Time=1580: i-loop: V_{t-1}[i= 6] = c0dd514b
+[DUT] Time=1590: Current State = VT_INIT_GET_AB
+[DUT] Time=1590: i-loop: Requesting A[ 6][ 2] @ address   43, B[ 2][         3] @ address    5
+[TB] Time=1600: aReg_Read_Port_1: addr=  43, data=c03734ea 
+[TB] Time=1600: bReg_Read_Port_1: addr=   5, data=bf2868ca 
+[DUT] Time=1610: Current State = VT_DONE_GET_AB
+[DUT] Time=1610: i-loop: Received A[ 6][ 2] = c03734ea (log prob)
+[DUT] Time=1610: Received B[ 2][         3] = bf2868ca (log prob)
+[DUT] Time=1620: Current State = VT_INIT_FP_ADD
+[DUT] Time=1630: Current State = VT_PROC_FP_ADD
+[DUT] Time=1640: Current State = VT_DONE_FP_ADD
+[DUT] Time=1640: i-loop: Current path probability via prevState  6 = c126fc6d
+[DUT] Time=1650: Current State = VT_LOOP_I_LOOP
+[DUT] Time=1660: Current State = VT_GET_PREV_PROB
+[DUT] Time=1660: i-loop: V_{t-1}[i= 7] = c168b591
+[DUT] Time=1670: Current State = VT_INIT_GET_AB
+[DUT] Time=1670: i-loop: Requesting A[ 7][ 2] @ address   50, B[ 2][         3] @ address    5
+[TB] Time=1680: aReg_Read_Port_1: addr=  50, data=bf8e9a6c 
+[TB] Time=1680: bReg_Read_Port_1: addr=   5, data=bf2868ca 
+[DUT] Time=1690: Current State = VT_DONE_GET_AB
+[DUT] Time=1690: i-loop: Received A[ 7][ 2] = bf8e9a6c (log prob)
+[DUT] Time=1690: Received B[ 2][         3] = bf2868ca (log prob)
+[DUT] Time=1700: Current State = VT_INIT_FP_ADD
+[DUT] Time=1710: Current State = VT_PROC_FP_ADD
+[DUT] Time=1720: Current State = VT_DONE_FP_ADD
+[DUT] Time=1720: i-loop: Current path probability via prevState  7 = c18287b6
+[DUT] Time=1730: Current State = VT_LOOP_I_LOOP
+[DUT] Time=1740: Current State = VT_SAVE_STATE
+[DUT] Time=1740: j-loop: Storing V_t[ 2] = c03d63d3, backtrace[ 2][ 2] =  3 @ btAddr   15
+[DUT] Time=1750: Current State = VT_LOOP_J_LOOP
+[DUT] Time=1760: Current State = VT_INIT_I_LOOP
+[DUT] Time=1760: i-loop: Computing max path metric to state j= 3
+[DUT] Time=1760: i-loop: Checking prevStates i=1 to          7
+[DUT] Time=1770: Current State = VT_GET_PREV_PROB
+[DUT] Time=1770: i-loop: V_{t-1}[i= 1] = bfe5c908
+[DUT] Time=1780: Current State = VT_INIT_GET_AB
+[DUT] Time=1780: i-loop: Requesting A[ 1][ 3] @ address    9, B[ 3][         3] @ address    8
+[TB] Time=1790: aReg_Read_Port_1: addr=   9, data=bf933c77 
+[TB] Time=1790: bReg_Read_Port_1: addr=   8, data=bf56e905 
+[DUT] Time=1800: Current State = VT_DONE_GET_AB
+[DUT] Time=1800: i-loop: Received A[ 1][ 3] = bf933c77 (log prob)
+[DUT] Time=1800: Received B[ 3][         3] = bf56e905 (log prob)
+[DUT] Time=1810: Current State = VT_INIT_FP_ADD
+[DUT] Time=1820: Current State = VT_PROC_FP_ADD
+[DUT] Time=1830: Current State = VT_DONE_FP_ADD
+[DUT] Time=1830: i-loop: Current path probability via prevState  1 = c0723d01
+[DUT] Time=1840: Current State = VT_LOOP_I_LOOP
+[DUT] Time=1850: Current State = VT_GET_PREV_PROB
+[DUT] Time=1850: i-loop: V_{t-1}[i= 2] = c0635be5
+[DUT] Time=1860: Current State = VT_INIT_GET_AB
+[DUT] Time=1860: i-loop: Requesting A[ 2][ 3] @ address   16, B[ 3][         3] @ address    8
+[TB] Time=1870: aReg_Read_Port_1: addr=  16, data=bf33455a 
+[TB] Time=1870: bReg_Read_Port_1: addr=   8, data=bf56e905 
+[DUT] Time=1880: Current State = VT_DONE_GET_AB
+[DUT] Time=1880: i-loop: Received A[ 2][ 3] = bf33455a (log prob)
+[DUT] Time=1880: Received B[ 3][         3] = bf56e905 (log prob)
+[DUT] Time=1890: Current State = VT_INIT_FP_ADD
+[DUT] Time=1900: Current State = VT_PROC_FP_ADD
+[DUT] Time=1910: Current State = VT_DONE_FP_ADD
+[DUT] Time=1910: i-loop: Current path probability via prevState  2 = c0a2f3bf
+[DUT] Time=1920: Current State = VT_LOOP_I_LOOP
+[DUT] Time=1930: Current State = VT_GET_PREV_PROB
+[DUT] Time=1930: i-loop: V_{t-1}[i= 3] = bfc9a85a
+[DUT] Time=1940: Current State = VT_INIT_GET_AB
+[DUT] Time=1940: i-loop: Requesting A[ 3][ 3] @ address   23, B[ 3][         3] @ address    8
+[TB] Time=1950: aReg_Read_Port_1: addr=  23, data=c08f3bb2 
+[TB] Time=1950: bReg_Read_Port_1: addr=   8, data=bf56e905 
+[DUT] Time=1960: Current State = VT_DONE_GET_AB
+[DUT] Time=1960: i-loop: Received A[ 3][ 3] = c08f3bb2 (log prob)
+[DUT] Time=1960: Received B[ 3][         3] = bf56e905 (log prob)
+[DUT] Time=1970: Current State = VT_INIT_FP_ADD
+[DUT] Time=1980: Current State = VT_PROC_FP_ADD
+[DUT] Time=1990: Current State = VT_DONE_FP_ADD
+[DUT] Time=1990: i-loop: Current path probability via prevState  3 = c0dc82e9
+[DUT] Time=2000: Current State = VT_LOOP_I_LOOP
+[DUT] Time=2010: Current State = VT_GET_PREV_PROB
+[DUT] Time=2010: i-loop: V_{t-1}[i= 4] = c095e986
+[DUT] Time=2020: Current State = VT_INIT_GET_AB
+[DUT] Time=2020: i-loop: Requesting A[ 4][ 3] @ address   30, B[ 3][         3] @ address    8
+[TB] Time=2030: aReg_Read_Port_1: addr=  30, data=c06e6eff 
+[TB] Time=2030: bReg_Read_Port_1: addr=   8, data=bf56e905 
+[DUT] Time=2040: Current State = VT_DONE_GET_AB
+[DUT] Time=2040: i-loop: Received A[ 4][ 3] = c06e6eff (log prob)
+[DUT] Time=2040: Received B[ 3][         3] = bf56e905 (log prob)
+[DUT] Time=2050: Current State = VT_INIT_FP_ADD
+[DUT] Time=2060: Current State = VT_PROC_FP_ADD
+[DUT] Time=2070: Current State = VT_DONE_FP_ADD
+[DUT] Time=2070: i-loop: Current path probability via prevState  4 = c113ff13
+[DUT] Time=2080: Current State = VT_LOOP_I_LOOP
+[DUT] Time=2090: Current State = VT_GET_PREV_PROB
+[DUT] Time=2090: i-loop: V_{t-1}[i= 5] = c0d4f902
+[DUT] Time=2100: Current State = VT_INIT_GET_AB
+[DUT] Time=2100: i-loop: Requesting A[ 5][ 3] @ address   37, B[ 3][         3] @ address    8
+[TB] Time=2110: aReg_Read_Port_1: addr=  37, data=bf6b0c3b 
+[TB] Time=2110: bReg_Read_Port_1: addr=   8, data=bf56e905 
+[DUT] Time=2120: Current State = VT_DONE_GET_AB
+[DUT] Time=2120: i-loop: Received A[ 5][ 3] = bf6b0c3b (log prob)
+[DUT] Time=2120: Received B[ 3][         3] = bf56e905 (log prob)
+[DUT] Time=2130: Current State = VT_INIT_FP_ADD
+[DUT] Time=2140: Current State = VT_PROC_FP_ADD
+[DUT] Time=2150: Current State = VT_DONE_FP_ADD
+[DUT] Time=2150: i-loop: Current path probability via prevState  5 = c1069bd5
+[DUT] Time=2160: Current State = VT_LOOP_I_LOOP
+[DUT] Time=2170: Current State = VT_GET_PREV_PROB
+[DUT] Time=2170: i-loop: V_{t-1}[i= 6] = c0dd514b
+[DUT] Time=2180: Current State = VT_INIT_GET_AB
+[DUT] Time=2180: i-loop: Requesting A[ 6][ 3] @ address   44, B[ 3][         3] @ address    8
+[TB] Time=2190: aReg_Read_Port_1: addr=  44, data=bf47ef04 
+[TB] Time=2190: bReg_Read_Port_1: addr=   8, data=bf56e905 
+[DUT] Time=2200: Current State = VT_DONE_GET_AB
+[DUT] Time=2200: i-loop: Received A[ 6][ 3] = bf47ef04 (log prob)
+[DUT] Time=2200: Received B[ 3][         3] = bf56e905 (log prob)
+[DUT] Time=2210: Current State = VT_INIT_FP_ADD
+[DUT] Time=2220: Current State = VT_PROC_FP_ADD
+[DUT] Time=2230: Current State = VT_DONE_FP_ADD
+[DUT] Time=2230: i-loop: Current path probability via prevState  6 = c1089626
+[DUT] Time=2240: Current State = VT_LOOP_I_LOOP
+[DUT] Time=2250: Current State = VT_GET_PREV_PROB
+[DUT] Time=2250: i-loop: V_{t-1}[i= 7] = c168b591
+[DUT] Time=2260: Current State = VT_INIT_GET_AB
+[DUT] Time=2260: i-loop: Requesting A[ 7][ 3] @ address   51, B[ 3][         3] @ address    8
+[TB] Time=2270: aReg_Read_Port_1: addr=  51, data=bf6b1ac1 
+[TB] Time=2270: bReg_Read_Port_1: addr=   8, data=bf56e905 
+[DUT] Time=2280: Current State = VT_DONE_GET_AB
+[DUT] Time=2280: i-loop: Received A[ 7][ 3] = bf6b1ac1 (log prob)
+[DUT] Time=2280: Received B[ 3][         3] = bf56e905 (log prob)
+[DUT] Time=2290: Current State = VT_INIT_FP_ADD
+[DUT] Time=2300: Current State = VT_PROC_FP_ADD
+[DUT] Time=2310: Current State = VT_DONE_FP_ADD
+[DUT] Time=2310: i-loop: Current path probability via prevState  7 = c1826ae6
+[DUT] Time=2320: Current State = VT_LOOP_I_LOOP
+[DUT] Time=2330: Current State = VT_SAVE_STATE
+[DUT] Time=2330: j-loop: Storing V_t[ 3] = c0723d01, backtrace[ 2][ 3] =  1 @ btAddr   16
+[DUT] Time=2340: Current State = VT_LOOP_J_LOOP
+[DUT] Time=2350: Current State = VT_INIT_I_LOOP
+[DUT] Time=2350: i-loop: Computing max path metric to state j= 4
+[DUT] Time=2350: i-loop: Checking prevStates i=1 to          7
+[DUT] Time=2360: Current State = VT_GET_PREV_PROB
+[DUT] Time=2360: i-loop: V_{t-1}[i= 1] = bfe5c908
+[DUT] Time=2370: Current State = VT_INIT_GET_AB
+[DUT] Time=2370: i-loop: Requesting A[ 1][ 4] @ address   10, B[ 4][         3] @ address   11
+[TB] Time=2380: aReg_Read_Port_1: addr=  10, data=c073f2be 
+[TB] Time=2380: bReg_Read_Port_1: addr=  11, data=be6a3558 
+[DUT] Time=2390: Current State = VT_DONE_GET_AB
+[DUT] Time=2390: i-loop: Received A[ 1][ 4] = c073f2be (log prob)
+[DUT] Time=2390: Received B[ 4][         3] = be6a3558 (log prob)
+[DUT] Time=2400: Current State = VT_INIT_FP_ADD
+[DUT] Time=2410: Current State = VT_PROC_FP_ADD
+[DUT] Time=2420: Current State = VT_DONE_FP_ADD
+[DUT] Time=2420: i-loop: Current path probability via prevState  1 = c0babd4c
+[DUT] Time=2430: Current State = VT_LOOP_I_LOOP
+[DUT] Time=2440: Current State = VT_GET_PREV_PROB
+[DUT] Time=2440: i-loop: V_{t-1}[i= 2] = c0635be5
+[DUT] Time=2450: Current State = VT_INIT_GET_AB
+[DUT] Time=2450: i-loop: Requesting A[ 2][ 4] @ address   17, B[ 4][         3] @ address   11
+[TB] Time=2460: aReg_Read_Port_1: addr=  17, data=c02bac4b 
+[TB] Time=2460: bReg_Read_Port_1: addr=  11, data=be6a3558 
+[DUT] Time=2470: Current State = VT_DONE_GET_AB
+[DUT] Time=2470: i-loop: Received A[ 2][ 4] = c02bac4b (log prob)
+[DUT] Time=2470: Received B[ 4][         3] = be6a3558 (log prob)
+[DUT] Time=2480: Current State = VT_INIT_FP_ADD
+[DUT] Time=2490: Current State = VT_PROC_FP_ADD
+[DUT] Time=2500: Current State = VT_DONE_FP_ADD
+[DUT] Time=2500: i-loop: Current path probability via prevState  2 = c0ced5c3
+[DUT] Time=2510: Current State = VT_LOOP_I_LOOP
+[DUT] Time=2520: Current State = VT_GET_PREV_PROB
+[DUT] Time=2520: i-loop: V_{t-1}[i= 3] = bfc9a85a
+[DUT] Time=2530: Current State = VT_INIT_GET_AB
+[DUT] Time=2530: i-loop: Requesting A[ 3][ 4] @ address   24, B[ 4][         3] @ address   11
+[TB] Time=2540: aReg_Read_Port_1: addr=  24, data=c07382b6 
+[TB] Time=2540: bReg_Read_Port_1: addr=  11, data=be6a3558 
+[DUT] Time=2550: Current State = VT_DONE_GET_AB
+[DUT] Time=2550: i-loop: Received A[ 3][ 4] = c07382b6 (log prob)
+[DUT] Time=2550: Received B[ 4][         3] = be6a3558 (log prob)
+[DUT] Time=2560: Current State = VT_INIT_FP_ADD
+[DUT] Time=2570: Current State = VT_PROC_FP_ADD
+[DUT] Time=2580: Current State = VT_DONE_FP_ADD
+[DUT] Time=2580: i-loop: Current path probability via prevState  3 = c0b37d1d
+[DUT] Time=2590: Current State = VT_LOOP_I_LOOP
+[DUT] Time=2600: Current State = VT_GET_PREV_PROB
+[DUT] Time=2600: i-loop: V_{t-1}[i= 4] = c095e986
+[DUT] Time=2610: Current State = VT_INIT_GET_AB
+[DUT] Time=2610: i-loop: Requesting A[ 4][ 4] @ address   31, B[ 4][         3] @ address   11
+[TB] Time=2620: aReg_Read_Port_1: addr=  31, data=c15d0c55 
+[TB] Time=2620: bReg_Read_Port_1: addr=  11, data=be6a3558 
+[DUT] Time=2630: Current State = VT_DONE_GET_AB
+[DUT] Time=2630: i-loop: Received A[ 4][ 4] = c15d0c55 (log prob)
+[DUT] Time=2630: Received B[ 4][         3] = be6a3558 (log prob)
+[DUT] Time=2640: Current State = VT_INIT_FP_ADD
+[DUT] Time=2650: Current State = VT_PROC_FP_ADD
+[DUT] Time=2660: Current State = VT_DONE_FP_ADD
+[DUT] Time=2660: i-loop: Current path probability via prevState  4 = c195d4f7
+[DUT] Time=2670: Current State = VT_LOOP_I_LOOP
+[DUT] Time=2680: Current State = VT_GET_PREV_PROB
+[DUT] Time=2680: i-loop: V_{t-1}[i= 5] = c0d4f902
+[DUT] Time=2690: Current State = VT_INIT_GET_AB
+[DUT] Time=2690: i-loop: Requesting A[ 5][ 4] @ address   38, B[ 4][         3] @ address   11
+[TB] Time=2700: aReg_Read_Port_1: addr=  38, data=c0372061 
+[TB] Time=2700: bReg_Read_Port_1: addr=  11, data=be6a3558 
+[DUT] Time=2710: Current State = VT_DONE_GET_AB
+[DUT] Time=2710: i-loop: Received A[ 5][ 4] = c0372061 (log prob)
+[DUT] Time=2710: Received B[ 4][         3] = be6a3558 (log prob)
+[DUT] Time=2720: Current State = VT_INIT_FP_ADD
+[DUT] Time=2730: Current State = VT_PROC_FP_ADD
+[DUT] Time=2740: Current State = VT_DONE_FP_ADD
+[DUT] Time=2740: i-loop: Current path probability via prevState  5 = c11bed6e
+[DUT] Time=2750: Current State = VT_LOOP_I_LOOP
+[DUT] Time=2760: Current State = VT_GET_PREV_PROB
+[DUT] Time=2760: i-loop: V_{t-1}[i= 6] = c0dd514b
+[DUT] Time=2770: Current State = VT_INIT_GET_AB
+[DUT] Time=2770: i-loop: Requesting A[ 6][ 4] @ address   45, B[ 4][         3] @ address   11
+[TB] Time=2780: aReg_Read_Port_1: addr=  45, data=c04569e7 
+[TB] Time=2780: bReg_Read_Port_1: addr=  11, data=be6a3558 
+[DUT] Time=2790: Current State = VT_DONE_GET_AB
+[DUT] Time=2790: i-loop: Received A[ 6][ 4] = c04569e7 (log prob)
+[DUT] Time=2790: Received B[ 4][         3] = be6a3558 (log prob)
+[DUT] Time=2800: Current State = VT_INIT_FP_ADD
+[DUT] Time=2810: Current State = VT_PROC_FP_ADD
+[DUT] Time=2820: Current State = VT_DONE_FP_ADD
+[DUT] Time=2820: i-loop: Current path probability via prevState  6 = c123abf5
+[DUT] Time=2830: Current State = VT_LOOP_I_LOOP
+[DUT] Time=2840: Current State = VT_GET_PREV_PROB
+[DUT] Time=2840: i-loop: V_{t-1}[i= 7] = c168b591
+[DUT] Time=2850: Current State = VT_INIT_GET_AB
+[DUT] Time=2850: i-loop: Requesting A[ 7][ 4] @ address   52, B[ 4][         3] @ address   11
+[TB] Time=2860: aReg_Read_Port_1: addr=  52, data=c07e42d2 
+[TB] Time=2860: bReg_Read_Port_1: addr=  11, data=be6a3558 
+[DUT] Time=2870: Current State = VT_DONE_GET_AB
+[DUT] Time=2870: i-loop: Received A[ 7][ 4] = c07e42d2 (log prob)
+[DUT] Time=2870: Received B[ 4][         3] = be6a3558 (log prob)
+[DUT] Time=2880: Current State = VT_INIT_FP_ADD
+[DUT] Time=2890: Current State = VT_PROC_FP_ADD
+[DUT] Time=2900: Current State = VT_DONE_FP_ADD
+[DUT] Time=2900: i-loop: Current path probability via prevState  7 = c195f78d
+[DUT] Time=2910: Current State = VT_LOOP_I_LOOP
+[DUT] Time=2920: Current State = VT_SAVE_STATE
+[DUT] Time=2920: j-loop: Storing V_t[ 4] = c0b37d1d, backtrace[ 2][ 4] =  3 @ btAddr   17
+[DUT] Time=2930: Current State = VT_LOOP_J_LOOP
+[DUT] Time=2940: Current State = VT_INIT_I_LOOP
+[DUT] Time=2940: i-loop: Computing max path metric to state j= 5
+[DUT] Time=2940: i-loop: Checking prevStates i=1 to          7
+[DUT] Time=2950: Current State = VT_GET_PREV_PROB
+[DUT] Time=2950: i-loop: V_{t-1}[i= 1] = bfe5c908
+[DUT] Time=2960: Current State = VT_INIT_GET_AB
+[DUT] Time=2960: i-loop: Requesting A[ 1][ 5] @ address   11, B[ 5][         3] @ address   14
+[TB] Time=2970: aReg_Read_Port_1: addr=  11, data=c04025b1 
+[TB] Time=2970: bReg_Read_Port_1: addr=  14, data=be8922e7 
+[DUT] Time=2980: Current State = VT_DONE_GET_AB
+[DUT] Time=2980: i-loop: Received A[ 1][ 5] = c04025b1 (log prob)
+[DUT] Time=2980: Received B[ 5][         3] = be8922e7 (log prob)
+[DUT] Time=2990: Current State = VT_INIT_FP_ADD
+[DUT] Time=3000: Current State = VT_PROC_FP_ADD
+[DUT] Time=3010: Current State = VT_DONE_FP_ADD
+[DUT] Time=3010: i-loop: Current path probability via prevState  1 = c0a21748
+[DUT] Time=3020: Current State = VT_LOOP_I_LOOP
+[DUT] Time=3030: Current State = VT_GET_PREV_PROB
+[DUT] Time=3030: i-loop: V_{t-1}[i= 2] = c0635be5
+[DUT] Time=3040: Current State = VT_INIT_GET_AB
+[DUT] Time=3040: i-loop: Requesting A[ 2][ 5] @ address   18, B[ 5][         3] @ address   14
+[TB] Time=3050: aReg_Read_Port_1: addr=  18, data=c02db5da 
+[TB] Time=3050: bReg_Read_Port_1: addr=  14, data=be8922e7 
+[DUT] Time=3060: Current State = VT_DONE_GET_AB
+[DUT] Time=3060: i-loop: Received A[ 2][ 5] = c02db5da (log prob)
+[DUT] Time=3060: Received B[ 5][         3] = be8922e7 (log prob)
+[DUT] Time=3070: Current State = VT_INIT_FP_ADD
+[DUT] Time=3080: Current State = VT_PROC_FP_ADD
+[DUT] Time=3090: Current State = VT_DONE_FP_ADD
+[DUT] Time=3090: i-loop: Current path probability via prevState  2 = c0d11b0e
+[DUT] Time=3100: Current State = VT_LOOP_I_LOOP
+[DUT] Time=3110: Current State = VT_GET_PREV_PROB
+[DUT] Time=3110: i-loop: V_{t-1}[i= 3] = bfc9a85a
+[DUT] Time=3120: Current State = VT_INIT_GET_AB
+[DUT] Time=3120: i-loop: Requesting A[ 3][ 5] @ address   25, B[ 5][         3] @ address   14
+[TB] Time=3130: aReg_Read_Port_1: addr=  25, data=c15d0c55 
+[TB] Time=3130: bReg_Read_Port_1: addr=  14, data=be8922e7 
+[DUT] Time=3140: Current State = VT_DONE_GET_AB
+[DUT] Time=3140: i-loop: Received A[ 3][ 5] = c15d0c55 (log prob)
+[DUT] Time=3140: Received B[ 5][         3] = be8922e7 (log prob)
+[DUT] Time=3150: Current State = VT_INIT_FP_ADD
+[DUT] Time=3160: Current State = VT_PROC_FP_ADD
+[DUT] Time=3170: Current State = VT_DONE_FP_ADD
+[DUT] Time=3170: i-loop: Current path probability via prevState  3 = c17a8a77
+[DUT] Time=3180: Current State = VT_LOOP_I_LOOP
+[DUT] Time=3190: Current State = VT_GET_PREV_PROB
+[DUT] Time=3190: i-loop: V_{t-1}[i= 4] = c095e986
+[DUT] Time=3200: Current State = VT_INIT_GET_AB
+[DUT] Time=3200: i-loop: Requesting A[ 4][ 5] @ address   32, B[ 5][         3] @ address   14
+[TB] Time=3210: aReg_Read_Port_1: addr=  32, data=c15d0c55 
+[TB] Time=3210: bReg_Read_Port_1: addr=  14, data=be8922e7 
+[DUT] Time=3220: Current State = VT_DONE_GET_AB
+[DUT] Time=3220: i-loop: Received A[ 4][ 5] = c15d0c55 (log prob)
+[DUT] Time=3220: Received B[ 5][         3] = be8922e7 (log prob)
+[DUT] Time=3230: Current State = VT_INIT_FP_ADD
+[DUT] Time=3240: Current State = VT_PROC_FP_ADD
+[DUT] Time=3250: Current State = VT_DONE_FP_ADD
+[DUT] Time=3250: i-loop: Current path probability via prevState  4 = c1962518
+[DUT] Time=3260: Current State = VT_LOOP_I_LOOP
+[DUT] Time=3270: Current State = VT_GET_PREV_PROB
+[DUT] Time=3270: i-loop: V_{t-1}[i= 5] = c0d4f902
+[DUT] Time=3280: Current State = VT_INIT_GET_AB
+[DUT] Time=3280: i-loop: Requesting A[ 5][ 5] @ address   39, B[ 5][         3] @ address   14
+[TB] Time=3290: aReg_Read_Port_1: addr=  39, data=bff3802c 
+[TB] Time=3290: bReg_Read_Port_1: addr=  14, data=be8922e7 
+[DUT] Time=3300: Current State = VT_DONE_GET_AB
+[DUT] Time=3300: i-loop: Received A[ 5][ 5] = bff3802c (log prob)
+[DUT] Time=3300: Received B[ 5][         3] = be8922e7 (log prob)
+[DUT] Time=3310: Current State = VT_INIT_FP_ADD
+[DUT] Time=3320: Current State = VT_PROC_FP_ADD
+[DUT] Time=3330: Current State = VT_DONE_FP_ADD
+[DUT] Time=3330: i-loop: Current path probability via prevState  5 = c10d359d
+[DUT] Time=3340: Current State = VT_LOOP_I_LOOP
+[DUT] Time=3350: Current State = VT_GET_PREV_PROB
+[DUT] Time=3350: i-loop: V_{t-1}[i= 6] = c0dd514b
+[DUT] Time=3360: Current State = VT_INIT_GET_AB
+[DUT] Time=3360: i-loop: Requesting A[ 6][ 5] @ address   46, B[ 5][         3] @ address   14
+[TB] Time=3370: aReg_Read_Port_1: addr=  46, data=c037c615 
+[TB] Time=3370: bReg_Read_Port_1: addr=  14, data=be8922e7 
+[DUT] Time=3380: Current State = VT_DONE_GET_AB
+[DUT] Time=3380: i-loop: Received A[ 6][ 5] = c037c615 (log prob)
+[DUT] Time=3380: Received B[ 5][         3] = be8922e7 (log prob)
+[DUT] Time=3390: Current State = VT_INIT_FP_ADD
+[DUT] Time=3400: Current State = VT_PROC_FP_ADD
+[DUT] Time=3410: Current State = VT_DONE_FP_ADD
+[DUT] Time=3410: i-loop: Current path probability via prevState  6 = c120e341
+[DUT] Time=3420: Current State = VT_LOOP_I_LOOP
+[DUT] Time=3430: Current State = VT_GET_PREV_PROB
+[DUT] Time=3430: i-loop: V_{t-1}[i= 7] = c168b591
+[DUT] Time=3440: Current State = VT_INIT_GET_AB
+[DUT] Time=3440: i-loop: Requesting A[ 7][ 5] @ address   53, B[ 5][         3] @ address   14
+[TB] Time=3450: aReg_Read_Port_1: addr=  53, data=c0d0b192 
+[TB] Time=3450: bReg_Read_Port_1: addr=  14, data=be8922e7 
+[DUT] Time=3460: Current State = VT_DONE_GET_AB
+[DUT] Time=3460: i-loop: Received A[ 7][ 5] = c0d0b192 (log prob)
+[DUT] Time=3460: Received B[ 5][         3] = be8922e7 (log prob)
+[DUT] Time=3470: Current State = VT_INIT_FP_ADD
+[DUT] Time=3480: Current State = VT_PROC_FP_ADD
+[DUT] Time=3490: Current State = VT_DONE_FP_ADD
+[DUT] Time=3490: i-loop: Current path probability via prevState  7 = c1aaabb9
+[DUT] Time=3500: Current State = VT_LOOP_I_LOOP
+[DUT] Time=3510: Current State = VT_SAVE_STATE
+[DUT] Time=3510: j-loop: Storing V_t[ 5] = c0a21748, backtrace[ 2][ 5] =  1 @ btAddr   18
+[DUT] Time=3520: Current State = VT_LOOP_J_LOOP
+[DUT] Time=3530: Current State = VT_INIT_I_LOOP
+[DUT] Time=3530: i-loop: Computing max path metric to state j= 6
+[DUT] Time=3530: i-loop: Checking prevStates i=1 to          7
+[DUT] Time=3540: Current State = VT_GET_PREV_PROB
+[DUT] Time=3540: i-loop: V_{t-1}[i= 1] = bfe5c908
+[DUT] Time=3550: Current State = VT_INIT_GET_AB
+[DUT] Time=3550: i-loop: Requesting A[ 1][ 6] @ address   12, B[ 6][         3] @ address   17
+[TB] Time=3560: aReg_Read_Port_1: addr=  12, data=c04f6131 
+[TB] Time=3560: bReg_Read_Port_1: addr=  17, data=c06cb71b 
+[DUT] Time=3570: Current State = VT_DONE_GET_AB
+[DUT] Time=3570: i-loop: Received A[ 1][ 6] = c04f6131 (log prob)
+[DUT] Time=3570: Received B[ 6][         3] = c06cb71b (log prob)
+[DUT] Time=3580: Current State = VT_INIT_FP_ADD
+[DUT] Time=3590: Current State = VT_PROC_FP_ADD
+[DUT] Time=3600: Current State = VT_DONE_FP_ADD
+[DUT] Time=3600: i-loop: Current path probability via prevState  1 = c10bbf34
+[DUT] Time=3610: Current State = VT_LOOP_I_LOOP
+[DUT] Time=3620: Current State = VT_GET_PREV_PROB
+[DUT] Time=3620: i-loop: V_{t-1}[i= 2] = c0635be5
+[DUT] Time=3630: Current State = VT_INIT_GET_AB
+[DUT] Time=3630: i-loop: Requesting A[ 2][ 6] @ address   19, B[ 6][         3] @ address   17
+[TB] Time=3640: aReg_Read_Port_1: addr=  19, data=c15d0c55 
+[TB] Time=3640: bReg_Read_Port_1: addr=  17, data=c06cb71b 
+[DUT] Time=3650: Current State = VT_DONE_GET_AB
+[DUT] Time=3650: i-loop: Received A[ 2][ 6] = c15d0c55 (log prob)
+[DUT] Time=3650: Received B[ 6][         3] = c06cb71b (log prob)
+[DUT] Time=3660: Current State = VT_INIT_FP_ADD
+[DUT] Time=3670: Current State = VT_PROC_FP_ADD
+[DUT] Time=3680: Current State = VT_DONE_FP_ADD
+[DUT] Time=3680: i-loop: Current path probability via prevState  2 = c1a8888a
+[DUT] Time=3690: Current State = VT_LOOP_I_LOOP
+[DUT] Time=3700: Current State = VT_GET_PREV_PROB
+[DUT] Time=3700: i-loop: V_{t-1}[i= 3] = bfc9a85a
+[DUT] Time=3710: Current State = VT_INIT_GET_AB
+[DUT] Time=3710: i-loop: Requesting A[ 3][ 6] @ address   26, B[ 6][         3] @ address   17
+[TB] Time=3720: aReg_Read_Port_1: addr=  26, data=c15d0c55 
+[TB] Time=3720: bReg_Read_Port_1: addr=  17, data=c06cb71b 
+[DUT] Time=3730: Current State = VT_DONE_GET_AB
+[DUT] Time=3730: i-loop: Received A[ 3][ 6] = c15d0c55 (log prob)
+[DUT] Time=3730: Received B[ 6][         3] = c06cb71b (log prob)
+[DUT] Time=3740: Current State = VT_INIT_FP_ADD
+[DUT] Time=3750: Current State = VT_PROC_FP_ADD
+[DUT] Time=3760: Current State = VT_DONE_FP_ADD
+[DUT] Time=3760: i-loop: Current path probability via prevState  3 = c198b794
+[DUT] Time=3770: Current State = VT_LOOP_I_LOOP
+[DUT] Time=3780: Current State = VT_GET_PREV_PROB
+[DUT] Time=3780: i-loop: V_{t-1}[i= 4] = c095e986
+[DUT] Time=3790: Current State = VT_INIT_GET_AB
+[DUT] Time=3790: i-loop: Requesting A[ 4][ 6] @ address   33, B[ 6][         3] @ address   17
+[TB] Time=3800: aReg_Read_Port_1: addr=  33, data=c15d0c55 
+[TB] Time=3800: bReg_Read_Port_1: addr=  17, data=c06cb71b 
+[DUT] Time=3810: Current State = VT_DONE_GET_AB
+[DUT] Time=3810: i-loop: Received A[ 4][ 6] = c15d0c55 (log prob)
+[DUT] Time=3810: Received B[ 6][         3] = c06cb71b (log prob)
+[DUT] Time=3820: Current State = VT_INIT_FP_ADD
+[DUT] Time=3830: Current State = VT_PROC_FP_ADD
+[DUT] Time=3840: Current State = VT_DONE_FP_ADD
+[DUT] Time=3840: i-loop: Current path probability via prevState  4 = c1b1976f
+[DUT] Time=3850: Current State = VT_LOOP_I_LOOP
+[DUT] Time=3860: Current State = VT_GET_PREV_PROB
+[DUT] Time=3860: i-loop: V_{t-1}[i= 5] = c0d4f902
+[DUT] Time=3870: Current State = VT_INIT_GET_AB
+[DUT] Time=3870: i-loop: Requesting A[ 5][ 6] @ address   40, B[ 6][         3] @ address   17
+[TB] Time=3880: aReg_Read_Port_1: addr=  40, data=c028910b 
+[TB] Time=3880: bReg_Read_Port_1: addr=  17, data=c06cb71b 
+[DUT] Time=3890: Current State = VT_DONE_GET_AB
+[DUT] Time=3890: i-loop: Received A[ 5][ 6] = c028910b (log prob)
+[DUT] Time=3890: Received B[ 6][         3] = c06cb71b (log prob)
+[DUT] Time=3900: Current State = VT_INIT_FP_ADD
+[DUT] Time=3910: Current State = VT_PROC_FP_ADD
+[DUT] Time=3920: Current State = VT_DONE_FP_ADD
+[DUT] Time=3920: i-loop: Current path probability via prevState  5 = c14fce8b
+[DUT] Time=3930: Current State = VT_LOOP_I_LOOP
+[DUT] Time=3940: Current State = VT_GET_PREV_PROB
+[DUT] Time=3940: i-loop: V_{t-1}[i= 6] = c0dd514b
+[DUT] Time=3950: Current State = VT_INIT_GET_AB
+[DUT] Time=3950: i-loop: Requesting A[ 6][ 6] @ address   47, B[ 6][         3] @ address   17
+[TB] Time=3960: aReg_Read_Port_1: addr=  47, data=c0312d72 
+[TB] Time=3960: bReg_Read_Port_1: addr=  17, data=c06cb71b 
+[DUT] Time=3970: Current State = VT_DONE_GET_AB
+[DUT] Time=3970: i-loop: Received A[ 6][ 6] = c0312d72 (log prob)
+[DUT] Time=3970: Received B[ 6][         3] = c06cb71b (log prob)
+[DUT] Time=3980: Current State = VT_INIT_FP_ADD
+[DUT] Time=3990: Current State = VT_PROC_FP_ADD
+[DUT] Time=4000: Current State = VT_DONE_FP_ADD
+[DUT] Time=4000: i-loop: Current path probability via prevState  6 = c15621c9
+[DUT] Time=4010: Current State = VT_LOOP_I_LOOP
+[DUT] Time=4020: Current State = VT_GET_PREV_PROB
+[DUT] Time=4020: i-loop: V_{t-1}[i= 7] = c168b591
+[DUT] Time=4030: Current State = VT_INIT_GET_AB
+[DUT] Time=4030: i-loop: Requesting A[ 7][ 6] @ address   54, B[ 6][         3] @ address   17
+[TB] Time=4040: aReg_Read_Port_1: addr=  54, data=c15d0c55 
+[TB] Time=4040: bReg_Read_Port_1: addr=  17, data=c06cb71b 
+[DUT] Time=4050: Current State = VT_DONE_GET_AB
+[DUT] Time=4050: i-loop: Received A[ 7][ 6] = c15d0c55 (log prob)
+[DUT] Time=4050: Received B[ 6][         3] = c06cb71b (log prob)
+[DUT] Time=4060: Current State = VT_INIT_FP_ADD
+[DUT] Time=4070: Current State = VT_PROC_FP_ADD
+[DUT] Time=4080: Current State = VT_DONE_FP_ADD
+[DUT] Time=4080: i-loop: Current path probability via prevState  7 = c2003beb
+[DUT] Time=4090: Current State = VT_LOOP_I_LOOP
+[DUT] Time=4100: Current State = VT_SAVE_STATE
+[DUT] Time=4100: j-loop: Storing V_t[ 6] = c10bbf34, backtrace[ 2][ 6] =  1 @ btAddr   19
+[DUT] Time=4110: Current State = VT_LOOP_J_LOOP
+[DUT] Time=4120: Current State = VT_INIT_I_LOOP
+[DUT] Time=4120: i-loop: Computing max path metric to state j= 7
+[DUT] Time=4120: i-loop: Checking prevStates i=1 to          7
+[DUT] Time=4130: Current State = VT_GET_PREV_PROB
+[DUT] Time=4130: i-loop: V_{t-1}[i= 1] = bfe5c908
+[DUT] Time=4140: Current State = VT_INIT_GET_AB
+[DUT] Time=4140: i-loop: Requesting A[ 1][ 7] @ address   13, B[ 7][         3] @ address   20
+[TB] Time=4150: aReg_Read_Port_1: addr=  13, data=c0ad4c48 
+[TB] Time=4150: bReg_Read_Port_1: addr=  20, data=c05916bd 
+[DUT] Time=4160: Current State = VT_DONE_GET_AB
+[DUT] Time=4160: i-loop: Received A[ 1][ 7] = c0ad4c48 (log prob)
+[DUT] Time=4160: Received B[ 7][         3] = c05916bd (log prob)
+[DUT] Time=4170: Current State = VT_INIT_FP_ADD
+[DUT] Time=4180: Current State = VT_PROC_FP_ADD
+[DUT] Time=4190: Current State = VT_DONE_FP_ADD
+[DUT] Time=4190: i-loop: Current path probability via prevState  1 = c129a4f4
+[DUT] Time=4200: Current State = VT_LOOP_I_LOOP
+[DUT] Time=4210: Current State = VT_GET_PREV_PROB
+[DUT] Time=4210: i-loop: V_{t-1}[i= 2] = c0635be5
+[DUT] Time=4220: Current State = VT_INIT_GET_AB
+[DUT] Time=4220: i-loop: Requesting A[ 2][ 7] @ address   20, B[ 7][         3] @ address   20
+[TB] Time=4230: aReg_Read_Port_1: addr=  20, data=c15d0c55 
+[TB] Time=4230: bReg_Read_Port_1: addr=  20, data=c05916bd 
+[DUT] Time=4240: Current State = VT_DONE_GET_AB
+[DUT] Time=4240: i-loop: Received A[ 2][ 7] = c15d0c55 (log prob)
+[DUT] Time=4240: Received B[ 7][         3] = c05916bd (log prob)
+[DUT] Time=4250: Current State = VT_INIT_FP_ADD
+[DUT] Time=4260: Current State = VT_PROC_FP_ADD
+[DUT] Time=4270: Current State = VT_DONE_FP_ADD
+[DUT] Time=4270: i-loop: Current path probability via prevState  2 = c1a6147f
+[DUT] Time=4280: Current State = VT_LOOP_I_LOOP
+[DUT] Time=4290: Current State = VT_GET_PREV_PROB
+[DUT] Time=4290: i-loop: V_{t-1}[i= 3] = bfc9a85a
+[DUT] Time=4300: Current State = VT_INIT_GET_AB
+[DUT] Time=4300: i-loop: Requesting A[ 3][ 7] @ address   27, B[ 7][         3] @ address   20
+[TB] Time=4310: aReg_Read_Port_1: addr=  27, data=c15d0c55 
+[TB] Time=4310: bReg_Read_Port_1: addr=  20, data=c05916bd 
+[DUT] Time=4320: Current State = VT_DONE_GET_AB
+[DUT] Time=4320: i-loop: Received A[ 3][ 7] = c15d0c55 (log prob)
+[DUT] Time=4320: Received B[ 7][         3] = c05916bd (log prob)
+[DUT] Time=4330: Current State = VT_INIT_FP_ADD
+[DUT] Time=4340: Current State = VT_PROC_FP_ADD
+[DUT] Time=4350: Current State = VT_DONE_FP_ADD
+[DUT] Time=4350: i-loop: Current path probability via prevState  3 = c1964388
+[DUT] Time=4360: Current State = VT_LOOP_I_LOOP
+[DUT] Time=4370: Current State = VT_GET_PREV_PROB
+[DUT] Time=4370: i-loop: V_{t-1}[i= 4] = c095e986
+[DUT] Time=4380: Current State = VT_INIT_GET_AB
+[DUT] Time=4380: i-loop: Requesting A[ 4][ 7] @ address   34, B[ 7][         3] @ address   20
+[TB] Time=4390: aReg_Read_Port_1: addr=  34, data=c15d0c55 
+[TB] Time=4390: bReg_Read_Port_1: addr=  20, data=c05916bd 
+[DUT] Time=4400: Current State = VT_DONE_GET_AB
+[DUT] Time=4400: i-loop: Received A[ 4][ 7] = c15d0c55 (log prob)
+[DUT] Time=4400: Received B[ 7][         3] = c05916bd (log prob)
+[DUT] Time=4410: Current State = VT_INIT_FP_ADD
+[DUT] Time=4420: Current State = VT_PROC_FP_ADD
+[DUT] Time=4430: Current State = VT_DONE_FP_ADD
+[DUT] Time=4430: i-loop: Current path probability via prevState  4 = c1af2364
+[DUT] Time=4440: Current State = VT_LOOP_I_LOOP
+[DUT] Time=4450: Current State = VT_GET_PREV_PROB
+[DUT] Time=4450: i-loop: V_{t-1}[i= 5] = c0d4f902
+[DUT] Time=4460: Current State = VT_INIT_GET_AB
+[DUT] Time=4460: i-loop: Requesting A[ 5][ 7] @ address   41, B[ 7][         3] @ address   20
+[TB] Time=4470: aReg_Read_Port_1: addr=  41, data=c070047a 
+[TB] Time=4470: bReg_Read_Port_1: addr=  20, data=c05916bd 
+[DUT] Time=4480: Current State = VT_DONE_GET_AB
+[DUT] Time=4480: i-loop: Received A[ 5][ 7] = c070047a (log prob)
+[DUT] Time=4480: Received B[ 7][         3] = c05916bd (log prob)
+[DUT] Time=4490: Current State = VT_INIT_FP_ADD
+[DUT] Time=4500: Current State = VT_PROC_FP_ADD
+[DUT] Time=4510: Current State = VT_DONE_FP_ADD
+[DUT] Time=4510: i-loop: Current path probability via prevState  5 = c15cc34f
+[DUT] Time=4520: Current State = VT_LOOP_I_LOOP
+[DUT] Time=4530: Current State = VT_GET_PREV_PROB
+[DUT] Time=4530: i-loop: V_{t-1}[i= 6] = c0dd514b
+[DUT] Time=4540: Current State = VT_INIT_GET_AB
+[DUT] Time=4540: i-loop: Requesting A[ 6][ 7] @ address   48, B[ 7][         3] @ address   20
+[TB] Time=4550: aReg_Read_Port_1: addr=  48, data=c00e3ccd 
+[TB] Time=4550: bReg_Read_Port_1: addr=  20, data=c05916bd 
+[DUT] Time=4560: Current State = VT_DONE_GET_AB
+[DUT] Time=4560: i-loop: Received A[ 6][ 7] = c00e3ccd (log prob)
+[DUT] Time=4560: Received B[ 7][         3] = c05916bd (log prob)
+[DUT] Time=4570: Current State = VT_INIT_FP_ADD
+[DUT] Time=4580: Current State = VT_PROC_FP_ADD
+[DUT] Time=4590: Current State = VT_DONE_FP_ADD
+[DUT] Time=4590: i-loop: Current path probability via prevState  6 = c1487d87
+[DUT] Time=4600: Current State = VT_LOOP_I_LOOP
+[DUT] Time=4610: Current State = VT_GET_PREV_PROB
+[DUT] Time=4610: i-loop: V_{t-1}[i= 7] = c168b591
+[DUT] Time=4620: Current State = VT_INIT_GET_AB
+[DUT] Time=4620: i-loop: Requesting A[ 7][ 7] @ address   55, B[ 7][         3] @ address   20
+[TB] Time=4630: aReg_Read_Port_1: addr=  55, data=c15d0c55 
+[TB] Time=4630: bReg_Read_Port_1: addr=  20, data=c05916bd 
+[DUT] Time=4640: Current State = VT_DONE_GET_AB
+[DUT] Time=4640: i-loop: Received A[ 7][ 7] = c15d0c55 (log prob)
+[DUT] Time=4640: Received B[ 7][         3] = c05916bd (log prob)
+[DUT] Time=4650: Current State = VT_INIT_FP_ADD
+[DUT] Time=4660: Current State = VT_PROC_FP_ADD
+[DUT] Time=4670: Current State = VT_DONE_FP_ADD
+[DUT] Time=4670: i-loop: Current path probability via prevState  7 = c1fe03cb
+[DUT] Time=4680: Current State = VT_LOOP_I_LOOP
+[DUT] Time=4690: Current State = VT_SAVE_STATE
+[DUT] Time=4690: j-loop: Storing V_t[ 7] = c129a4f4, backtrace[ 2][ 7] =  1 @ btAddr   20
+[DUT] Time=4700: Current State = VT_LOOP_J_LOOP
+[DUT] Time=4710: Current State = VT_UPDATE_VREG
+[DUT] Time=4710: j-loop completed: all          7 states computed for t= 2
+[DUT] Time=4720: Current State = VT_CALC_START
+[DUT] Time=4720: Starting Vt calculation for t= 3
+[DUT] Time=4720: Requesting observation at index    2
+[TB] Time=4730: inputReg_Read_Port_1: addr=   2, data=ffffffff 
+[DUT] Time=4740: Current State = VT_GET_INPUT
+[DUT] Time=4740: Received Input = ffffffff
+[DUT] Time=4740: End marker detected at t= 3
+[DUT] Time=4740: Sequence length =  2 observations
+[DUT] Time=4750: Current State = TRACEBACK_CALC_START
+[DUT] Time=4750: Traceback: Total timeSteps:  2
+[DUT] Time=4760: Current State = TRACEBACK_LOOP
+DEBUG : [DUT] Time=4760: Write state  1 (timestep  2) to output[1]
+DEBUG : [DUT] Time=4760: backtrace[ 2][ 1] =  3
+[TB] Time=4770: outputReg_Write: addr=   1, data=00000001 
+[DUT] Time=4770: Current State = TRACEBACK_LOOP
+DEBUG : [DUT] Time=4770: Write state  3 (timestep  1) to output[0]
+[TB] Time=4780: outputReg_Write: addr=   0, data=00000003 
+[DUT] Time=4780: Current State = TRACEBACK_WRITE_FINAL_PROB
+[DUT] Time=4780: Write final prob c03cda32 to output[2]
+[TB] Time=4790: outputReg_Write: addr=   2, data=c03cda32 
+[DUT] Time=4790: Current State = WRITE_FF_MARKER
+[TB] Time=4800: outputReg_Write: addr=   3, data=ffffffff 
+[DUT] Time=4800: Current State = V1_CALC_START
+[DUT] Time=4800: Requesting Input-1
+[TB] Time=4810: inputReg_Read_Port_1: addr=   3, data=00000000 
+[DUT] Time=4820: Current State = GET_INPUT_V1
+DEBUG : [DUT] Time=4820: EOF detected. Going to DONE State!
+[DUT] Time=4830: Current State = DONE
+[TB] Time=4840: DUT done; starting output.dat dump (max addr 3)
+[TB] Time=4840: outputReg_Write: addr=   4, data=00000000 
+[TB] Time=4850: Opened output.dat for write
+[TB] Time=4920: output.dat written up to addr 4
