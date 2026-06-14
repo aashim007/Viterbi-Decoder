@@ -1,0 +1,78 @@
+Warning: file 'A.dat' for memory 'aRegFile' has a gap at addresses 6 to 991.
+Warning: file 'B.dat' for memory 'bRegFile' has a gap at addresses 8 to 960.
+Warning: file 'input.dat' for memory 'inputRegFile' has a gap at addresses 5 to 1023.
+[TB] Time=10: Test started
+[DUT] Time=20: Current State = IDLE
+[DUT] Time=30: Current State = START
+[DUT] Time=40: Current State = INIT_GET_NM
+[DUT] Time=40: Requesting N & M
+[TB] Time=50: nReg_Read_Port_1: addr=0, data=00000002 
+[TB] Time=50: nReg_Read_Port_2: addr=1, data=00000004 
+[DUT] Time=60: Current State = DONE_GET_NM
+[DUT] Time=60: Received N =          2
+[DUT] Time=60: Received M =          4
+[DUT] Time=70: Current State = V1_CALC_START
+[DUT] Time=70: Requesting Input-1
+[TB] Time=80: inputReg_Read_Port_1: addr=   0, data=00000001 
+[DUT] Time=90: Current State = GET_INPUT_V1
+[DUT] Time=90: Received Input-1 =          1
+[DUT] Time=100: Current State = INIT_COMPUTE_V1
+[DUT] Time=100: Starting V1 Computation for N=         2 states
+[DUT] Time=110: Current State = LOOP_V1_INIT_GET_AB
+[DUT] Time=110: Computing V1[ 1]
+[DUT] Time=110: Requesting A[0][ 1] @ addr=   0
+[DUT] Time=110: Requesting B[ 1][         1] @ addr=   0
+[TB] Time=120: aReg_Read_Port_1: addr=   0, data=bf317218 
+[TB] Time=120: bReg_Read_Port_1: addr=   0, data=c0135d8e 
+[DUT] Time=130: Current State = LOOP_V1_DONE_GET_AB
+[DUT] Time=130: Received A[0][ 1] = bf317218 (log prob)
+[DUT] Time=130: Received B[ 1][         1] = c0135d8e (log prob)
+[DUT] Time=140: Current State = LOOP_V1_INIT_FP_ADD
+[DUT] Time=140: Computing V1[ 1] = A + B
+[DUT] Time=150: Current State = LOOP_V1_DONE_FP_ADD
+[DUT] Time=150: Writing V1[ 1] = c03fba14 to vCurr[1020]
+[TB] Time=160: BTBReg_Write: addr=1020, data=c03fba14 
+[DUT] Time=160: Current State = LOOP_V1_NEXT_STATE
+[DUT] Time=160: Moving to next state  2
+[DUT] Time=170: Current State = LOOP_V1_INIT_GET_AB
+[DUT] Time=170: Computing V1[ 2]
+[DUT] Time=170: Requesting A[0][ 2] @ addr=   1
+[DUT] Time=170: Requesting B[ 2][         1] @ addr=   4
+[TB] Time=180: aReg_Read_Port_1: addr=   1, data=bf317218 
+[TB] Time=180: bReg_Read_Port_1: addr=   4, data=bf9a1bc8 
+[DUT] Time=190: Current State = LOOP_V1_DONE_GET_AB
+[DUT] Time=190: Received A[0][ 2] = bf317218 (log prob)
+[DUT] Time=190: Received B[ 2][         1] = bf9a1bc8 (log prob)
+[DUT] Time=200: Current State = LOOP_V1_INIT_FP_ADD
+[DUT] Time=200: Computing V1[ 2] = A + B
+[DUT] Time=210: Current State = LOOP_V1_DONE_FP_ADD
+[DUT] Time=210: Writing V1[ 2] = bff2d4d4 to vCurr[1021]
+[TB] Time=220: BTBReg_Write: addr=1021, data=bff2d4d4 
+[DUT] Time=220: Current State = LOOP_V1_NEXT_STATE
+[DUT] Time=220: Completed V1 computation for all  2 states
+[DUT] Time=230: Current State = V1_CALC_END
+[DUT] Time=230: V1 calculation complete : Swapping vCurr to vPrev
+[DUT] Time=240: SWAP_INIT
+[DUT] Time=250: SWAP_READ_VCURR index= 0
+[TB] Time=260: BTBReg_Read_Port: addr=1020, data=c03fba14 
+[DUT] Time=270: SWAP_WRITE_VPREV
+[TB] Time=280: BTBReg_Write: addr=1022, data=c03fba14 
+[DUT] Time=280: SWAP_READ_VCURR index= 1
+[TB] Time=290: BTBReg_Read_Port: addr=1021, data=bff2d4d4 
+[DUT] Time=300: SWAP_WRITE_VPREV
+[TB] Time=310: BTBReg_Write: addr=1023, data=bff2d4d4 
+[DUT] Time=310: SWAP_READ_VCURR index= 2
+[DUT] Time=310: Swap complete
+[DUT] Time=320: Current State = VT_CALC_START
+[DUT] Time=320: Starting Vt calculation for t=   1
+[DUT] Time=320: Requesting observation at index    1
+[TB] Time=330: inputReg_Read_Port_1: addr=   1, data=00000005 
+[DUT] Time=340: Current State = VT_GET_INPUT
+[DUT] Time=340: Received Input = 00000005
+[DUT][ERROR] Time=340: Invalid observation          5 (max possible =          4)
+[DUT] Time=350: Current State = INPUT_ERROR
+[DUT] Time=360: Current State = DONE
+[TB] Time=370: DUT done; starting output.dat dump (max addr 0)
+[TB] Time=370: outputReg_Write: addr=   0, data=00000000 
+[TB] Time=380: Opened output.dat for write
+[TB] Time=410: output.dat written up to addr 0

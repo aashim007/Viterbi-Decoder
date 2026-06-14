@@ -1,0 +1,20 @@
+Warning: file 'A.dat' for memory 'aRegFile' has a gap at addresses 56 to 991.
+Warning: file 'B.dat' for memory 'bRegFile' has a gap at addresses 21 to 960.
+Warning: file 'input.dat' for memory 'inputRegFile' has a gap at addresses 4 to 1023.
+[TB] Time=10: Test started
+[DUT] Time=20: Current State = IDLE
+[DUT] Time=30: Current State = START
+[DUT] Time=40: Current State = INIT_GET_NM
+[DUT] Time=40: Requesting N & M
+[TB] Time=50: nReg_Read_Port_1: addr=0, data=0000001f 
+[TB] Time=50: nReg_Read_Port_2: addr=1, data=00000000 
+[DUT] Time=60: Current State = DONE_GET_NM
+[DUT] Time=60: Received N =         31
+[DUT] Time=60: Received M =          0
+[DUT][ERROR] Time=60: Received illegal N/M
+[DUT] Time=70: Current State = INPUT_ERROR
+[DUT] Time=80: Current State = DONE
+[TB] Time=90: DUT done; starting output.dat dump (max addr 0)
+[TB] Time=90: outputReg_Write: addr=   0, data=00000000 
+[TB] Time=100: Opened output.dat for write
+[TB] Time=130: output.dat written up to addr 0
