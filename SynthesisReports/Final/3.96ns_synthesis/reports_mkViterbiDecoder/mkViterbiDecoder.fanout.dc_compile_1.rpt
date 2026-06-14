@@ -1,0 +1,78 @@
+ 
+****************************************
+Report : net fanout
+        -threshold 50
+Design : mkViterbiDecoder
+Version: U-2022.12
+Date   : Sun Nov  9 15:19:25 2025
+****************************************
+
+
+Operating Conditions: ss0p75v25c   Library: saed32lvt_ss0p75v25c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+mkViterbiDecoder       16000             saed32lvt_ss0p75v25c
+mkFpAdder              8000              saed32lvt_ss0p75v25c
+FIFO1_0000000a_1_3     ForQA             saed32lvt_ss0p75v25c
+FIFO1_0000000a_1_2     ForQA             saed32lvt_ss0p75v25c
+FIFO1_0000000a_1_1     ForQA             saed32lvt_ss0p75v25c
+FIFO1_0000000a_1_0     ForQA             saed32lvt_ss0p75v25c
+FIFO1_00000001_1_1     ForQA             saed32lvt_ss0p75v25c
+FIFO1_00000001_1_0     ForQA             saed32lvt_ss0p75v25c
+FIFO1_00000020_1_5     8000              saed32lvt_ss0p75v25c
+FIFO1_00000020_1_4     8000              saed32lvt_ss0p75v25c
+FIFO1_00000020_1_3     8000              saed32lvt_ss0p75v25c
+FIFO1_00000020_1_2     8000              saed32lvt_ss0p75v25c
+FIFO1_00000020_1_1     8000              saed32lvt_ss0p75v25c
+FIFO1_00000020_1_0     8000              saed32lvt_ss0p75v25c
+FIFO1_0000002a_1       8000              saed32lvt_ss0p75v25c
+FIFO1_0000002b_1       8000              saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_mkViterbiDecoder_17 ForQA saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_mkViterbiDecoder_16 ForQA saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_mkViterbiDecoder_15 ForQA saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_mkViterbiDecoder_14 ForQA saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_mkViterbiDecoder_13 ForQA saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_mkViterbiDecoder_12 ForQA saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_mkViterbiDecoder_11 ForQA saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_mkViterbiDecoder_10 ForQA saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_mkViterbiDecoder_9 ForQA saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_mkViterbiDecoder_8 ForQA saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_mkViterbiDecoder_7 ForQA saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_mkViterbiDecoder_6 ForQA saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_mkViterbiDecoder_5 ForQA saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_mkViterbiDecoder_4 ForQA saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_mkViterbiDecoder_3 ForQA saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_mkViterbiDecoder_2 ForQA saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_mkViterbiDecoder_1 ForQA saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_mkViterbiDecoder_0 ForQA saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_FIFO1_0000000a_1_3 ForQA saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_FIFO1_0000000a_1_2 ForQA saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_FIFO1_0000000a_1_1 ForQA saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_FIFO1_0000000a_1_0 ForQA saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_FIFO1_00000020_1_5 ForQA saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_FIFO1_00000020_1_4 ForQA saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_FIFO1_00000020_1_3 ForQA saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_FIFO1_00000020_1_2 ForQA saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_FIFO1_00000020_1_1 ForQA saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_FIFO1_00000020_1_0 ForQA saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_FIFO1_0000002a_1 ForQA saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_FIFO1_0000002b_1 ForQA saed32lvt_ss0p75v25c
+
+
+Attributes:
+   dr - drc disabled
+    c - annotated capacitance
+    d - dont_touch
+    i - ideal_net
+    I - ideal_network
+    p - includes pin load
+    r - annotated resistance
+    h - high fanout
+
+Net                 Fanout   Attributes   Capacitance   Driver
+--------------------------------------------------------------------------------
+CLK                     76   dr              42.29      CLK
+net3039                 61   dr              39.60      clk_gate_nValue_reg/main_gate/Y
+1

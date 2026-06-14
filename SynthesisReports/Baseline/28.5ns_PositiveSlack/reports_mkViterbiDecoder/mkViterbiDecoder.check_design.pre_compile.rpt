@@ -1,0 +1,454 @@
+ 
+****************************************
+check_design summary:
+Version:     U-2022.12
+Date:        Sun Nov  9 02:41:45 2025
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     18
+    Unconnected ports (LINT-28)                                     7
+    Shorted outputs (LINT-31)                                       3
+    Constant outputs (LINT-52)                                      8
+
+Cells                                                             190
+    Cells do not drive (LINT-1)                                     6
+    Connected to power or ground (LINT-32)                        175
+    Nets connected to multiple pins on same cell (LINT-33)          9
+
+Nets                                                               38
+    Unloaded nets (LINT-2)                                         38
+--------------------------------------------------------------------------------
+
+Warning: In design 'mkViterbiDecoder', cell 'fpAdder2' does not drive any nets. (LINT-1)
+Warning: In design 'mkViterbiDecoder', cell 'I_68' does not drive any nets. (LINT-1)
+Warning: In design 'mkFpAdder', cell 'B_107' does not drive any nets. (LINT-1)
+Warning: In design 'mkFpAdder', cell 'B_108' does not drive any nets. (LINT-1)
+Warning: In design 'mkFpAdder', cell 'B_109' does not drive any nets. (LINT-1)
+Warning: In design 'mkFpAdder', cell 'B_110' does not drive any nets. (LINT-1)
+Warning: In design 'mkViterbiDecoder', net 'fpAdder2/ks_adder_add[0]' driven by pin 'fpAdder2/ks_adder/add[0]' has no loads. (LINT-2)
+Warning: In design 'mkViterbiDecoder', net 'fpAdder2/ks_adder_add[26]' driven by pin 'fpAdder2/ks_adder/add[26]' has no loads. (LINT-2)
+Warning: In design 'mkViterbiDecoder', net 'fpAdder2/ks_adder_add[27]' driven by pin 'fpAdder2/ks_adder/add[27]' has no loads. (LINT-2)
+Warning: In design 'mkViterbiDecoder', net 'fpAdder2/ks_adder_add[28]' driven by pin 'fpAdder2/ks_adder/add[28]' has no loads. (LINT-2)
+Warning: In design 'mkViterbiDecoder', net 'fpAdder2/ks_adder_add[29]' driven by pin 'fpAdder2/ks_adder/add[29]' has no loads. (LINT-2)
+Warning: In design 'mkViterbiDecoder', net 'fpAdder2/ks_adder_add[30]' driven by pin 'fpAdder2/ks_adder/add[30]' has no loads. (LINT-2)
+Warning: In design 'mkViterbiDecoder', net 'fpAdder2/ks_adder_add[31]' driven by pin 'fpAdder2/ks_adder/add[31]' has no loads. (LINT-2)
+Warning: In design 'mkViterbiDecoder', net 'fpAdder2/ks_adder_add[32]' driven by pin 'fpAdder2/ks_adder/add[32]' has no loads. (LINT-2)
+Warning: In design 'mkViterbiDecoder', net 'readRespFIFO_NM1_D_OUT[10]' driven by pin 'readRespFIFO_NM1/D_OUT[10]' has no loads. (LINT-2)
+Warning: In design 'mkViterbiDecoder', net 'readRespFIFO_NM1_D_OUT[11]' driven by pin 'readRespFIFO_NM1/D_OUT[11]' has no loads. (LINT-2)
+Warning: In design 'mkViterbiDecoder', net 'readRespFIFO_NM1_D_OUT[12]' driven by pin 'readRespFIFO_NM1/D_OUT[12]' has no loads. (LINT-2)
+Warning: In design 'mkViterbiDecoder', net 'readRespFIFO_NM1_D_OUT[13]' driven by pin 'readRespFIFO_NM1/D_OUT[13]' has no loads. (LINT-2)
+Warning: In design 'mkViterbiDecoder', net 'readRespFIFO_NM1_D_OUT[14]' driven by pin 'readRespFIFO_NM1/D_OUT[14]' has no loads. (LINT-2)
+Warning: In design 'mkViterbiDecoder', net 'readRespFIFO_NM1_D_OUT[15]' driven by pin 'readRespFIFO_NM1/D_OUT[15]' has no loads. (LINT-2)
+Warning: In design 'mkViterbiDecoder', net 'readRespFIFO_NM1_D_OUT[16]' driven by pin 'readRespFIFO_NM1/D_OUT[16]' has no loads. (LINT-2)
+Warning: In design 'mkViterbiDecoder', net 'readRespFIFO_NM1_D_OUT[17]' driven by pin 'readRespFIFO_NM1/D_OUT[17]' has no loads. (LINT-2)
+Warning: In design 'mkViterbiDecoder', net 'readRespFIFO_NM1_D_OUT[18]' driven by pin 'readRespFIFO_NM1/D_OUT[18]' has no loads. (LINT-2)
+Warning: In design 'mkViterbiDecoder', net 'readRespFIFO_NM1_D_OUT[19]' driven by pin 'readRespFIFO_NM1/D_OUT[19]' has no loads. (LINT-2)
+Warning: In design 'mkViterbiDecoder', net 'readRespFIFO_NM1_D_OUT[20]' driven by pin 'readRespFIFO_NM1/D_OUT[20]' has no loads. (LINT-2)
+Warning: In design 'mkViterbiDecoder', net 'readRespFIFO_NM1_D_OUT[21]' driven by pin 'readRespFIFO_NM1/D_OUT[21]' has no loads. (LINT-2)
+Warning: In design 'mkViterbiDecoder', net 'readRespFIFO_NM1_D_OUT[22]' driven by pin 'readRespFIFO_NM1/D_OUT[22]' has no loads. (LINT-2)
+Warning: In design 'mkViterbiDecoder', net 'readRespFIFO_NM1_D_OUT[23]' driven by pin 'readRespFIFO_NM1/D_OUT[23]' has no loads. (LINT-2)
+Warning: In design 'mkViterbiDecoder', net 'readRespFIFO_NM1_D_OUT[24]' driven by pin 'readRespFIFO_NM1/D_OUT[24]' has no loads. (LINT-2)
+Warning: In design 'mkViterbiDecoder', net 'readRespFIFO_NM1_D_OUT[25]' driven by pin 'readRespFIFO_NM1/D_OUT[25]' has no loads. (LINT-2)
+Warning: In design 'mkViterbiDecoder', net 'readRespFIFO_NM1_D_OUT[26]' driven by pin 'readRespFIFO_NM1/D_OUT[26]' has no loads. (LINT-2)
+Warning: In design 'mkViterbiDecoder', net 'readRespFIFO_NM1_D_OUT[27]' driven by pin 'readRespFIFO_NM1/D_OUT[27]' has no loads. (LINT-2)
+Warning: In design 'mkViterbiDecoder', net 'readRespFIFO_NM1_D_OUT[28]' driven by pin 'readRespFIFO_NM1/D_OUT[28]' has no loads. (LINT-2)
+Warning: In design 'mkViterbiDecoder', net 'readRespFIFO_NM1_D_OUT[29]' driven by pin 'readRespFIFO_NM1/D_OUT[29]' has no loads. (LINT-2)
+Warning: In design 'mkViterbiDecoder', net 'readRespFIFO_NM1_D_OUT[30]' driven by pin 'readRespFIFO_NM1/D_OUT[30]' has no loads. (LINT-2)
+Warning: In design 'mkViterbiDecoder', net 'readRespFIFO_NM1_D_OUT[31]' driven by pin 'readRespFIFO_NM1/D_OUT[31]' has no loads. (LINT-2)
+Warning: In design 'mkViterbiDecoder', net 'fpAdder1/ks_adder_add[0]' driven by pin 'fpAdder1/ks_adder/add[0]' has no loads. (LINT-2)
+Warning: In design 'mkViterbiDecoder', net 'fpAdder1/ks_adder_add[26]' driven by pin 'fpAdder1/ks_adder/add[26]' has no loads. (LINT-2)
+Warning: In design 'mkViterbiDecoder', net 'fpAdder1/ks_adder_add[27]' driven by pin 'fpAdder1/ks_adder/add[27]' has no loads. (LINT-2)
+Warning: In design 'mkViterbiDecoder', net 'fpAdder1/ks_adder_add[28]' driven by pin 'fpAdder1/ks_adder/add[28]' has no loads. (LINT-2)
+Warning: In design 'mkViterbiDecoder', net 'fpAdder1/ks_adder_add[29]' driven by pin 'fpAdder1/ks_adder/add[29]' has no loads. (LINT-2)
+Warning: In design 'mkViterbiDecoder', net 'fpAdder1/ks_adder_add[30]' driven by pin 'fpAdder1/ks_adder/add[30]' has no loads. (LINT-2)
+Warning: In design 'mkViterbiDecoder', net 'fpAdder1/ks_adder_add[31]' driven by pin 'fpAdder1/ks_adder/add[31]' has no loads. (LINT-2)
+Warning: In design 'mkViterbiDecoder', net 'fpAdder1/ks_adder_add[32]' driven by pin 'fpAdder1/ks_adder/add[32]' has no loads. (LINT-2)
+Warning: In design 'mkFpAdder', port 'add_a[31]' is not connected to any nets. (LINT-28)
+Warning: In design 'mkFpAdder', port 'add_b[31]' is not connected to any nets. (LINT-28)
+Warning: In design 'mkKs', port 'EN_add' is not connected to any nets. (LINT-28)
+Warning: In design 'mkgg', port 'CLK' is not connected to any nets. (LINT-28)
+Warning: In design 'mkgg', port 'RST_N' is not connected to any nets. (LINT-28)
+Warning: In design 'mkgp', port 'CLK' is not connected to any nets. (LINT-28)
+Warning: In design 'mkgp', port 'RST_N' is not connected to any nets. (LINT-28)
+Warning: In design 'mkViterbiDecoder', output port 'RDY_done' is connected directly to output port 'RDY_fpError'. (LINT-31)
+Warning: In design 'mkViterbiDecoder', output port 'RDY_done' is connected directly to output port 'RDY_inputError'. (LINT-31)
+Warning: In design 'mkFpAdder', output port 'add[31]' is connected directly to output port 'RDY_add'. (LINT-31)
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'backTraceBuffer' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ADDR_2[9]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'backTraceBuffer' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ADDR_2[8]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'backTraceBuffer' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ADDR_2[7]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'backTraceBuffer' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ADDR_2[6]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'backTraceBuffer' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ADDR_2[5]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'backTraceBuffer' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ADDR_2[4]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'backTraceBuffer' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ADDR_2[3]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'backTraceBuffer' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ADDR_2[2]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'backTraceBuffer' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ADDR_2[1]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'backTraceBuffer' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ADDR_2[0]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'backTraceBuffer' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ADDR_3[9]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'backTraceBuffer' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ADDR_3[8]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'backTraceBuffer' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ADDR_3[7]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'backTraceBuffer' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ADDR_3[6]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'backTraceBuffer' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ADDR_3[5]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'backTraceBuffer' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ADDR_3[4]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'backTraceBuffer' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ADDR_3[3]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'backTraceBuffer' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ADDR_3[2]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'backTraceBuffer' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ADDR_3[1]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'backTraceBuffer' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ADDR_3[0]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'backTraceBuffer' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ADDR_4[9]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'backTraceBuffer' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ADDR_4[8]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'backTraceBuffer' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ADDR_4[7]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'backTraceBuffer' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ADDR_4[6]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'backTraceBuffer' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ADDR_4[5]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'backTraceBuffer' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ADDR_4[4]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'backTraceBuffer' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ADDR_4[3]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'backTraceBuffer' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ADDR_4[2]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'backTraceBuffer' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ADDR_4[1]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'backTraceBuffer' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ADDR_4[0]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'backTraceBuffer' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ADDR_5[9]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'backTraceBuffer' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ADDR_5[8]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'backTraceBuffer' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ADDR_5[7]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'backTraceBuffer' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ADDR_5[6]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'backTraceBuffer' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ADDR_5[5]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'backTraceBuffer' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ADDR_5[4]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'backTraceBuffer' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ADDR_5[3]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'backTraceBuffer' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ADDR_5[2]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'backTraceBuffer' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ADDR_5[1]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'backTraceBuffer' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ADDR_5[0]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_a[31]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_a[30]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_a[29]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_a[28]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_a[27]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_a[26]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_a[25]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_a[24]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_a[23]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_a[22]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_a[21]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_a[20]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_a[19]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_a[18]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_a[17]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_a[16]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_a[15]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_a[14]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_a[13]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_a[12]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_a[11]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_a[10]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_a[9]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_a[8]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_a[7]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_a[6]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_a[5]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_a[4]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_a[3]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_a[2]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_a[1]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_a[0]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_b[31]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_b[30]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_b[29]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_b[28]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_b[27]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_b[26]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_b[25]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_b[24]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_b[23]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_b[22]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_b[21]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_b[20]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_b[19]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_b[18]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_b[17]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_b[16]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_b[15]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_b[14]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_b[13]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_b[12]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_b[11]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_b[10]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_b[9]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_b[8]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_b[7]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_b[6]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_b[5]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_b[4]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_b[3]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_b[2]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_b[1]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_b[0]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'fpAdder2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'EN_add' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readReqFIFO_A1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CLR' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readReqFIFO_A2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D_IN[9]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readReqFIFO_A2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D_IN[8]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readReqFIFO_A2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D_IN[7]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readReqFIFO_A2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D_IN[6]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readReqFIFO_A2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D_IN[5]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readReqFIFO_A2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D_IN[4]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readReqFIFO_A2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D_IN[3]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readReqFIFO_A2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D_IN[2]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readReqFIFO_A2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D_IN[1]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readReqFIFO_A2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D_IN[0]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readReqFIFO_A2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ENQ' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readReqFIFO_A2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CLR' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readReqFIFO_B1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CLR' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readReqFIFO_B2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D_IN[9]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readReqFIFO_B2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D_IN[8]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readReqFIFO_B2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D_IN[7]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readReqFIFO_B2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D_IN[6]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readReqFIFO_B2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D_IN[5]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readReqFIFO_B2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D_IN[4]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readReqFIFO_B2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D_IN[3]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readReqFIFO_B2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D_IN[2]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readReqFIFO_B2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D_IN[1]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readReqFIFO_B2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D_IN[0]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readReqFIFO_B2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ENQ' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readReqFIFO_B2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CLR' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readReqFIFO_Input1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CLR' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readReqFIFO_Input2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D_IN[9]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readReqFIFO_Input2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D_IN[8]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readReqFIFO_Input2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D_IN[7]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readReqFIFO_Input2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D_IN[6]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readReqFIFO_Input2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D_IN[5]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readReqFIFO_Input2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D_IN[4]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readReqFIFO_Input2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D_IN[3]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readReqFIFO_Input2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D_IN[2]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readReqFIFO_Input2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D_IN[1]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readReqFIFO_Input2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'D_IN[0]' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readReqFIFO_Input2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ENQ' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readReqFIFO_Input2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CLR' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readReqFIFO_NM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CLR' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readReqFIFO_NM2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CLR' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readRespFIFO_A1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CLR' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readRespFIFO_A2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'DEQ' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readRespFIFO_A2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CLR' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readRespFIFO_B1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CLR' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readRespFIFO_B2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'DEQ' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readRespFIFO_B2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CLR' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readRespFIFO_Input1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CLR' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readRespFIFO_Input2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'DEQ' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readRespFIFO_Input2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CLR' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readRespFIFO_NM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CLR' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readRespFIFO_NM2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CLR' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'writeReqFIFO_Output' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CLR' is connected to logic 0. 
+Warning: In design 'mkFpAdder', a pin on submodule 'ks_adder' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_a[31]' is connected to logic 0. 
+Warning: In design 'mkFpAdder', a pin on submodule 'ks_adder' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_a[30]' is connected to logic 0. 
+Warning: In design 'mkFpAdder', a pin on submodule 'ks_adder' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_a[29]' is connected to logic 0. 
+Warning: In design 'mkFpAdder', a pin on submodule 'ks_adder' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_a[28]' is connected to logic 0. 
+Warning: In design 'mkFpAdder', a pin on submodule 'ks_adder' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_a[27]' is connected to logic 0. 
+Warning: In design 'mkFpAdder', a pin on submodule 'ks_adder' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_a[26]' is connected to logic 0. 
+Warning: In design 'mkFpAdder', a pin on submodule 'ks_adder' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_a[25]' is connected to logic 0. 
+Warning: In design 'mkFpAdder', a pin on submodule 'ks_adder' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_a[24]' is connected to logic 0. 
+Warning: In design 'mkFpAdder', a pin on submodule 'ks_adder' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_b[31]' is connected to logic 0. 
+Warning: In design 'mkFpAdder', a pin on submodule 'ks_adder' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_b[30]' is connected to logic 0. 
+Warning: In design 'mkFpAdder', a pin on submodule 'ks_adder' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_b[29]' is connected to logic 0. 
+Warning: In design 'mkFpAdder', a pin on submodule 'ks_adder' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_b[28]' is connected to logic 0. 
+Warning: In design 'mkFpAdder', a pin on submodule 'ks_adder' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_b[27]' is connected to logic 0. 
+Warning: In design 'mkFpAdder', a pin on submodule 'ks_adder' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_b[26]' is connected to logic 0. 
+Warning: In design 'mkFpAdder', a pin on submodule 'ks_adder' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_b[25]' is connected to logic 0. 
+Warning: In design 'mkFpAdder', a pin on submodule 'ks_adder' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_b[24]' is connected to logic 0. 
+Warning: In design 'mkFpAdder', a pin on submodule 'ks_adder' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'add_cin' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', the same net is connected to more than one pin on submodule 'backTraceBuffer'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'ADDR_2[9]', 'ADDR_2[8]'', 'ADDR_2[7]', 'ADDR_2[6]', 'ADDR_2[5]', 'ADDR_2[4]', 'ADDR_2[3]', 'ADDR_2[2]', 'ADDR_2[1]', 'ADDR_2[0]', 'ADDR_3[9]', 'ADDR_3[8]', 'ADDR_3[7]', 'ADDR_3[6]', 'ADDR_3[5]', 'ADDR_3[4]', 'ADDR_3[3]', 'ADDR_3[2]', 'ADDR_3[1]', 'ADDR_3[0]', 'ADDR_4[9]', 'ADDR_4[8]', 'ADDR_4[7]', 'ADDR_4[6]', 'ADDR_4[5]', 'ADDR_4[4]', 'ADDR_4[3]', 'ADDR_4[2]', 'ADDR_4[1]', 'ADDR_4[0]', 'ADDR_5[9]', 'ADDR_5[8]', 'ADDR_5[7]', 'ADDR_5[6]', 'ADDR_5[5]', 'ADDR_5[4]', 'ADDR_5[3]', 'ADDR_5[2]', 'ADDR_5[1]', 'ADDR_5[0]'.
+Warning: In design 'mkViterbiDecoder', the same net is connected to more than one pin on submodule 'fpAdder2'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'add_a[31]', 'add_a[30]'', 'add_a[29]', 'add_a[28]', 'add_a[27]', 'add_a[26]', 'add_a[25]', 'add_a[24]', 'add_a[23]', 'add_a[22]', 'add_a[21]', 'add_a[20]', 'add_a[19]', 'add_a[18]', 'add_a[17]', 'add_a[16]', 'add_a[15]', 'add_a[14]', 'add_a[13]', 'add_a[12]', 'add_a[11]', 'add_a[10]', 'add_a[9]', 'add_a[8]', 'add_a[7]', 'add_a[6]', 'add_a[5]', 'add_a[4]', 'add_a[3]', 'add_a[2]', 'add_a[1]', 'add_a[0]', 'add_b[31]', 'add_b[30]', 'add_b[29]', 'add_b[28]', 'add_b[27]', 'add_b[26]', 'add_b[25]', 'add_b[24]', 'add_b[23]', 'add_b[22]', 'add_b[21]', 'add_b[20]', 'add_b[19]', 'add_b[18]', 'add_b[17]', 'add_b[16]', 'add_b[15]', 'add_b[14]', 'add_b[13]', 'add_b[12]', 'add_b[11]', 'add_b[10]', 'add_b[9]', 'add_b[8]', 'add_b[7]', 'add_b[6]', 'add_b[5]', 'add_b[4]', 'add_b[3]', 'add_b[2]', 'add_b[1]', 'add_b[0]', 'EN_add'.
+Warning: In design 'mkViterbiDecoder', the same net is connected to more than one pin on submodule 'readReqFIFO_A2'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'D_IN[9]', 'D_IN[8]'', 'D_IN[7]', 'D_IN[6]', 'D_IN[5]', 'D_IN[4]', 'D_IN[3]', 'D_IN[2]', 'D_IN[1]', 'D_IN[0]', 'ENQ', 'CLR'.
+Warning: In design 'mkViterbiDecoder', the same net is connected to more than one pin on submodule 'readReqFIFO_B2'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'D_IN[9]', 'D_IN[8]'', 'D_IN[7]', 'D_IN[6]', 'D_IN[5]', 'D_IN[4]', 'D_IN[3]', 'D_IN[2]', 'D_IN[1]', 'D_IN[0]', 'ENQ', 'CLR'.
+Warning: In design 'mkViterbiDecoder', the same net is connected to more than one pin on submodule 'readReqFIFO_Input2'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'D_IN[9]', 'D_IN[8]'', 'D_IN[7]', 'D_IN[6]', 'D_IN[5]', 'D_IN[4]', 'D_IN[3]', 'D_IN[2]', 'D_IN[1]', 'D_IN[0]', 'ENQ', 'CLR'.
+Warning: In design 'mkViterbiDecoder', the same net is connected to more than one pin on submodule 'readRespFIFO_A2'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'DEQ', 'CLR''.
+Warning: In design 'mkViterbiDecoder', the same net is connected to more than one pin on submodule 'readRespFIFO_B2'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'DEQ', 'CLR''.
+Warning: In design 'mkViterbiDecoder', the same net is connected to more than one pin on submodule 'readRespFIFO_Input2'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'DEQ', 'CLR''.
+Warning: In design 'mkFpAdder', the same net is connected to more than one pin on submodule 'ks_adder'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'add_a[31]', 'add_a[30]'', 'add_a[29]', 'add_a[28]', 'add_a[27]', 'add_a[26]', 'add_a[25]', 'add_a[24]', 'add_b[31]', 'add_b[30]', 'add_b[29]', 'add_b[28]', 'add_b[27]', 'add_b[26]', 'add_b[25]', 'add_b[24]', 'add_cin'.
+Warning: In design 'mkViterbiDecoder', output port 'RDY_done' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'mkViterbiDecoder', output port 'RDY_inputError' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'mkViterbiDecoder', output port 'RDY_fpError' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'mkFpAdder', output port 'add[31]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'mkFpAdder', output port 'RDY_add' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'mkKs', output port 'RDY_add' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'mkgg', output port 'RDY_gout' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'mkgp', output port 'RDY_pout' is connected directly to 'logic 1'. (LINT-52)
+1

@@ -1,0 +1,2102 @@
+ 
+****************************************
+Report : resources
+Design : mkViterbiDecoder
+Version: U-2022.12
+Date   : Sun Nov  9 06:08:48 2025
+****************************************
+
+
+Resource Report for this hierarchy in file
+        /scratch/CS25D007/CS6230_Rahul/CS6230/Baseline_viterbiDecoderSynth/rtl/mkViterbiDecoder.v
+=============================================================================
+| Cell           | Module         | Parameters | Contained Operations       |
+=============================================================================
+| add_x_3        | DW01_inc       | width=6    | add_1991 (mkViterbiDecoder.v:1991) |
+| add_x_8        | DW01_inc       | width=10   | add_2168 (mkViterbiDecoder.v:2168) |
+| lt_x_161       | DW_cmp         | width=32   | lt_3336 (mkViterbiDecoder.v:3336) |
+| lte_x_162      | DW_cmp         | width=5    | lte_3338 (mkViterbiDecoder.v:3338) |
+| lte_x_163      | DW_cmp         | width=5    | lte_3339 (mkViterbiDecoder.v:3339) |
+| lte_x_164      | DW_cmp         | width=5    | lte_3340 (mkViterbiDecoder.v:3340) |
+| lte_x_165      | DW_cmp         | width=5    | lte_3341 (mkViterbiDecoder.v:3341) |
+| lte_x_166      | DW_cmp         | width=5    | lte_3342 (mkViterbiDecoder.v:3342) |
+| lte_x_167      | DW_cmp         | width=5    | lte_3343 (mkViterbiDecoder.v:3343) |
+| lte_x_168      | DW_cmp         | width=5    | lte_3344 (mkViterbiDecoder.v:3344) |
+| lte_x_169      | DW_cmp         | width=5    | lte_3345 (mkViterbiDecoder.v:3345) |
+| lte_x_170      | DW_cmp         | width=5    | lte_3346 (mkViterbiDecoder.v:3346) |
+| lte_x_171      | DW_cmp         | width=5    | lte_3347 (mkViterbiDecoder.v:3347) |
+| lte_x_172      | DW_cmp         | width=5    | lte_3348 (mkViterbiDecoder.v:3348) |
+| lte_x_173      | DW_cmp         | width=5    | lte_3349 (mkViterbiDecoder.v:3349) |
+| lte_x_174      | DW_cmp         | width=5    | lte_3350 (mkViterbiDecoder.v:3350) |
+| lte_x_175      | DW_cmp         | width=5    | lte_3351 (mkViterbiDecoder.v:3351) |
+| lte_x_176      | DW_cmp         | width=5    | lte_3352 (mkViterbiDecoder.v:3352) |
+| lte_x_177      | DW_cmp         | width=5    | lte_3353 (mkViterbiDecoder.v:3353) |
+| lte_x_178      | DW_cmp         | width=5    | lte_3354 (mkViterbiDecoder.v:3354) |
+| lte_x_179      | DW_cmp         | width=5    | lte_3355 (mkViterbiDecoder.v:3355) |
+| lte_x_180      | DW_cmp         | width=5    | lte_3356 (mkViterbiDecoder.v:3356) |
+| lte_x_181      | DW_cmp         | width=5    | lte_3357 (mkViterbiDecoder.v:3357) |
+| lte_x_182      | DW_cmp         | width=5    | lte_3358 (mkViterbiDecoder.v:3358) |
+| lte_x_183      | DW_cmp         | width=5    | lte_3359 (mkViterbiDecoder.v:3359) |
+| lte_x_184      | DW_cmp         | width=5    | lte_3360 (mkViterbiDecoder.v:3360) |
+| lte_x_185      | DW_cmp         | width=5    | lte_3361 (mkViterbiDecoder.v:3361) |
+| lte_x_186      | DW_cmp         | width=5    | lte_3362 (mkViterbiDecoder.v:3362) |
+| lte_x_187      | DW_cmp         | width=5    | lte_3363 (mkViterbiDecoder.v:3363) |
+| lte_x_188      | DW_cmp         | width=5    | lte_3364 (mkViterbiDecoder.v:3364) |
+| lte_x_189      | DW_cmp         | width=5    | lte_3365 (mkViterbiDecoder.v:3365) |
+| lte_x_190      | DW_cmp         | width=5    | lte_3366 (mkViterbiDecoder.v:3366) |
+| add_x_191      | DW01_add       | width=10   | add_3367 (mkViterbiDecoder.v:3367) |
+| eq_x_192       | DW_cmp         | width=5    | eq_3368 (mkViterbiDecoder.v:3368) |
+| lte_x_193      | DW_cmp         | width=32   | lte_3371 (mkViterbiDecoder.v:3371) |
+| eq_x_194       | DW_cmp         | width=5    | eq_3373 (mkViterbiDecoder.v:3373) |
+| eq_x_195       | DW_cmp         | width=5    | eq_3375 (mkViterbiDecoder.v:3375) |
+| lt_x_196       | DW_cmp         | width=32   | lt_3378 (mkViterbiDecoder.v:3378) |
+| lt_x_197       | DW_cmp         | width=32   | lt_3381 (mkViterbiDecoder.v:3381) |
+| lt_x_198       | DW_cmp         | width=32   | lt_3384 (mkViterbiDecoder.v:3384) |
+| lt_x_199       | DW_cmp         | width=32   | lt_3387 (mkViterbiDecoder.v:3387) |
+| lt_x_200       | DW_cmp         | width=32   | lt_3390 (mkViterbiDecoder.v:3390) |
+| lt_x_201       | DW_cmp         | width=32   | lt_3393 (mkViterbiDecoder.v:3393) |
+| lt_x_202       | DW_cmp         | width=32   | lt_3396 (mkViterbiDecoder.v:3396) |
+| lt_x_203       | DW_cmp         | width=32   | lt_3399 (mkViterbiDecoder.v:3399) |
+| lt_x_204       | DW_cmp         | width=32   | lt_3402 (mkViterbiDecoder.v:3402) |
+| lt_x_205       | DW_cmp         | width=32   | lt_3405 (mkViterbiDecoder.v:3405) |
+| lt_x_206       | DW_cmp         | width=32   | lt_3408 (mkViterbiDecoder.v:3408) |
+| lt_x_207       | DW_cmp         | width=32   | lt_3409 (mkViterbiDecoder.v:3409) |
+| lt_x_208       | DW_cmp         | width=32   | lt_3412 (mkViterbiDecoder.v:3412) |
+| lt_x_209       | DW_cmp         | width=32   | lt_3415 (mkViterbiDecoder.v:3415) |
+| lt_x_210       | DW_cmp         | width=32   | lt_3418 (mkViterbiDecoder.v:3418) |
+| lt_x_211       | DW_cmp         | width=32   | lt_3421 (mkViterbiDecoder.v:3421) |
+| lt_x_212       | DW_cmp         | width=32   | lt_3424 (mkViterbiDecoder.v:3424) |
+| lt_x_213       | DW_cmp         | width=32   | lt_3427 (mkViterbiDecoder.v:3427) |
+| lt_x_214       | DW_cmp         | width=32   | lt_3430 (mkViterbiDecoder.v:3430) |
+| lt_x_215       | DW_cmp         | width=32   | lt_3433 (mkViterbiDecoder.v:3433) |
+| lt_x_216       | DW_cmp         | width=32   | lt_3436 (mkViterbiDecoder.v:3436) |
+| lt_x_217       | DW_cmp         | width=32   | lt_3439 (mkViterbiDecoder.v:3439) |
+| lt_x_218       | DW_cmp         | width=32   | lt_3442 (mkViterbiDecoder.v:3442) |
+| lt_x_219       | DW_cmp         | width=32   | lt_3445 (mkViterbiDecoder.v:3445) |
+| lt_x_220       | DW_cmp         | width=32   | lt_3448 (mkViterbiDecoder.v:3448) |
+| lt_x_221       | DW_cmp         | width=32   | lt_3451 (mkViterbiDecoder.v:3451) |
+| lt_x_222       | DW_cmp         | width=32   | lt_3454 (mkViterbiDecoder.v:3454) |
+| lt_x_223       | DW_cmp         | width=32   | lt_3457 (mkViterbiDecoder.v:3457) |
+| lt_x_224       | DW_cmp         | width=32   | lt_3460 (mkViterbiDecoder.v:3460) |
+| lt_x_225       | DW_cmp         | width=32   | lt_3463 (mkViterbiDecoder.v:3463) |
+| sub_x_226      | DW01_dec       | width=5    | sub_3466 (mkViterbiDecoder.v:3466) |
+| add_x_227      | DW01_inc       | width=5    | add_3468 (mkViterbiDecoder.v:3468) |
+| sub_x_228      | DW01_dec       | width=6    | sub_3469 (mkViterbiDecoder.v:3469) |
+| sub_x_229      | DW01_dec       | width=6    | sub_3470 (mkViterbiDecoder.v:3470) |
+| eq_x_377       | DW_cmp         | width=5    | eq_1894 (mkViterbiDecoder.v:1894) |
+          |                |            | eq_2325 (mkViterbiDecoder.v:2325) |
+          |                |            | eq_2325_2 (mkViterbiDecoder.v:2325) |
+| eq_x_378       | DW_cmp         | width=5    | eq_1896 (mkViterbiDecoder.v:1896) |
+          |                |            | eq_2332 (mkViterbiDecoder.v:2332) |
+          |                |            | eq_2332_2 (mkViterbiDecoder.v:2332) |
+| eq_x_379       | DW_cmp         | width=5    | eq_1898 (mkViterbiDecoder.v:1898) |
+          |                |            | eq_2339 (mkViterbiDecoder.v:2339) |
+          |                |            | eq_2339_2 (mkViterbiDecoder.v:2339) |
+| eq_x_380       | DW_cmp         | width=5    | eq_1900 (mkViterbiDecoder.v:1900) |
+          |                |            | eq_2346 (mkViterbiDecoder.v:2346) |
+          |                |            | eq_2346_2 (mkViterbiDecoder.v:2346) |
+| eq_x_381       | DW_cmp         | width=5    | eq_1902 (mkViterbiDecoder.v:1902) |
+          |                |            | eq_2353 (mkViterbiDecoder.v:2353) |
+          |                |            | eq_2353_2 (mkViterbiDecoder.v:2353) |
+| eq_x_382       | DW_cmp         | width=5    | eq_1904 (mkViterbiDecoder.v:1904) |
+          |                |            | eq_2360 (mkViterbiDecoder.v:2360) |
+          |                |            | eq_2360_2 (mkViterbiDecoder.v:2360) |
+| eq_x_383       | DW_cmp         | width=5    | eq_1906 (mkViterbiDecoder.v:1906) |
+          |                |            | eq_2367 (mkViterbiDecoder.v:2367) |
+          |                |            | eq_2367_2 (mkViterbiDecoder.v:2367) |
+| eq_x_384       | DW_cmp         | width=5    | eq_1908 (mkViterbiDecoder.v:1908) |
+          |                |            | eq_2374 (mkViterbiDecoder.v:2374) |
+          |                |            | eq_2374_2 (mkViterbiDecoder.v:2374) |
+| eq_x_385       | DW_cmp         | width=5    | eq_1910 (mkViterbiDecoder.v:1910) |
+          |                |            | eq_2381 (mkViterbiDecoder.v:2381) |
+          |                |            | eq_2381_2 (mkViterbiDecoder.v:2381) |
+| eq_x_386       | DW_cmp         | width=5    | eq_1912 (mkViterbiDecoder.v:1912) |
+          |                |            | eq_2388 (mkViterbiDecoder.v:2388) |
+          |                |            | eq_2388_2 (mkViterbiDecoder.v:2388) |
+| eq_x_387       | DW_cmp         | width=5    | eq_1914 (mkViterbiDecoder.v:1914) |
+          |                |            | eq_2395 (mkViterbiDecoder.v:2395) |
+          |                |            | eq_2395_2 (mkViterbiDecoder.v:2395) |
+| eq_x_388       | DW_cmp         | width=5    | eq_1916 (mkViterbiDecoder.v:1916) |
+          |                |            | eq_2402 (mkViterbiDecoder.v:2402) |
+          |                |            | eq_2402_2 (mkViterbiDecoder.v:2402) |
+| eq_x_389       | DW_cmp         | width=5    | eq_1918 (mkViterbiDecoder.v:1918) |
+          |                |            | eq_2409 (mkViterbiDecoder.v:2409) |
+          |                |            | eq_2409_2 (mkViterbiDecoder.v:2409) |
+| eq_x_390       | DW_cmp         | width=5    | eq_1920 (mkViterbiDecoder.v:1920) |
+          |                |            | eq_2416 (mkViterbiDecoder.v:2416) |
+          |                |            | eq_2416_2 (mkViterbiDecoder.v:2416) |
+| eq_x_391       | DW_cmp         | width=5    | eq_1922 (mkViterbiDecoder.v:1922) |
+          |                |            | eq_2423 (mkViterbiDecoder.v:2423) |
+          |                |            | eq_2423_2 (mkViterbiDecoder.v:2423) |
+| eq_x_392       | DW_cmp         | width=5    | eq_1924 (mkViterbiDecoder.v:1924) |
+          |                |            | eq_2430 (mkViterbiDecoder.v:2430) |
+          |                |            | eq_2430_2 (mkViterbiDecoder.v:2430) |
+| eq_x_393       | DW_cmp         | width=5    | eq_1926 (mkViterbiDecoder.v:1926) |
+          |                |            | eq_2437 (mkViterbiDecoder.v:2437) |
+          |                |            | eq_2437_2 (mkViterbiDecoder.v:2437) |
+| eq_x_394       | DW_cmp         | width=5    | eq_1928 (mkViterbiDecoder.v:1928) |
+          |                |            | eq_2444 (mkViterbiDecoder.v:2444) |
+          |                |            | eq_2444_2 (mkViterbiDecoder.v:2444) |
+| eq_x_395       | DW_cmp         | width=5    | eq_1930 (mkViterbiDecoder.v:1930) |
+          |                |            | eq_2451 (mkViterbiDecoder.v:2451) |
+          |                |            | eq_2451_2 (mkViterbiDecoder.v:2451) |
+| eq_x_396       | DW_cmp         | width=5    | eq_1932 (mkViterbiDecoder.v:1932) |
+          |                |            | eq_2458 (mkViterbiDecoder.v:2458) |
+          |                |            | eq_2458_2 (mkViterbiDecoder.v:2458) |
+| eq_x_397       | DW_cmp         | width=5    | eq_1934 (mkViterbiDecoder.v:1934) |
+          |                |            | eq_2465 (mkViterbiDecoder.v:2465) |
+          |                |            | eq_2465_2 (mkViterbiDecoder.v:2465) |
+| eq_x_398       | DW_cmp         | width=5    | eq_1936 (mkViterbiDecoder.v:1936) |
+          |                |            | eq_2472 (mkViterbiDecoder.v:2472) |
+          |                |            | eq_2472_2 (mkViterbiDecoder.v:2472) |
+| eq_x_399       | DW_cmp         | width=5    | eq_1938 (mkViterbiDecoder.v:1938) |
+          |                |            | eq_2479 (mkViterbiDecoder.v:2479) |
+          |                |            | eq_2479_2 (mkViterbiDecoder.v:2479) |
+| eq_x_400       | DW_cmp         | width=5    | eq_1940 (mkViterbiDecoder.v:1940) |
+          |                |            | eq_2486 (mkViterbiDecoder.v:2486) |
+          |                |            | eq_2486_2 (mkViterbiDecoder.v:2486) |
+| eq_x_401       | DW_cmp         | width=5    | eq_1942 (mkViterbiDecoder.v:1942) |
+          |                |            | eq_2493 (mkViterbiDecoder.v:2493) |
+          |                |            | eq_2493_2 (mkViterbiDecoder.v:2493) |
+| eq_x_402       | DW_cmp         | width=5    | eq_1944 (mkViterbiDecoder.v:1944) |
+          |                |            | eq_2500 (mkViterbiDecoder.v:2500) |
+          |                |            | eq_2500_2 (mkViterbiDecoder.v:2500) |
+| eq_x_403       | DW_cmp         | width=5    | eq_1946 (mkViterbiDecoder.v:1946) |
+          |                |            | eq_2507 (mkViterbiDecoder.v:2507) |
+          |                |            | eq_2507_2 (mkViterbiDecoder.v:2507) |
+| eq_x_404       | DW_cmp         | width=5    | eq_1948 (mkViterbiDecoder.v:1948) |
+          |                |            | eq_2514 (mkViterbiDecoder.v:2514) |
+          |                |            | eq_2514_2 (mkViterbiDecoder.v:2514) |
+| eq_x_405       | DW_cmp         | width=5    | eq_1950 (mkViterbiDecoder.v:1950) |
+          |                |            | eq_2521 (mkViterbiDecoder.v:2521) |
+          |                |            | eq_2521_2 (mkViterbiDecoder.v:2521) |
+| eq_x_406       | DW_cmp         | width=5    | eq_1952 (mkViterbiDecoder.v:1952) |
+          |                |            | eq_2528 (mkViterbiDecoder.v:2528) |
+          |                |            | eq_2528_2 (mkViterbiDecoder.v:2528) |
+| eq_x_407       | DW_cmp         | width=5    | eq_1954 (mkViterbiDecoder.v:1954) |
+          |                |            | eq_2535 (mkViterbiDecoder.v:2535) |
+          |                |            | eq_2535_2 (mkViterbiDecoder.v:2535) |
+| eq_x_408       | DW_cmp         | width=5    | eq_1956 (mkViterbiDecoder.v:1956) |
+          |                |            | eq_2542 (mkViterbiDecoder.v:2542) |
+          |                |            | eq_2542_2 (mkViterbiDecoder.v:2542) |
+| DP_OP_668J2_122_1004            |            |                            |
+|                | DP_OP_668J2_122_1004 |      |                            |
+| DP_OP_669J2_123_276             |            |                            |
+|                | DP_OP_669J2_123_276 |       |                            |
+| DP_OP_670J2_124_1944            |            |                            |
+|                | DP_OP_670J2_124_1944 |      |                            |
+| DP_OP_277J2_125_4526            |            |                            |
+|                | DP_OP_277J2_125_4526 |      |                            |
+=============================================================================
+
+Datapath Report for DP_OP_668J2_122_1004
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_668J2_122_1004 | sub_3467 (mkViterbiDecoder.v:3467)                  |
+|                      | sub_3473 (mkViterbiDecoder.v:3473)                  |
+|                      | mult_3081 (mkViterbiDecoder.v:3081)                 |
+|                      | sub_3472 (mkViterbiDecoder.v:3472)                  |
+|                      | add_3328 (mkViterbiDecoder.v:3328)                  |
+|                      | add_3325_aco (mkViterbiDecoder.v:3325)              |
+|                      | mult_3079 (mkViterbiDecoder.v:3079)                 |
+|                      | mult_add_3325_aco (mkViterbiDecoder.v:3325)         |
+|                      | add_3331 (mkViterbiDecoder.v:3331)                  |
+|                      | mult_3083 (mkViterbiDecoder.v:3083)                 |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 5     |                                          |
+| I2    | PI   | Unsigned | 10    |                                          |
+| I3    | PI   | Signed   | 10    |                                          |
+| I4    | PI   | Unsigned | 5     |                                          |
+| I5    | PI   | Unsigned | 10    |                                          |
+| I6    | PI   | Unsigned | 1     |                                          |
+| I7    | PI   | Unsigned | 6     |                                          |
+| T203  | IFO  | Signed   | 10    | O1 * I2 (mkViterbiDecoder.v:3081)        |
+| T567  | IFO  | Unsigned | 10    | I4 * I5 * I6 ( mkViterbiDecoder.v:3079 mkViterbiDecoder.v:3325 ) |
+| T204  | IFO  | Unsigned | 10    | I7 * I5 (mkViterbiDecoder.v:3083)        |
+| O1    | PO   | Signed   | 6     | I1 - $unsigned(1'b1) ( mkViterbiDecoder.v:3467 mkViterbiDecoder.v:3473 ) |
+| O2    | PO   | Signed   | 10    | I3 - $unsigned(1'b1) + T203 ( mkViterbiDecoder.v:3328 mkViterbiDecoder.v:3472 ) |
+| O3    | PO   | Signed   | 10    | T567 + O1 (mkViterbiDecoder.v:3325)      |
+| O4    | PO   | Signed   | 10    | T204 + O1 (mkViterbiDecoder.v:3331)      |
+==============================================================================
+
+Datapath Report for DP_OP_669J2_123_276
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_669J2_123_276  | mult_3085 (mkViterbiDecoder.v:3085)                 |
+|                      | sub_3474 (mkViterbiDecoder.v:3474)                  |
+|                      | add_2675 (mkViterbiDecoder.v:2675)                  |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 6     |                                          |
+| I2    | PI   | Unsigned | 10    |                                          |
+| I3    | PI   | Unsigned | 5     |                                          |
+| T205  | IFO  | Unsigned | 10    | I1 * I2 (mkViterbiDecoder.v:3085)        |
+| O1    | PO   | Signed   | 10    | I3 - $unsigned(1'b1) + T205 ( mkViterbiDecoder.v:2675 mkViterbiDecoder.v:3474 ) |
+==============================================================================
+
+Datapath Report for DP_OP_670J2_124_1944
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_670J2_124_1944 | mult_add_1990_aco (mkViterbiDecoder.v:1990)         |
+|                      | add_1990_aco (mkViterbiDecoder.v:1990)              |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 5     |                                          |
+| I2    | PI   | Unsigned | 1     |                                          |
+| T484  | IFO  | Unsigned | 5     | I1 * I2 (mkViterbiDecoder.v:1990)        |
+| O1    | PO   | Unsigned | 5     | T484 + $unsigned(1'b1) (mkViterbiDecoder.v:1990) |
+==============================================================================
+
+Datapath Report for DP_OP_277J2_125_4526
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_277J2_125_4526 | add_3337 (mkViterbiDecoder.v:3337)                  |
+|                      | C15690 (mkViterbiDecoder.v:2211)                    |
+|                      | add_1988 (mkViterbiDecoder.v:1988)                  |
+|                      | add_1989 (mkViterbiDecoder.v:1989)                  |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 6     |                                          |
+| I2    | PI   | Unsigned | 10    |                                          |
+| I3    | PI   | Unsigned | 1     |                                          |
+| I4    | PI   | Unsigned | 1     |                                          |
+| T272  | IFO  | Unsigned | 10    | { I3, I4 } ? O1 : I2 (mkViterbiDecoder.v:2211) |
+| O1    | PO   | Unsigned | 10    | I1 + I2 (mkViterbiDecoder.v:3337)        |
+| O2    | PO   | Unsigned | 10    | T272 + $unsigned(1'b1) ( mkViterbiDecoder.v:1988 mkViterbiDecoder.v:1989 ) |
+==============================================================================
+
+
+Datapath Extraction Report
+
+Information: Operator associated with resources 'sub_3469 (mkViterbiDecoder.v:3469)' in design 'mkViterbiDecoder' breaks the datapath extraction because there is leakage due to truncation on its fanout to operator of resources 'add_3337 (mkViterbiDecoder.v:3337)'.  (HDL-120)
+
+Information: Operator associated with resources 'sub_3470 (mkViterbiDecoder.v:3470)' in design 'mkViterbiDecoder' breaks the datapath extraction because there is leakage due to truncation on its fanout to operator of resources 'add_3367 (mkViterbiDecoder.v:3367)'.  (HDL-120)
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_x_3            | DW01_inc         | apparch (area)     |                |
+| add_x_8            | DW01_inc         | apparch (area)     |                |
+| lt_x_161           | DW_cmp           | apparch (area)     |                |
+| lte_x_162          | DW_cmp           | apparch (area)     |                |
+| lte_x_163          | DW_cmp           | apparch (area)     |                |
+| lte_x_164          | DW_cmp           | apparch (area)     |                |
+| lte_x_165          | DW_cmp           | apparch (area)     |                |
+| lte_x_166          | DW_cmp           | apparch (area)     |                |
+| lte_x_167          | DW_cmp           | apparch (area)     |                |
+| lte_x_168          | DW_cmp           | apparch (area)     |                |
+| lte_x_169          | DW_cmp           | apparch (area)     |                |
+| lte_x_170          | DW_cmp           | apparch (area)     |                |
+| lte_x_171          | DW_cmp           | apparch (area)     |                |
+| lte_x_172          | DW_cmp           | apparch (area)     |                |
+| lte_x_173          | DW_cmp           | apparch (area)     |                |
+| lte_x_174          | DW_cmp           | apparch (area)     |                |
+| lte_x_175          | DW_cmp           | apparch (area)     |                |
+| lte_x_176          | DW_cmp           | apparch (area)     |                |
+| lte_x_177          | DW_cmp           | apparch (area)     |                |
+| lte_x_178          | DW_cmp           | apparch (area)     |                |
+| lte_x_179          | DW_cmp           | apparch (area)     |                |
+| lte_x_180          | DW_cmp           | apparch (area)     |                |
+| lte_x_181          | DW_cmp           | apparch (area)     |                |
+| lte_x_182          | DW_cmp           | apparch (area)     |                |
+| lte_x_183          | DW_cmp           | apparch (area)     |                |
+| lte_x_184          | DW_cmp           | apparch (area)     |                |
+| lte_x_185          | DW_cmp           | apparch (area)     |                |
+| lte_x_186          | DW_cmp           | apparch (area)     |                |
+| lte_x_187          | DW_cmp           | apparch (area)     |                |
+| lte_x_188          | DW_cmp           | apparch (area)     |                |
+| lte_x_189          | DW_cmp           | apparch (area)     |                |
+| lte_x_190          | DW_cmp           | apparch (area)     |                |
+| add_x_191          | DW01_add         | apparch (area)     |                |
+| eq_x_192           | DW_cmp           | apparch (area)     |                |
+| lte_x_193          | DW_cmp           | apparch (area)     |                |
+| eq_x_194           | DW_cmp           | apparch (area)     |                |
+| eq_x_195           | DW_cmp           | apparch (area)     |                |
+| lt_x_196           | DW_cmp           | pparch (area,speed)                 |
+| lt_x_197           | DW_cmp           | pparch (area,speed)                 |
+| lt_x_198           | DW_cmp           | pparch (area,speed)                 |
+| lt_x_199           | DW_cmp           | pparch (area,speed)                 |
+| lt_x_200           | DW_cmp           | pparch (area,speed)                 |
+| lt_x_201           | DW_cmp           | pparch (area,speed)                 |
+| lt_x_202           | DW_cmp           | pparch (area,speed)                 |
+| lt_x_203           | DW_cmp           | pparch (area,speed)                 |
+| lt_x_204           | DW_cmp           | pparch (area,speed)                 |
+| lt_x_205           | DW_cmp           | pparch (area,speed)                 |
+| lt_x_206           | DW_cmp           | pparch (area,speed)                 |
+| lt_x_207           | DW_cmp           | pparch (area,speed)                 |
+| lt_x_208           | DW_cmp           | apparch (area)     |                |
+| lt_x_209           | DW_cmp           | pparch (area,speed)                 |
+| lt_x_210           | DW_cmp           | pparch (area,speed)                 |
+| lt_x_211           | DW_cmp           | apparch (area)     |                |
+| lt_x_212           | DW_cmp           | apparch (area)     |                |
+| lt_x_213           | DW_cmp           | apparch (area)     |                |
+| lt_x_214           | DW_cmp           | pparch (area,speed)                 |
+| lt_x_215           | DW_cmp           | pparch (area,speed)                 |
+| lt_x_216           | DW_cmp           | pparch (area,speed)                 |
+| lt_x_217           | DW_cmp           | pparch (area,speed)                 |
+| lt_x_218           | DW_cmp           | pparch (area,speed)                 |
+| lt_x_219           | DW_cmp           | pparch (area,speed)                 |
+| lt_x_220           | DW_cmp           | pparch (area,speed)                 |
+| lt_x_221           | DW_cmp           | pparch (area,speed)                 |
+| lt_x_222           | DW_cmp           | pparch (area,speed)                 |
+| lt_x_223           | DW_cmp           | pparch (area,speed)                 |
+| lt_x_224           | DW_cmp           | pparch (area,speed)                 |
+| lt_x_225           | DW_cmp           | pparch (area,speed)                 |
+| sub_x_226          | DW01_dec         | apparch (area)     |                |
+| add_x_227          | DW01_inc         | apparch (area)     |                |
+| sub_x_228          | DW01_dec         | apparch (area)     |                |
+| sub_x_229          | DW01_dec         | apparch (area)     |                |
+| eq_x_377           | DW_cmp           | apparch (area)     |                |
+| eq_x_378           | DW_cmp           | apparch (area)     |                |
+| eq_x_379           | DW_cmp           | apparch (area)     |                |
+| eq_x_380           | DW_cmp           | apparch (area)     |                |
+| eq_x_381           | DW_cmp           | apparch (area)     |                |
+| eq_x_382           | DW_cmp           | apparch (area)     |                |
+| eq_x_383           | DW_cmp           | apparch (area)     |                |
+| eq_x_384           | DW_cmp           | apparch (area)     |                |
+| eq_x_385           | DW_cmp           | apparch (area)     |                |
+| eq_x_386           | DW_cmp           | apparch (area)     |                |
+| eq_x_387           | DW_cmp           | apparch (area)     |                |
+| eq_x_388           | DW_cmp           | apparch (area)     |                |
+| eq_x_389           | DW_cmp           | apparch (area)     |                |
+| eq_x_390           | DW_cmp           | apparch (area)     |                |
+| eq_x_391           | DW_cmp           | apparch (area)     |                |
+| eq_x_392           | DW_cmp           | apparch (area)     |                |
+| eq_x_393           | DW_cmp           | apparch (area)     |                |
+| eq_x_394           | DW_cmp           | apparch (area)     |                |
+| eq_x_395           | DW_cmp           | apparch (area)     |                |
+| eq_x_396           | DW_cmp           | apparch (area)     |                |
+| eq_x_397           | DW_cmp           | apparch (area)     |                |
+| eq_x_398           | DW_cmp           | apparch (area)     |                |
+| eq_x_399           | DW_cmp           | apparch (area)     |                |
+| eq_x_400           | DW_cmp           | apparch (area)     |                |
+| eq_x_401           | DW_cmp           | apparch (area)     |                |
+| eq_x_402           | DW_cmp           | apparch (area)     |                |
+| eq_x_403           | DW_cmp           | apparch (area)     |                |
+| eq_x_404           | DW_cmp           | apparch (area)     |                |
+| eq_x_405           | DW_cmp           | apparch (area)     |                |
+| eq_x_406           | DW_cmp           | apparch (area)     |                |
+| eq_x_407           | DW_cmp           | apparch (area)     |                |
+| eq_x_408           | DW_cmp           | apparch (area)     |                |
+| DP_OP_668J2_122_1004                  |                    |                |
+|                    | DP_OP_668J2_122_1004 | str (area)     |                |
+|                    |                  | mult_arch: and     |                |
+|                    |                  | mult_arch: and     |                |
+|                    |                  | mult_arch: benc_radix4              |
+|                    |                  | mult_arch: and     |                |
+| DP_OP_669J2_123_276                   |                    |                |
+|                    | DP_OP_669J2_123_276 | str (area)      |                |
+|                    |                  | mult_arch: and     |                |
+| DP_OP_670J2_124_1944                  |                    |                |
+|                    | DP_OP_670J2_124_1944 | str (area)     |                |
+|                    |                  | mult_arch: benc_radix4              |
+| DP_OP_277J2_125_4526                  |                    |                |
+|                    | DP_OP_277J2_125_4526 | str (area)     |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : FIFO2_0000002a_1
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : FIFO2_00000020_1_0
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : FIFO2_00000020_1_1
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : FIFO2_00000020_1_2
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : FIFO2_00000020_1_3
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : FIFO2_00000020_1_4
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : FIFO2_00000020_1_5
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : FIFO2_00000020_1_6
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : FIFO2_00000020_1_7
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : FIFO2_00000001_1_0
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : FIFO2_00000001_1_1
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : FIFO2_0000000a_1_1
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : FIFO2_0000000a_1_3
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : FIFO2_0000000a_1_5
+****************************************
+
+No implementations to report
+ 
+****************************************
+Design : mkFpAdder_1
+****************************************
+
+Resource Report for this hierarchy in file
+        /scratch/CS25D007/CS6230_Rahul/CS6230/Baseline_viterbiDecoderSynth/rtl/mkFpAdder.v
+=============================================================================
+| Cell           | Module         | Parameters | Contained Operations       |
+=============================================================================
+| lt_x_3         | DW_cmp         | width=8    | lt_141 (mkFpAdder.v:141)   |
+| eq_x_4         | DW_cmp         | width=8    | eq_141 (mkFpAdder.v:141)   |
+| lt_x_8         | DW_cmp         | width=8    | lt_149 (mkFpAdder.v:149)   |
+| eq_x_9         | DW_cmp         | width=8    | eq_149 (mkFpAdder.v:149)   |
+| lte_x_12       | DW_cmp         | width=8    | lte_153 (mkFpAdder.v:153)  |
+| add_x_13       | DW01_inc       | width=8    | add_155 (mkFpAdder.v:155)  |
+| lte_x_14       | DW_cmp         | width=8    | lte_156 (mkFpAdder.v:156)  |
+| ashr_16        | DW_rightsh     | A_width=24 | srl_168 (mkFpAdder.v:168)  |
+|                |                | SH_width=8 |                            |
+| add_x_17       | DW01_add       | width=24   | add_169 (mkFpAdder.v:169)  |
+| add_x_18       | DW01_add       | width=23   | add_170 (mkFpAdder.v:170)  |
+| ashr_19        | DW_rightsh     | A_width=24 | srl_172 (mkFpAdder.v:172)  |
+|                |                | SH_width=8 |                            |
+| add_x_20       | DW01_add       | width=24   | add_173 (mkFpAdder.v:173)  |
+| gt_x_21        | DW_cmp         | width=8    | gt_175 (mkFpAdder.v:175)   |
+| gt_x_22        | DW_cmp         | width=8    | gt_177 (mkFpAdder.v:177)   |
+| ash_23         | DW_leftsh      | A_width=24 | sll_186 (mkFpAdder.v:186)  |
+|                |                | SH_width=8 |                            |
+| sub_x_24       | DW01_dec       | width=24   | sub_186 (mkFpAdder.v:186)  |
+| ash_25         | DW_leftsh      | A_width=24 | sll_187 (mkFpAdder.v:187)  |
+|                |                | SH_width=8 |                            |
+| sub_x_26       | DW01_dec       | width=24   | sub_187 (mkFpAdder.v:187)  |
+| lte_x_27       | DW_cmp         | width=8    | lte_192 (mkFpAdder.v:192)  |
+| ash_28         | DW_leftsh      | A_width=24 | sll_192 (mkFpAdder.v:192)  |
+|                |                | SH_width=8 |                            |
+| sub_x_29       | DW01_dec       | width=24   | sub_192 (mkFpAdder.v:192)  |
+| lte_x_31       | DW_cmp         | width=8    | lte_194 (mkFpAdder.v:194)  |
+| ash_32         | DW_leftsh      | A_width=24 | sll_194 (mkFpAdder.v:194)  |
+|                |                | SH_width=8 |                            |
+| sub_x_33       | DW01_dec       | width=24   | sub_194 (mkFpAdder.v:194)  |
+| DP_OP_105J3_122_5520            |            |                            |
+|                | DP_OP_105J3_122_5520 |      |                            |
+| DP_OP_106J3_123_5520            |            |                            |
+|                | DP_OP_106J3_123_5520 |      |                            |
+=============================================================================
+
+Datapath Report for DP_OP_105J3_122_5520
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_105J3_122_5520 | sub_183 (mkFpAdder.v:183) sub_163 (mkFpAdder.v:163) |
+|                      | sub_164 (mkFpAdder.v:164)                           |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 8     |                                          |
+| I2    | PI   | Unsigned | 8     |                                          |
+| T50   | IFO  | Signed   | 5     | O1[4:0]                                  |
+| O1    | PO   | Signed   | 8     | I1 - I2 (mkFpAdder.v:183)                |
+| O2    | PO   | Signed   | 5     | T50 - $unsigned(1'b1) (mkFpAdder.v:163)  |
+| O3    | PO   | Signed   | 8     | O1 - $unsigned(2'b10) (mkFpAdder.v:164)  |
+==============================================================================
+
+Datapath Report for DP_OP_106J3_123_5520
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_106J3_123_5520 | sub_182 (mkFpAdder.v:182) sub_165 (mkFpAdder.v:165) |
+|                      | sub_166 (mkFpAdder.v:166)                           |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 8     |                                          |
+| I2    | PI   | Unsigned | 8     |                                          |
+| T51   | IFO  | Signed   | 5     | O1[4:0]                                  |
+| O1    | PO   | Signed   | 8     | I1 - I2 (mkFpAdder.v:182)                |
+| O2    | PO   | Signed   | 5     | T51 - $unsigned(1'b1) (mkFpAdder.v:165)  |
+| O3    | PO   | Signed   | 8     | O1 - $unsigned(2'b10) (mkFpAdder.v:166)  |
+==============================================================================
+
+
+Datapath Extraction Report
+
+Information: Operator associated with resources 'lt_141 (mkFpAdder.v:141)' in design 'mkFpAdder_1' breaks the datapath extraction because there is leakage due to truncation on the fanout of its driver 'sub_183 (mkFpAdder.v:183)'.  (HDL-120)
+
+Information: Operator associated with resources 'lt_149 (mkFpAdder.v:149)' in design 'mkFpAdder_1' breaks the datapath extraction because there is leakage due to truncation on the fanout of its driver 'sub_182 (mkFpAdder.v:182)'.  (HDL-120)
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| lt_x_3             | DW_cmp           | apparch (area)     |                |
+| eq_x_4             | DW_cmp           | apparch (area)     |                |
+| lt_x_8             | DW_cmp           | apparch (area)     |                |
+| eq_x_9             | DW_cmp           | apparch (area)     |                |
+| lte_x_12           | DW_cmp           | apparch (area)     |                |
+| add_x_13           | DW01_inc         | apparch (area)     |                |
+| lte_x_14           | DW_cmp           | apparch (area)     |                |
+| ashr_16            | DW_rightsh       | astr (area)        |                |
+| add_x_17           | DW01_add         | apparch (area)     |                |
+| add_x_18           | DW01_add         | apparch (area)     |                |
+| ashr_19            | DW_rightsh       | astr (area)        |                |
+| add_x_20           | DW01_add         | apparch (area)     |                |
+| gt_x_21            | DW_cmp           | apparch (area)     |                |
+| gt_x_22            | DW_cmp           | apparch (area)     |                |
+| ash_23             | DW_leftsh        | astr (area)        |                |
+| sub_x_24           | DW01_dec         | apparch (area)     |                |
+| ash_25             | DW_leftsh        | astr (area)        |                |
+| sub_x_26           | DW01_dec         | apparch (area)     |                |
+| lte_x_27           | DW_cmp           | apparch (area)     |                |
+| ash_28             | DW_leftsh        | astr (area)        |                |
+| sub_x_29           | DW01_dec         | apparch (area)     |                |
+| lte_x_31           | DW_cmp           | apparch (area)     |                |
+| ash_32             | DW_leftsh        | astr (area)        |                |
+| sub_x_33           | DW01_dec         | apparch (area)     |                |
+| DP_OP_105J3_122_5520                  |                    |                |
+|                    | DP_OP_105J3_122_5520 | str (area)     |                |
+| DP_OP_106J3_123_5520                  |                    |                |
+|                    | DP_OP_106J3_123_5520 | str (area)     |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkKs_1
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_145
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_146
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_161
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_162
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_163
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_164
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_165
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_166
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_169
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_170
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_171
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_172
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_173
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_174
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_185
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_186
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_187
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_188
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_189
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_190
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_191
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_192
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_193
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_194
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_197
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_198
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_199
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_200
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_201
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_202
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_203
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_212
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_213
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_214
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_215
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_216
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_217
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_218
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_219
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_220
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_221
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_222
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_223
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_224
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_227
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_228
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_229
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_230
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_231
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_232
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_234
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_242
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_243
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_244
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_245
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_246
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_247
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_248
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_249
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_250
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_251
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_252
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_253
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_254
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_255
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgp_256
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_162
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_163
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_164
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_165
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_166
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_167
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_174
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_175
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_176
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_177
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_178
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_179
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_180
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_181
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_182
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_187
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_192
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_193
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_194
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_195
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_196
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_197
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_198
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_199
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_200
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_201
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_202
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_203
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_204
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_205
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_206
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_215
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_216
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_217
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_218
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_219
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_220
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_221
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_222
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_223
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_224
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_225
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_226
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_227
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_228
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_229
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_230
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_231
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_232
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_233
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_234
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_243
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_244
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_245
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_246
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_247
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_248
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_249
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_250
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_251
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_252
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_253
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_254
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_255
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_256
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_257
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_258
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_259
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_260
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_261
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_262
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_263
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_265
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_273
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_274
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_275
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_276
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_277
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_278
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_279
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_280
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_281
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_282
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_283
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_284
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_285
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_286
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_287
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_288
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_289
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_290
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_291
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_292
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_293
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_294
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_296
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_303
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_304
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_305
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_306
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_307
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_308
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_309
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_310
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_311
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_312
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_313
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_314
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_315
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_316
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_317
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : mkgg_318
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : RegFile_0000000a_00000005_000_3ff
+****************************************
+
+No implementations to report
+1

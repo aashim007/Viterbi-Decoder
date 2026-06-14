@@ -1,0 +1,88 @@
+ 
+****************************************
+Report : area
+Design : mkViterbiDecoder
+Version: U-2022.12
+Date   : Sun Nov  9 14:42:16 2025
+****************************************
+
+Library(s) Used:
+
+    saed32lvt_ss0p75v25c (File: /home/tools/pdk/SAED32nm_EDK_02_2024/lib/stdcell_lvt/db_nldm/saed32lvt_ss0p75v25c.db)
+
+Number of ports:                         1284
+Number of nets:                          6123
+Number of cells:                         4783
+Number of combinational cells:           3990
+Number of sequential cells:               744
+Number of macros/black boxes:               0
+Number of buf/inv:                        686
+Number of references:                      81
+
+Combinational area:               9402.819759
+Buf/Inv area:                      898.399045
+Noncombinational area:            4872.448923
+Macro/Black Box area:                0.000000
+Net Interconnect area:            2883.079555
+
+Total cell area:                 14275.268682
+Total area:                      17158.348237
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area           Local cell area
+                                  -------------------  ---------------------------- 
+Hierarchical cell                 Absolute    Percent  Combi-     Noncombi-  Black-
+                                  Total       Total    national   national   boxes   Design
+--------------------------------  ----------  -------  ---------  ---------  ------  ----------------------------------------
+mkViterbiDecoder                  14275.2687    100.0  6199.3346  2532.2909  0.0000  mkViterbiDecoder
+clk_gate_aValue_reg                   8.3868      0.1     3.3039     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_mkViterbiDecoder_0
+clk_gate_bValue_reg                   8.3868      0.1     3.3039     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_mkViterbiDecoder_1
+clk_gate_bestMinIdx_reg               8.3868      0.1     3.3039     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_mkViterbiDecoder_2
+clk_gate_currState_reg                8.3868      0.1     3.3039     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_mkViterbiDecoder_3
+clk_gate_finalMaxProb_reg             8.3868      0.1     3.3039     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_mkViterbiDecoder_4
+clk_gate_fpAddResult1_reg             8.3868      0.1     3.3039     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_mkViterbiDecoder_5
+clk_gate_inputIndex_reg               8.3868      0.1     3.3039     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_mkViterbiDecoder_6
+clk_gate_inputValue_reg               8.3868      0.1     3.3039     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_mkViterbiDecoder_7
+clk_gate_maxProb_reg                  8.3868      0.1     3.3039     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_mkViterbiDecoder_8
+clk_gate_minIdx_reg                   8.3868      0.1     3.3039     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_mkViterbiDecoder_9
+clk_gate_nValue_reg                   8.3868      0.1     3.3039     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_mkViterbiDecoder_10
+clk_gate_outputOffset_reg             8.3868      0.1     3.3039     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_mkViterbiDecoder_11
+clk_gate_prevProb_reg                 8.3868      0.1     3.3039     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_mkViterbiDecoder_12
+clk_gate_prevStateIndex_reg           8.3868      0.1     3.3039     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_mkViterbiDecoder_13
+clk_gate_stateCount_reg               8.3868      0.1     3.3039     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_mkViterbiDecoder_14
+clk_gate_stateIndex_reg               8.3868      0.1     3.3039     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_mkViterbiDecoder_15
+clk_gate_timeStep_reg                 8.3868      0.1     3.3039     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_mkViterbiDecoder_16
+clk_gate_traceBackTime_reg            8.3868      0.1     3.3039     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_mkViterbiDecoder_17
+fpAdder1                           3043.8827     21.3  3043.8827     0.0000  0.0000  mkFpAdder
+readReqFIFO_A1                       85.3924      0.6     4.3204    72.6852  0.0000  FIFO1_0000000a_1_3
+readReqFIFO_A1/clk_gate_D_OUT_reg     8.3868      0.1     3.3039     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_FIFO1_0000000a_1_3
+readReqFIFO_B1                       85.3924      0.6     4.3204    72.6852  0.0000  FIFO1_0000000a_1_2
+readReqFIFO_B1/clk_gate_D_OUT_reg     8.3868      0.1     3.3039     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_FIFO1_0000000a_1_2
+readReqFIFO_BTB1                     85.3924      0.6     4.3204    72.6852  0.0000  FIFO1_0000000a_1_1
+readReqFIFO_BTB1/clk_gate_D_OUT_reg     8.3868     0.1    3.3039     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_FIFO1_0000000a_1_1
+readReqFIFO_Input1                   85.3924      0.6     4.3204    72.6852  0.0000  FIFO1_0000000a_1_0
+readReqFIFO_Input1/clk_gate_D_OUT_reg     8.3868     0.1    3.3039    5.0829 0.0000  SNPS_CLOCK_GATE_HIGH_FIFO1_0000000a_1_0
+readReqFIFO_NM1                      10.9282      0.1     4.3204     6.6077  0.0000  FIFO1_00000001_1_1
+readReqFIFO_NM2                      10.9282      0.1     4.3204     6.6077  0.0000  FIFO1_00000001_1_0
+readRespFIFO_A1                     230.7628      1.6     4.3204   218.0556  0.0000  FIFO1_00000020_1_5
+readRespFIFO_A1/clk_gate_D_OUT_reg     8.3868     0.1     3.3039     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_FIFO1_00000020_1_5
+readRespFIFO_B1                     230.7628      1.6     4.3204   218.0556  0.0000  FIFO1_00000020_1_4
+readRespFIFO_B1/clk_gate_D_OUT_reg     8.3868     0.1     3.3039     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_FIFO1_00000020_1_4
+readRespFIFO_BTB1                   230.7628      1.6     4.3204   218.0556  0.0000  FIFO1_00000020_1_3
+readRespFIFO_BTB1/clk_gate_D_OUT_reg     8.3868     0.1    3.3039    5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_FIFO1_00000020_1_3
+readRespFIFO_Input1                 230.7628      1.6     4.3204   218.0556  0.0000  FIFO1_00000020_1_2
+readRespFIFO_Input1/clk_gate_D_OUT_reg     8.3868     0.1    3.3039    5.0829 0.0000 SNPS_CLOCK_GATE_HIGH_FIFO1_00000020_1_2
+readRespFIFO_NM1                    231.2710      1.6     4.3204   218.5638  0.0000  FIFO1_00000020_1_1
+readRespFIFO_NM1/clk_gate_D_OUT_reg     8.3868     0.1    3.3039     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_FIFO1_00000020_1_1
+readRespFIFO_NM2                    230.7628      1.6     4.3204   218.0556  0.0000  FIFO1_00000020_1_0
+readRespFIFO_NM2/clk_gate_D_OUT_reg     8.3868     0.1    3.3039     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_FIFO1_00000020_1_0
+writeReqFIFO_BTB                    296.8402      2.1     4.3204   284.1330  0.0000  FIFO1_0000002a_1
+writeReqFIFO_BTB/clk_gate_D_OUT_reg     8.3868     0.1    3.3039     5.0829  0.0000  SNPS_CLOCK_GATE_HIGH_FIFO1_0000002a_1
+writeReqFIFO_Output                 303.4479      2.1     4.3204   290.7407  0.0000  FIFO1_0000002b_1
+writeReqFIFO_Output/clk_gate_D_OUT_reg     8.3868     0.1    3.3039    5.0829 0.0000 SNPS_CLOCK_GATE_HIGH_FIFO1_0000002b_1
+--------------------------------  ----------  -------  ---------  ---------  ------  ----------------------------------------
+Total                                                  9402.8198  4872.4489  0.0000
+
+1

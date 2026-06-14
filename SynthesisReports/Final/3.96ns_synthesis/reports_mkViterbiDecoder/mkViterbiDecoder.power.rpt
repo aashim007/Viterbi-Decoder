@@ -1,0 +1,139 @@
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : mkViterbiDecoder
+Version: U-2022.12
+Date   : Sun Nov  9 15:19:26 2025
+****************************************
+
+
+Library(s) Used:
+
+    saed32lvt_ss0p75v25c (File: /home/tools/pdk/SAED32nm_EDK_02_2024/lib/stdcell_lvt/db_nldm/saed32lvt_ss0p75v25c.db)
+
+
+Operating Conditions: ss0p75v25c   Library: saed32lvt_ss0p75v25c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+mkViterbiDecoder       16000             saed32lvt_ss0p75v25c
+mkFpAdder              8000              saed32lvt_ss0p75v25c
+FIFO1_0000000a_1_3     ForQA             saed32lvt_ss0p75v25c
+FIFO1_0000000a_1_2     ForQA             saed32lvt_ss0p75v25c
+FIFO1_0000000a_1_1     ForQA             saed32lvt_ss0p75v25c
+FIFO1_0000000a_1_0     ForQA             saed32lvt_ss0p75v25c
+FIFO1_00000001_1_1     ForQA             saed32lvt_ss0p75v25c
+FIFO1_00000001_1_0     ForQA             saed32lvt_ss0p75v25c
+FIFO1_00000020_1_5     8000              saed32lvt_ss0p75v25c
+FIFO1_00000020_1_4     8000              saed32lvt_ss0p75v25c
+FIFO1_00000020_1_3     8000              saed32lvt_ss0p75v25c
+FIFO1_00000020_1_2     8000              saed32lvt_ss0p75v25c
+FIFO1_00000020_1_1     8000              saed32lvt_ss0p75v25c
+FIFO1_00000020_1_0     8000              saed32lvt_ss0p75v25c
+FIFO1_0000002a_1       8000              saed32lvt_ss0p75v25c
+FIFO1_0000002b_1       8000              saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_mkViterbiDecoder_17
+                       ForQA             saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_mkViterbiDecoder_16
+                       ForQA             saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_mkViterbiDecoder_15
+                       ForQA             saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_mkViterbiDecoder_14
+                       ForQA             saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_mkViterbiDecoder_13
+                       ForQA             saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_mkViterbiDecoder_12
+                       ForQA             saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_mkViterbiDecoder_11
+                       ForQA             saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_mkViterbiDecoder_10
+                       ForQA             saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_mkViterbiDecoder_9
+                       ForQA             saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_mkViterbiDecoder_8
+                       ForQA             saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_mkViterbiDecoder_7
+                       ForQA             saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_mkViterbiDecoder_6
+                       ForQA             saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_mkViterbiDecoder_5
+                       ForQA             saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_mkViterbiDecoder_4
+                       ForQA             saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_mkViterbiDecoder_3
+                       ForQA             saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_mkViterbiDecoder_2
+                       ForQA             saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_mkViterbiDecoder_1
+                       ForQA             saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_mkViterbiDecoder_0
+                       ForQA             saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_FIFO1_0000000a_1_3
+                       ForQA             saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_FIFO1_0000000a_1_2
+                       ForQA             saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_FIFO1_0000000a_1_1
+                       ForQA             saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_FIFO1_0000000a_1_0
+                       ForQA             saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_FIFO1_00000020_1_5
+                       ForQA             saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_FIFO1_00000020_1_4
+                       ForQA             saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_FIFO1_00000020_1_3
+                       ForQA             saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_FIFO1_00000020_1_2
+                       ForQA             saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_FIFO1_00000020_1_1
+                       ForQA             saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_FIFO1_00000020_1_0
+                       ForQA             saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_FIFO1_0000002a_1
+                       ForQA             saed32lvt_ss0p75v25c
+SNPS_CLOCK_GATE_HIGH_FIFO1_0000002b_1
+                       ForQA             saed32lvt_ss0p75v25c
+
+
+Global Operating Voltage = 0.75 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+mkViterbiDecoder                         47.803  294.658 3.38e+08  679.991 100.0
+  writeReqFIFO_Output (FIFO1_0000002b_1)
+                                          0.246    1.825 9.51e+06   11.577   1.7
+  writeReqFIFO_BTB (FIFO1_0000002a_1)     0.143    0.996 9.48e+06   10.623   1.6
+  readRespFIFO_NM2 (FIFO1_00000020_1_0)
+                                          1.928   15.087 8.25e+06   25.262   3.7
+  readRespFIFO_NM1 (FIFO1_00000020_1_1)
+                                          2.161   14.855 8.51e+06   25.521   3.8
+  readRespFIFO_Input1 (FIFO1_00000020_1_2)
+                                          1.975   15.114 8.25e+06   25.335   3.7
+  readRespFIFO_BTB1 (FIFO1_00000020_1_3)
+                                          1.913   14.807 8.25e+06   24.970   3.7
+  readRespFIFO_B1 (FIFO1_00000020_1_4)    1.854   14.803 8.25e+06   24.907   3.7
+  readRespFIFO_A1 (FIFO1_00000020_1_5)    1.880   14.972 8.25e+06   25.103   3.7
+  readReqFIFO_NM2 (FIFO1_00000001_1_0) 1.52e-02    0.879 2.56e+05    1.150   0.2
+  readReqFIFO_NM1 (FIFO1_00000001_1_1) 1.50e-02    0.879 2.57e+05    1.150   0.2
+  readReqFIFO_Input1 (FIFO1_0000000a_1_0)
+                                          0.140    0.968 2.58e+06    3.691   0.5
+  readReqFIFO_BTB1 (FIFO1_0000000a_1_1)
+                                          0.140    0.963 2.69e+06    3.798   0.6
+  readReqFIFO_B1 (FIFO1_0000000a_1_2)     0.140    1.047 2.94e+06    4.128   0.6
+  readReqFIFO_A1 (FIFO1_0000000a_1_3)     0.140    0.966 3.05e+06    4.151   0.6
+  fpAdder1 (mkFpAdder)                    2.227    4.110 5.99e+07   66.247   9.7
+1

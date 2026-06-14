@@ -1,0 +1,417 @@
+ 
+****************************************
+Report : resources
+Design : mkViterbiDecoder
+Version: U-2022.12
+Date   : Sun Nov  9 14:42:16 2025
+****************************************
+
+
+Resource Report for this hierarchy in file
+        /scratch/EE25M092/CS6230/synth/rtl/mkViterbiDecoder.v
+=============================================================================
+| Cell           | Module         | Parameters | Contained Operations       |
+=============================================================================
+| gt_x_1         | DW_cmp         | width=32   | gt_1398 (mkViterbiDecoder.v:1398) |
+| gt_x_2         | DW_cmp         | width=32   | gt_1398_2 (mkViterbiDecoder.v:1398) |
+| gt_x_4         | DW_cmp         | width=10   | gt_1419 (mkViterbiDecoder.v:1419) |
+| add_x_6        | DW01_inc       | width=5    | add_1450 (mkViterbiDecoder.v:1450) |
+| add_x_7        | DW01_inc       | width=5    | add_1453 (mkViterbiDecoder.v:1453) |
+| add_x_8        | DW01_inc       | width=10   | add_1463 (mkViterbiDecoder.v:1463) |
+| add_x_9        | DW01_inc       | width=5    | add_1499 (mkViterbiDecoder.v:1499) |
+| add_x_14       | DW01_inc       | width=10   | add_1715 (mkViterbiDecoder.v:1715) |
+| add_x_19       | DW01_add       | width=10   | add_2102 (mkViterbiDecoder.v:2102) |
+| lt_x_20        | DW_cmp         | width=32   | lt_2108 (mkViterbiDecoder.v:2108) |
+| div_21         | DW_div_uns     | a_width=10 | div_2110 (mkViterbiDecoder.v:2110) |
+         |                | b_width=10 |                            |
+| lt_x_22        | DW_cmp         | width=5    | lt_2111 (mkViterbiDecoder.v:2111) |
+| add_x_23       | DW01_add       | width=11   | add_2112 (mkViterbiDecoder.v:2112) |
+| eq_x_24        | DW_cmp         | width=5    | eq_2114 (mkViterbiDecoder.v:2114) |
+| lt_x_25        | DW_cmp         | width=5    | lt_2116 (mkViterbiDecoder.v:2116) |
+| lt_x_26        | DW_cmp         | width=32   | lt_2119 (mkViterbiDecoder.v:2119) |
+| lte_x_27       | DW_cmp         | width=32   | lte_2121 (mkViterbiDecoder.v:2121) |
+| eq_x_28        | DW_cmp         | width=5    | eq_2124 (mkViterbiDecoder.v:2124) |
+| eq_x_29        | DW_cmp         | width=5    | eq_2126 (mkViterbiDecoder.v:2126) |
+| add_x_30       | DW01_add       | width=10   | add_2131 (mkViterbiDecoder.v:2131) |
+| add_x_31       | DW01_inc       | width=5    | add_2134 (mkViterbiDecoder.v:2134) |
+| sub_x_32       | DW01_sub       | width=10   | sub_2135 (mkViterbiDecoder.v:2135) |
+| DP_OP_190J1_122_6905            |            |                            |
+|                | DP_OP_190J1_122_6905 |      |                            |
+| sub_x_93       | DW01_sub       | width=10   | add_1491 (mkViterbiDecoder.v:1491) |
+         |                |            | sub_2136 (mkViterbiDecoder.v:2136) |
+| sub_x_94       | DW01_sub       | width=10   | add_1495 (mkViterbiDecoder.v:1495) |
+         |                |            | sub_2137 (mkViterbiDecoder.v:2137) |
+| DP_OP_198J1_129_499             |            |                            |
+|                | DP_OP_198J1_129_499 |       |                            |
+| DP_OP_199J1_130_2932            |            |                            |
+|                | DP_OP_199J1_130_2932 |      |                            |
+| DP_OP_36J1_126_9208             |            |                            |
+|                | DP_OP_36J1_126_9208 |       |                            |
+| DP_OP_44J1_123_8462             |            |                            |
+|                | DP_OP_44J1_123_8462 |       |                            |
+=============================================================================
+
+Datapath Report for DP_OP_190J1_122_6905
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_190J1_122_6905 | mult_2095 (mkViterbiDecoder.v:2095)                 |
+|                      | mult_add_2099_aco (mkViterbiDecoder.v:2099)         |
+|                      | add_2099_aco (mkViterbiDecoder.v:2099)              |
+|                      | sub_2123 (mkViterbiDecoder.v:2123)                  |
+|                      | sub_2141 (mkViterbiDecoder.v:2141)                  |
+|                      | mult_2097 (mkViterbiDecoder.v:2097)                 |
+|                      | sub_2140 (mkViterbiDecoder.v:2140)                  |
+|                      | add_2103 (mkViterbiDecoder.v:2103)                  |
+|                      | add_2132 (mkViterbiDecoder.v:2132)                  |
+|                      | mult_2127 (mkViterbiDecoder.v:2127)                 |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 5     |                                          |
+| I2    | PI   | Unsigned | 10    |                                          |
+| I3    | PI   | Unsigned | 1     |                                          |
+| I4    | PI   | Unsigned | 5     |                                          |
+| I5    | PI   | Unsigned | 10    |                                          |
+| I6    | PI   | Signed   | 10    |                                          |
+| I7    | PI   | Unsigned | 10    |                                          |
+| T179  | IFO  | Unsigned | 10    | I1 * I2 * I3 ( mkViterbiDecoder.v:2095 mkViterbiDecoder.v:2099 ) |
+| T31   | IFO  | Signed   | 10    | O2 * I5 (mkViterbiDecoder.v:2097)        |
+| T48   | IFO  | Unsigned | 10    | I7 * I2 (mkViterbiDecoder.v:2127)        |
+| O1    | PO   | Signed   | 10    | T179 + O2 (mkViterbiDecoder.v:2099)      |
+| O2    | PO   | Signed   | 6     | I4 - $unsigned(1'b1) ( mkViterbiDecoder.v:2123 mkViterbiDecoder.v:2141 ) |
+| O3    | PO   | Signed   | 10    | I6 - $unsigned(1'b1) + T31 ( mkViterbiDecoder.v:2103 mkViterbiDecoder.v:2140 ) |
+| O4    | PO   | Signed   | 10    | T48 + O2 (mkViterbiDecoder.v:2132)       |
+==============================================================================
+
+Datapath Report for DP_OP_198J1_129_499
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_198J1_129_499  | mult_2129 (mkViterbiDecoder.v:2129)                 |
+|                      | sub_2142 (mkViterbiDecoder.v:2142)                  |
+|                      | add_1458 (mkViterbiDecoder.v:1458)                  |
+|                      | C3607 (mkViterbiDecoder.v:1951)                     |
+|                      | add_1454 (mkViterbiDecoder.v:1454)                  |
+|                      | add_1456 (mkViterbiDecoder.v:1456)                  |
+|                      | add_1461 (mkViterbiDecoder.v:1461)                  |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 10    |                                          |
+| I2    | PI   | Unsigned | 10    |                                          |
+| I3    | PI   | Unsigned | 5     |                                          |
+| I4    | PI   | Unsigned | 1     |                                          |
+| I5    | PI   | Signed   | 10    |                                          |
+| I6    | PI   | Unsigned | 1     |                                          |
+| I7    | PI   | Unsigned | 5     |                                          |
+| T49   | IFO  | Unsigned | 10    | I1 * I2 (mkViterbiDecoder.v:2129)        |
+| T185  | IFO  | Unsigned | 10    | I3 + T49 ( mkViterbiDecoder.v:1458 mkViterbiDecoder.v:2142 ) |
+| T195  | IFO  | Signed   | 10    | { I4, I6 } ? T185 : I5 (mkViterbiDecoder.v:1951) |
+| O1    | PO   | Signed   | 10    | addsub(T195,I7,I4) ( mkViterbiDecoder.v:1454 mkViterbiDecoder.v:1456 mkViterbiDecoder.v:1458 mkViterbiDecoder.v:1461 mkViterbiDecoder.v:2142 ) |
+==============================================================================
+
+Datapath Report for DP_OP_199J1_130_2932
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_199J1_130_2932 | sub_2113 (mkViterbiDecoder.v:2113)                  |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 5     |                                          |
+| O1    | PO   | Signed   | 5     | I1 - $unsigned(1'b1) (mkViterbiDecoder.v:2113) |
+==============================================================================
+
+Datapath Report for DP_OP_36J1_126_9208
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_36J1_126_9208  | sub_1464 (mkViterbiDecoder.v:1464)                  |
+|                      | sub_1465 (mkViterbiDecoder.v:1465)                  |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Signed   | 10    |                                          |
+| O1    | PO   | Signed   | 10    | I1 - $unsigned(1'b1) ( mkViterbiDecoder.v:1464 mkViterbiDecoder.v:1465 ) |
+==============================================================================
+
+Datapath Report for DP_OP_44J1_123_8462
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_44J1_123_8462  | add_2109 (mkViterbiDecoder.v:2109)                  |
+|                      | C3599 (mkViterbiDecoder.v:1770)                     |
+|                      | add_1451 (mkViterbiDecoder.v:1451)                  |
+|                      | add_1452 (mkViterbiDecoder.v:1452)                  |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 10    |                                          |
+| I2    | PI   | Unsigned | 11    |                                          |
+| I3    | PI   | Unsigned | 1     |                                          |
+| I4    | PI   | Unsigned | 1     |                                          |
+| T39   | IFO  | Unsigned | 11    | { I3, I4 } ? O1 : I2 (mkViterbiDecoder.v:1770) |
+| O1    | PO   | Unsigned | 11    | I1 + I2 (mkViterbiDecoder.v:2109)        |
+| O2    | PO   | Unsigned | 11    | T39 + $unsigned(1'b1) ( mkViterbiDecoder.v:1451 mkViterbiDecoder.v:1452 ) |
+==============================================================================
+
+
+Resource Report for Ungrouped Hierarchy div_21
+=============================================================================
+| Cell           | Module         | Parameters | Contained Operations       |
+=============================================================================
+=============================================================================
+
+
+Datapath Extraction Report
+
+Information: Operator associated with resources 'add_2102 (mkViterbiDecoder.v:2102)' in design 'mkViterbiDecoder' breaks the datapath extraction because there is leakage due to truncation on the fanout of its driver 'sub_2123 (mkViterbiDecoder.v:2123) sub_2141 (mkViterbiDecoder.v:2141)'.  (HDL-120)
+
+Information: Operator associated with resources 'sub_2113 (mkViterbiDecoder.v:2113)' in design 'mkViterbiDecoder' breaks the datapath extraction because there is leakage due to truncation on its fanout.  (HDL-120)
+
+Information: Operator associated with resources 'sub_2113 (mkViterbiDecoder.v:2113)' in design 'mkViterbiDecoder' breaks the datapath extraction because there is leakage due to truncation on its fanout to operator of resources 'add_1461 (mkViterbiDecoder.v:1461)'.  (HDL-120)
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| gt_x_1             | DW_cmp           | apparch (area)     |                |
+| gt_x_2             | DW_cmp           | apparch (area)     |                |
+| gt_x_4             | DW_cmp           | apparch (area)     |                |
+| add_x_6            | DW01_inc         | apparch (area)     |                |
+| add_x_7            | DW01_inc         | apparch (area)     |                |
+| add_x_8            | DW01_inc         | apparch (area)     |                |
+| add_x_9            | DW01_inc         | apparch (area)     |                |
+| add_x_14           | DW01_inc         | apparch (area)     |                |
+| add_x_19           | DW01_add         | apparch (area)     |                |
+| lt_x_20            | DW_cmp           | apparch (area)     |                |
+| div_21             | DW_div_uns       | cla2               |                |
+| lt_x_22            | DW_cmp           | apparch (area)     |                |
+| add_x_23           | DW01_add         | apparch (area)     |                |
+| eq_x_24            | DW_cmp           | apparch (area)     |                |
+| lt_x_25            | DW_cmp           | apparch (area)     |                |
+| lt_x_26            | DW_cmp           | apparch (area)     |                |
+| lte_x_27           | DW_cmp           | apparch (area)     |                |
+| eq_x_28            | DW_cmp           | apparch (area)     |                |
+| eq_x_29            | DW_cmp           | apparch (area)     |                |
+| add_x_30           | DW01_add         | apparch (area)     |                |
+| add_x_31           | DW01_inc         | apparch (area)     |                |
+| sub_x_32           | DW01_sub         | apparch (area)     |                |
+| sub_x_93           | DW01_sub         | apparch (area)     |                |
+| sub_x_94           | DW01_sub         | apparch (area)     |                |
+| DP_OP_190J1_122_6905                  |                    |                |
+|                    | DP_OP_190J1_122_6905 | str (area)     |                |
+|                    |                  | mult_arch: and     |                |
+|                    |                  | mult_arch: and     |                |
+|                    |                  | mult_arch: benc_radix4              |
+|                    |                  | mult_arch: and     |                |
+| DP_OP_198J1_129_499                   |                    |                |
+|                    | DP_OP_198J1_129_499 | str (area)      |                |
+|                    |                  | mult_arch: and     |                |
+| DP_OP_199J1_130_2932                  |                    |                |
+|                    | DP_OP_199J1_130_2932 | str (area)     |                |
+| DP_OP_36J1_126_9208                   |                    |                |
+|                    | DP_OP_36J1_126_9208 | str (area)      |                |
+| DP_OP_44J1_123_8462                   |                    |                |
+|                    | DP_OP_44J1_123_8462 | str (area)      |                |
+===============================================================================
+
+
+No resource sharing information to report.
+ 
+****************************************
+Design : FIFO1_0000002b_1
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : FIFO1_0000002a_1
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : FIFO1_00000020_1_0
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : FIFO1_00000020_1_1
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : FIFO1_00000020_1_2
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : FIFO1_00000020_1_3
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : FIFO1_00000020_1_4
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : FIFO1_00000020_1_5
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : FIFO1_00000001_1_0
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : FIFO1_00000001_1_1
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : FIFO1_0000000a_1_0
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : FIFO1_0000000a_1_1
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : FIFO1_0000000a_1_2
+****************************************
+
+No implementations to report
+
+No resource sharing information to report.
+ 
+****************************************
+Design : FIFO1_0000000a_1_3
+****************************************
+
+No implementations to report
+ 
+****************************************
+Design : mkFpAdder
+****************************************
+
+Resource Report for this hierarchy in file
+        /scratch/EE25M092/CS6230/synth/rtl/mkFpAdder.v
+=============================================================================
+| Cell           | Module         | Parameters | Contained Operations       |
+=============================================================================
+| ash_2          | DW_leftsh      | A_width=24 | sll_814 (mkFpAdder.v:814)  |
+|                |                | SH_width=8 |                            |
+| lte_x_11       | DW_cmp         | width=8    | lte_902 (mkFpAdder.v:902)  |
+| lt_x_12        | DW_cmp         | width=8    | lt_913 (mkFpAdder.v:913)   |
+| lt_x_13        | DW_cmp         | width=8    | lt_924 (mkFpAdder.v:924)   |
+| lte_x_14       | DW_cmp         | width=8    | lte_942 (mkFpAdder.v:942)  |
+| sub_x_19       | DW01_dec       | width=5    | sub_1191 (mkFpAdder.v:1191) |
+| sub_x_20       | DW01_sub       | width=8    | sub_1192 (mkFpAdder.v:1192) |
+| sub_x_21       | DW01_dec       | width=5    | sub_1193 (mkFpAdder.v:1193) |
+| sub_x_22       | DW01_sub       | width=8    | sub_1194 (mkFpAdder.v:1194) |
+| ashr_24        | DW_rightsh     | A_width=24 | srl_1200 (mkFpAdder.v:1200) |
+                |                | SH_width=8 |                            |
+| ashr_27        | DW_rightsh     | A_width=24 | srl_1210 (mkFpAdder.v:1210) |
+                |                | SH_width=8 |                            |
+| gt_x_29        | DW_cmp         | width=8    | gt_1394 (mkFpAdder.v:1394) |
+| gt_x_30        | DW_cmp         | width=8    | gt_1397 (mkFpAdder.v:1397) |
+| ash_31         | DW_leftsh      | A_width=24 | sll_1410 (mkFpAdder.v:1410) |
+                |                | SH_width=8 |                            |
+| sub_x_32       | DW01_dec       | width=24   | sub_1410 (mkFpAdder.v:1410) |
+| lte_x_33       | DW_cmp         | width=8    | lte_1418 (mkFpAdder.v:1418) |
+| ash_34         | DW_leftsh      | A_width=24 | sll_1418 (mkFpAdder.v:1418) |
+                |                | SH_width=8 |                            |
+| sub_x_35       | DW01_dec       | width=24   | sub_1418 (mkFpAdder.v:1418) |
+| lte_x_37       | DW_cmp         | width=8    | lte_1422 (mkFpAdder.v:1422) |
+| ash_38         | DW_leftsh      | A_width=24 | sll_1422 (mkFpAdder.v:1422) |
+                |                | SH_width=8 |                            |
+| sub_x_39       | DW01_dec       | width=24   | sub_1422 (mkFpAdder.v:1422) |
+=============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| ash_2              | DW_leftsh        | astr (area)        |                |
+| lte_x_11           | DW_cmp           | apparch (area)     |                |
+| lt_x_12            | DW_cmp           | apparch (area)     |                |
+| lt_x_13            | DW_cmp           | apparch (area)     |                |
+| lte_x_14           | DW_cmp           | apparch (area)     |                |
+| sub_x_19           | DW01_dec         | apparch (area)     |                |
+| sub_x_20           | DW01_sub         | apparch (area)     |                |
+| sub_x_21           | DW01_dec         | apparch (area)     |                |
+| sub_x_22           | DW01_sub         | apparch (area)     |                |
+| ashr_24            | DW_rightsh       | astr (area)        |                |
+| ashr_27            | DW_rightsh       | astr (area)        |                |
+| gt_x_29            | DW_cmp           | apparch (area)     |                |
+| gt_x_30            | DW_cmp           | apparch (area)     |                |
+| ash_31             | DW_leftsh        | astr (area)        |                |
+| sub_x_32           | DW01_dec         | pparch (area,speed)                 |
+| lte_x_33           | DW_cmp           | apparch (area)     |                |
+| ash_34             | DW_leftsh        | astr (area)        |                |
+| sub_x_35           | DW01_dec         | pparch (area,speed)                 |
+| lte_x_37           | DW_cmp           | apparch (area)     |                |
+| ash_38             | DW_leftsh        | astr (area)        |                |
+| sub_x_39           | DW01_dec         | pparch (area,speed)                 |
+===============================================================================
+
+1

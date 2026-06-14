@@ -1,0 +1,61 @@
+ 
+****************************************
+check_design summary:
+Version:     U-2022.12
+Date:        Sun Nov  9 14:40:37 2025
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     11
+    Unconnected ports (LINT-28)                                     5
+    Shorted outputs (LINT-31)                                       2
+    Constant outputs (LINT-52)                                      4
+
+Cells                                                              16
+    Cells do not drive (LINT-1)                                     2
+    Connected to power or ground (LINT-32)                         14
+--------------------------------------------------------------------------------
+
+Warning: In design 'mkFpAdder', cell 'B_130' does not drive any nets. (LINT-1)
+Warning: In design 'mkFpAdder', cell 'B_131' does not drive any nets. (LINT-1)
+Warning: In design 'mkFpAdder', port 'CLK' is not connected to any nets. (LINT-28)
+Warning: In design 'mkFpAdder', port 'RST_N' is not connected to any nets. (LINT-28)
+Warning: In design 'mkFpAdder', port 'add_a[31]' is not connected to any nets. (LINT-28)
+Warning: In design 'mkFpAdder', port 'add_b[31]' is not connected to any nets. (LINT-28)
+Warning: In design 'mkFpAdder', port 'EN_add' is not connected to any nets. (LINT-28)
+Warning: In design 'mkViterbiDecoder', output port 'RDY_done' is connected directly to output port 'RDY_fpError'. (LINT-31)
+Warning: In design 'mkViterbiDecoder', output port 'RDY_done' is connected directly to output port 'RDY_inputError'. (LINT-31)
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readReqFIFO_A1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CLR' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readReqFIFO_B1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CLR' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readReqFIFO_BTB1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CLR' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readReqFIFO_Input1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CLR' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readReqFIFO_NM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CLR' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readReqFIFO_NM2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CLR' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readRespFIFO_A1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CLR' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readRespFIFO_B1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CLR' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readRespFIFO_BTB1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CLR' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readRespFIFO_Input1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CLR' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readRespFIFO_NM1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CLR' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'readRespFIFO_NM2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CLR' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'writeReqFIFO_BTB' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CLR' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', a pin on submodule 'writeReqFIFO_Output' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CLR' is connected to logic 0. 
+Warning: In design 'mkViterbiDecoder', output port 'RDY_done' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'mkViterbiDecoder', output port 'RDY_inputError' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'mkViterbiDecoder', output port 'RDY_fpError' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'mkFpAdder', output port 'RDY_add' is connected directly to 'logic 1'. (LINT-52)
+1

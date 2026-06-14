@@ -1,0 +1,1968 @@
+ 
+****************************************
+Report : clock_gating
+        -gating_elements
+        -gated
+        -verbose
+Design : mkViterbiDecoder
+Version: U-2022.12
+Date   : Sun Nov  9 15:19:25 2025
+****************************************
+
+Information: Identification of clock-gating cells has not been performed. Pre-existing clock-gating cells will not be reported. (PWR-947)
+--------------------------------------------------------------------------------
+                             Clock Gating Cell Report
+--------------------------------------------------------------------------------
+
+ Clock Gating Bank : clk_gate_traceBackTime_reg
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = unlimited, OBS_DEPTH = 5 
+
+     TEST INFORMATION : 
+
+     INPUTS :
+         clk_gate_traceBackTime_reg/CLK = CLK 
+         clk_gate_traceBackTime_reg/EN = N518 
+
+     OUTPUTS :
+         clk_gate_traceBackTime_reg/ENCLK = net3004 
+
+     RELATED REGISTERS :
+		currTraceState_reg_4_
+		currTraceState_reg_3_
+		currTraceState_reg_2_
+		currTraceState_reg_1_
+		currTraceState_reg_0_
+		traceBackTime_reg_0_
+		traceBackTime_reg_1_
+		traceBackTime_reg_2_
+		traceBackTime_reg_3_
+		traceBackTime_reg_4_
+		traceBackTime_reg_5_
+		traceBackTime_reg_6_
+		traceBackTime_reg_7_
+		traceBackTime_reg_8_
+		traceBackTime_reg_9_
+
+ Clock Gating Bank : clk_gate_timeStep_reg
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = unlimited, OBS_DEPTH = 5 
+
+     TEST INFORMATION : 
+
+     INPUTS :
+         clk_gate_timeStep_reg/CLK = CLK 
+         clk_gate_timeStep_reg/EN = N507 
+
+     OUTPUTS :
+         clk_gate_timeStep_reg/ENCLK = net3009 
+
+     RELATED REGISTERS :
+		timeStep_reg_0_
+		timeStep_reg_1_
+		timeStep_reg_9_
+		timeStep_reg_2_
+		timeStep_reg_4_
+		timeStep_reg_3_
+		timeStep_reg_5_
+		timeStep_reg_6_
+		timeStep_reg_7_
+		timeStep_reg_8_
+
+ Clock Gating Bank : clk_gate_stateIndex_reg
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = unlimited, OBS_DEPTH = 5 
+
+     TEST INFORMATION : 
+
+     INPUTS :
+         clk_gate_stateIndex_reg/CLK = CLK 
+         clk_gate_stateIndex_reg/EN = N501 
+
+     OUTPUTS :
+         clk_gate_stateIndex_reg/ENCLK = net3014 
+
+     RELATED REGISTERS :
+		stateIndex_reg_0_
+		stateIndex_reg_1_
+		stateIndex_reg_2_
+		stateIndex_reg_3_
+		stateIndex_reg_4_
+
+ Clock Gating Bank : clk_gate_stateCount_reg
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = unlimited, OBS_DEPTH = 5 
+
+     TEST INFORMATION : 
+
+     INPUTS :
+         clk_gate_stateCount_reg/CLK = CLK 
+         clk_gate_stateCount_reg/EN = N495 
+
+     OUTPUTS :
+         clk_gate_stateCount_reg/ENCLK = net3019 
+
+     RELATED REGISTERS :
+		stateCount_reg_4_
+		stateCount_reg_3_
+		stateCount_reg_1_
+		stateCount_reg_2_
+		stateCount_reg_0_
+
+ Clock Gating Bank : clk_gate_prevStateIndex_reg
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = unlimited, OBS_DEPTH = 5 
+
+     TEST INFORMATION : 
+
+     INPUTS :
+         clk_gate_prevStateIndex_reg/CLK = CLK 
+         clk_gate_prevStateIndex_reg/EN = N481 
+
+     OUTPUTS :
+         clk_gate_prevStateIndex_reg/ENCLK = net3024 
+
+     RELATED REGISTERS :
+		prevStateIndex_reg_4_
+		prevStateIndex_reg_3_
+		prevStateIndex_reg_0_
+		prevStateIndex_reg_2_
+		prevStateIndex_reg_1_
+
+ Clock Gating Bank : clk_gate_prevProb_reg
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = unlimited, OBS_DEPTH = 5 
+
+     TEST INFORMATION : 
+
+     INPUTS :
+         clk_gate_prevProb_reg/CLK = CLK 
+         clk_gate_prevProb_reg/EN = N448 
+
+     OUTPUTS :
+         clk_gate_prevProb_reg/ENCLK = net3029 
+
+     RELATED REGISTERS :
+		prevProb_reg_24_
+		prevProb_reg_23_
+		prevProb_reg_25_
+		prevProb_reg_0_
+		prevProb_reg_1_
+		prevProb_reg_2_
+		prevProb_reg_3_
+		prevProb_reg_4_
+		prevProb_reg_5_
+		prevProb_reg_6_
+		prevProb_reg_7_
+		prevProb_reg_8_
+		prevProb_reg_9_
+		prevProb_reg_10_
+		prevProb_reg_11_
+		prevProb_reg_12_
+		prevProb_reg_13_
+		prevProb_reg_14_
+		prevProb_reg_15_
+		prevProb_reg_16_
+		prevProb_reg_17_
+		prevProb_reg_18_
+		prevProb_reg_19_
+		prevProb_reg_20_
+		prevProb_reg_21_
+		prevProb_reg_22_
+		prevProb_reg_26_
+		prevProb_reg_27_
+		prevProb_reg_28_
+		prevProb_reg_29_
+		prevProb_reg_30_
+
+ Clock Gating Bank : clk_gate_outputOffset_reg
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = unlimited, OBS_DEPTH = 5 
+
+     TEST INFORMATION : 
+
+     INPUTS :
+         clk_gate_outputOffset_reg/CLK = CLK 
+         clk_gate_outputOffset_reg/EN = N436 
+
+     OUTPUTS :
+         clk_gate_outputOffset_reg/ENCLK = net3034 
+
+     RELATED REGISTERS :
+		outputOffset_reg_0_
+		outputOffset_reg_1_
+		outputOffset_reg_2_
+		outputOffset_reg_3_
+		outputOffset_reg_4_
+		outputOffset_reg_5_
+		outputOffset_reg_6_
+		outputOffset_reg_7_
+		outputOffset_reg_8_
+		outputOffset_reg_9_
+		outputOffset_reg_10_
+
+ Clock Gating Bank : clk_gate_nValue_reg
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = unlimited, OBS_DEPTH = 5 
+
+     TEST INFORMATION : 
+
+     INPUTS :
+         clk_gate_nValue_reg/CLK = CLK 
+         clk_gate_nValue_reg/EN = N425 
+
+     OUTPUTS :
+         clk_gate_nValue_reg/ENCLK = net3039 
+
+     RELATED REGISTERS :
+		nValue_reg_3_
+		nValue_reg_1_
+		nValue_reg_2_
+		maxInputSeqLength_reg_1_
+		maxInputSeqLength_reg_8_
+		maxInputSeqLength_reg_7_
+		mValue_reg_30_
+		mValue_reg_27_
+		mValue_reg_22_
+		mValue_reg_18_
+		mValue_reg_12_
+		mValue_reg_10_
+		mValue_reg_3_
+		mValue_reg_29_
+		mValue_reg_25_
+		mValue_reg_19_
+		mValue_reg_17_
+		mValue_reg_14_
+		mValue_reg_9_
+		mValue_reg_7_
+		mValue_reg_1_
+		mValue_reg_2_
+		mValue_reg_26_
+		mValue_reg_24_
+		mValue_reg_16_
+		mValue_reg_13_
+		mValue_reg_8_
+		mValue_reg_6_
+		mValue_reg_31_
+		mValue_reg_28_
+		mValue_reg_23_
+		mValue_reg_20_
+		mValue_reg_15_
+		mValue_reg_11_
+		mValue_reg_5_
+		mValue_reg_4_
+		baseAddrVCurr_reg_1_
+		nValue_reg_5_
+		nValue_reg_4_
+		baseAddrVPrev_reg_9_
+		maxInputSeqLength_reg_9_
+		maxInputSeqLength_reg_6_
+		maxInputSeqLength_reg_5_
+		maxInputSeqLength_reg_4_
+		maxInputSeqLength_reg_3_
+		maxInputSeqLength_reg_2_
+		maxInputSeqLength_reg_0_
+		nValue_reg_9_
+		baseAddrVCurr_reg_9_
+		nValue_reg_8_
+		baseAddrVCurr_reg_8_
+		nValue_reg_7_
+		baseAddrVCurr_reg_7_
+		nValue_reg_6_
+		baseAddrVCurr_reg_6_
+		baseAddrVCurr_reg_5_
+		baseAddrVCurr_reg_4_
+		baseAddrVCurr_reg_3_
+		baseAddrVCurr_reg_2_
+		mValue_reg_21_
+		mValue_reg_0_
+
+ Clock Gating Bank : clk_gate_minIdx_reg
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = unlimited, OBS_DEPTH = 5 
+
+     TEST INFORMATION : 
+
+     INPUTS :
+         clk_gate_minIdx_reg/CLK = CLK 
+         clk_gate_minIdx_reg/EN = n2479 
+
+     OUTPUTS :
+         clk_gate_minIdx_reg/ENCLK = net3044 
+
+     RELATED REGISTERS :
+		minIdx_reg_4_
+		minIdx_reg_3_
+		minIdx_reg_2_
+		minIdx_reg_1_
+		minIdx_reg_0_
+
+ Clock Gating Bank : clk_gate_maxProb_reg
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = unlimited, OBS_DEPTH = 5 
+
+     TEST INFORMATION : 
+
+     INPUTS :
+         clk_gate_maxProb_reg/CLK = CLK 
+         clk_gate_maxProb_reg/EN = N385 
+
+     OUTPUTS :
+         clk_gate_maxProb_reg/ENCLK = net3049 
+
+     RELATED REGISTERS :
+		maxProb_reg_8_
+		maxProb_reg_7_
+		maxProb_reg_23_
+		maxProb_reg_30_
+		maxProb_reg_27_
+		maxProb_reg_20_
+		maxProb_reg_29_
+		maxProb_reg_9_
+		maxProb_reg_10_
+		maxProb_reg_5_
+		maxProb_reg_28_
+		maxProb_reg_4_
+		bestPrevState_reg_0_
+		bestPrevState_reg_1_
+		bestPrevState_reg_2_
+		bestPrevState_reg_3_
+		bestPrevState_reg_4_
+		maxProb_reg_0_
+		maxProb_reg_1_
+		maxProb_reg_2_
+		maxProb_reg_3_
+		maxProb_reg_6_
+		maxProb_reg_11_
+		maxProb_reg_12_
+		maxProb_reg_13_
+		maxProb_reg_14_
+		maxProb_reg_15_
+		maxProb_reg_16_
+		maxProb_reg_17_
+		maxProb_reg_18_
+		maxProb_reg_19_
+		maxProb_reg_21_
+		maxProb_reg_22_
+		maxProb_reg_24_
+		maxProb_reg_25_
+		maxProb_reg_26_
+		maxProb_reg_31_
+
+ Clock Gating Bank : clk_gate_inputValue_reg
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = unlimited, OBS_DEPTH = 5 
+
+     TEST INFORMATION : 
+
+     INPUTS :
+         clk_gate_inputValue_reg/CLK = CLK 
+         clk_gate_inputValue_reg/EN = N329 
+
+     OUTPUTS :
+         clk_gate_inputValue_reg/ENCLK = net3054 
+
+     RELATED REGISTERS :
+		inputValue_reg_7_
+		inputValue_reg_3_
+		inputValue_reg_9_
+		inputValue_reg_5_
+		inputValue_reg_8_
+		inputValue_reg_4_
+		inputValue_reg_6_
+		inputValue_reg_0_
+		inputValue_reg_1_
+		inputValue_reg_2_
+
+ Clock Gating Bank : clk_gate_inputIndex_reg
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = unlimited, OBS_DEPTH = 5 
+
+     TEST INFORMATION : 
+
+     INPUTS :
+         clk_gate_inputIndex_reg/CLK = CLK 
+         clk_gate_inputIndex_reg/EN = N318 
+
+     OUTPUTS :
+         clk_gate_inputIndex_reg/ENCLK = net3059 
+
+     RELATED REGISTERS :
+		inputIndex_reg_8_
+		inputIndex_reg_0_
+		inputIndex_reg_1_
+		inputIndex_reg_2_
+		inputIndex_reg_3_
+		inputIndex_reg_4_
+		inputIndex_reg_5_
+		inputIndex_reg_6_
+		inputIndex_reg_7_
+		inputIndex_reg_9_
+
+ Clock Gating Bank : clk_gate_fpAddResult1_reg
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = unlimited, OBS_DEPTH = 5 
+
+     TEST INFORMATION : 
+
+     INPUTS :
+         clk_gate_fpAddResult1_reg/CLK = CLK 
+         clk_gate_fpAddResult1_reg/EN = n2359 
+
+     OUTPUTS :
+         clk_gate_fpAddResult1_reg/ENCLK = net3064 
+
+     RELATED REGISTERS :
+		fpAddResult1_reg_8_
+		fpAddResult1_reg_1_
+		fpAddResult1_reg_3_
+		fpAddResult1_reg_16_
+		fpAddResult1_reg_0_
+		fpAddResult1_reg_2_
+		fpAddResult1_reg_21_
+		fpAddResult1_reg_4_
+		fpAddResult1_reg_5_
+		fpAddResult1_reg_6_
+		fpAddResult1_reg_7_
+		fpAddResult1_reg_9_
+		fpAddResult1_reg_10_
+		fpAddResult1_reg_11_
+		fpAddResult1_reg_12_
+		fpAddResult1_reg_13_
+		fpAddResult1_reg_14_
+		fpAddResult1_reg_15_
+		fpAddResult1_reg_17_
+		fpAddResult1_reg_18_
+		fpAddResult1_reg_19_
+		fpAddResult1_reg_20_
+		fpAddResult1_reg_22_
+		fpAddResult1_reg_23_
+		fpAddResult1_reg_24_
+		fpAddResult1_reg_25_
+		fpAddResult1_reg_26_
+		fpAddResult1_reg_27_
+		fpAddResult1_reg_28_
+		fpAddResult1_reg_29_
+		fpAddResult1_reg_30_
+		fpAddResult1_reg_31_
+
+ Clock Gating Bank : clk_gate_finalMaxProb_reg
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = unlimited, OBS_DEPTH = 5 
+
+     TEST INFORMATION : 
+
+     INPUTS :
+         clk_gate_finalMaxProb_reg/CLK = CLK 
+         clk_gate_finalMaxProb_reg/EN = N252 
+
+     OUTPUTS :
+         clk_gate_finalMaxProb_reg/ENCLK = net3069 
+
+     RELATED REGISTERS :
+		finalMaxProb_reg_0_
+		finalMaxProb_reg_1_
+		finalMaxProb_reg_4_
+		finalMaxProb_reg_3_
+		finalMaxProb_reg_2_
+		bestFinalState_reg_0_
+		bestFinalState_reg_1_
+		bestFinalState_reg_2_
+		bestFinalState_reg_3_
+		bestFinalState_reg_4_
+		finalMaxProb_reg_5_
+		finalMaxProb_reg_6_
+		finalMaxProb_reg_7_
+		finalMaxProb_reg_8_
+		finalMaxProb_reg_9_
+		finalMaxProb_reg_10_
+		finalMaxProb_reg_11_
+		finalMaxProb_reg_12_
+		finalMaxProb_reg_13_
+		finalMaxProb_reg_14_
+		finalMaxProb_reg_15_
+		finalMaxProb_reg_16_
+		finalMaxProb_reg_17_
+		finalMaxProb_reg_18_
+		finalMaxProb_reg_19_
+		finalMaxProb_reg_20_
+		finalMaxProb_reg_21_
+		finalMaxProb_reg_22_
+		finalMaxProb_reg_23_
+		finalMaxProb_reg_24_
+		finalMaxProb_reg_25_
+		finalMaxProb_reg_26_
+		finalMaxProb_reg_27_
+		finalMaxProb_reg_28_
+		finalMaxProb_reg_29_
+		finalMaxProb_reg_30_
+		finalMaxProb_reg_31_
+
+ Clock Gating Bank : clk_gate_currState_reg
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = unlimited, OBS_DEPTH = 5 
+
+     TEST INFORMATION : 
+
+     INPUTS :
+         clk_gate_currState_reg/CLK = CLK 
+         clk_gate_currState_reg/EN = N239 
+
+     OUTPUTS :
+         clk_gate_currState_reg/ENCLK = net3074 
+
+     RELATED REGISTERS :
+		currState_reg_4_
+		currState_reg_0_
+		currState_reg_2_
+		currState_reg_1_
+		currState_reg_3_
+		rg_fp_err_reg
+		rg_input_err_reg
+		currState_reg_5_
+
+ Clock Gating Bank : clk_gate_bestMinIdx_reg
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = unlimited, OBS_DEPTH = 5 
+
+     TEST INFORMATION : 
+
+     INPUTS :
+         clk_gate_bestMinIdx_reg/CLK = CLK 
+         clk_gate_bestMinIdx_reg/EN = n2465 
+
+     OUTPUTS :
+         clk_gate_bestMinIdx_reg/ENCLK = net3079 
+
+     RELATED REGISTERS :
+		bestMin_reg_31_
+		bestMin_reg_30_
+		bestMin_reg_29_
+		bestMin_reg_28_
+		bestMin_reg_27_
+		bestMin_reg_26_
+		bestMin_reg_25_
+		bestMin_reg_24_
+		bestMin_reg_23_
+		bestMin_reg_22_
+		bestMin_reg_21_
+		bestMin_reg_20_
+		bestMin_reg_19_
+		bestMin_reg_18_
+		bestMin_reg_17_
+		bestMin_reg_16_
+		bestMin_reg_15_
+		bestMin_reg_14_
+		bestMin_reg_13_
+		bestMin_reg_12_
+		bestMin_reg_11_
+		bestMin_reg_10_
+		bestMin_reg_9_
+		bestMin_reg_8_
+		bestMin_reg_7_
+		bestMin_reg_6_
+		bestMin_reg_5_
+		bestMin_reg_4_
+		bestMin_reg_3_
+		bestMin_reg_2_
+		bestMin_reg_1_
+		bestMin_reg_0_
+		bestMinIdx_reg_4_
+		bestMinIdx_reg_3_
+		bestMinIdx_reg_2_
+		bestMinIdx_reg_1_
+		bestMinIdx_reg_0_
+
+ Clock Gating Bank : clk_gate_bValue_reg
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = unlimited, OBS_DEPTH = 5 
+
+     TEST INFORMATION : 
+
+     INPUTS :
+         clk_gate_bValue_reg/CLK = CLK 
+         clk_gate_bValue_reg/EN = n2481 
+
+     OUTPUTS :
+         clk_gate_bValue_reg/ENCLK = net3084 
+
+     RELATED REGISTERS :
+		bValue_reg_30_
+		bValue_reg_0_
+		bValue_reg_1_
+		bValue_reg_2_
+		bValue_reg_3_
+		bValue_reg_4_
+		bValue_reg_5_
+		bValue_reg_6_
+		bValue_reg_7_
+		bValue_reg_8_
+		bValue_reg_9_
+		bValue_reg_10_
+		bValue_reg_11_
+		bValue_reg_12_
+		bValue_reg_13_
+		bValue_reg_14_
+		bValue_reg_15_
+		bValue_reg_16_
+		bValue_reg_17_
+		bValue_reg_18_
+		bValue_reg_19_
+		bValue_reg_20_
+		bValue_reg_21_
+		bValue_reg_22_
+		bValue_reg_23_
+		bValue_reg_24_
+		bValue_reg_25_
+		bValue_reg_26_
+		bValue_reg_27_
+		bValue_reg_28_
+		bValue_reg_29_
+
+ Clock Gating Bank : clk_gate_aValue_reg
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = unlimited, OBS_DEPTH = 5 
+
+     TEST INFORMATION : 
+
+     INPUTS :
+         clk_gate_aValue_reg/CLK = CLK 
+         clk_gate_aValue_reg/EN = N100 
+
+     OUTPUTS :
+         clk_gate_aValue_reg/ENCLK = net3089 
+
+     RELATED REGISTERS :
+		aValue_reg_28_
+		aValue_reg_24_
+		aValue_reg_29_
+		aValue_reg_23_
+		aValue_reg_22_
+		aValue_reg_1_
+		aValue_reg_2_
+		aValue_reg_3_
+		aValue_reg_4_
+		aValue_reg_5_
+		aValue_reg_6_
+		aValue_reg_7_
+		aValue_reg_8_
+		aValue_reg_9_
+		aValue_reg_10_
+		aValue_reg_11_
+		aValue_reg_12_
+		aValue_reg_13_
+		aValue_reg_14_
+		aValue_reg_15_
+		aValue_reg_16_
+		aValue_reg_17_
+		aValue_reg_18_
+		aValue_reg_19_
+		aValue_reg_20_
+		aValue_reg_21_
+		aValue_reg_25_
+		aValue_reg_26_
+		aValue_reg_27_
+		aValue_reg_30_
+		aValue_reg_0_
+
+ Clock Gating Bank : readReqFIFO_A1/clk_gate_D_OUT_reg
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = unlimited, OBS_DEPTH = 5 
+
+     TEST INFORMATION : 
+
+     INPUTS :
+         readReqFIFO_A1/clk_gate_D_OUT_reg/CLK = CLK 
+         readReqFIFO_A1/clk_gate_D_OUT_reg/EN = ENQ 
+
+     OUTPUTS :
+         readReqFIFO_A1/clk_gate_D_OUT_reg/ENCLK = net3149 
+
+     RELATED REGISTERS :
+		readReqFIFO_A1/D_OUT_reg_0_
+		readReqFIFO_A1/D_OUT_reg_1_
+		readReqFIFO_A1/D_OUT_reg_2_
+		readReqFIFO_A1/D_OUT_reg_3_
+		readReqFIFO_A1/D_OUT_reg_4_
+		readReqFIFO_A1/D_OUT_reg_5_
+		readReqFIFO_A1/D_OUT_reg_6_
+		readReqFIFO_A1/D_OUT_reg_7_
+		readReqFIFO_A1/D_OUT_reg_8_
+		readReqFIFO_A1/D_OUT_reg_9_
+
+ Clock Gating Bank : readReqFIFO_B1/clk_gate_D_OUT_reg
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = unlimited, OBS_DEPTH = 5 
+
+     TEST INFORMATION : 
+
+     INPUTS :
+         readReqFIFO_B1/clk_gate_D_OUT_reg/CLK = CLK 
+         readReqFIFO_B1/clk_gate_D_OUT_reg/EN = ENQ 
+
+     OUTPUTS :
+         readReqFIFO_B1/clk_gate_D_OUT_reg/ENCLK = net3149 
+
+     RELATED REGISTERS :
+		readReqFIFO_B1/D_OUT_reg_0_
+		readReqFIFO_B1/D_OUT_reg_1_
+		readReqFIFO_B1/D_OUT_reg_2_
+		readReqFIFO_B1/D_OUT_reg_3_
+		readReqFIFO_B1/D_OUT_reg_4_
+		readReqFIFO_B1/D_OUT_reg_5_
+		readReqFIFO_B1/D_OUT_reg_6_
+		readReqFIFO_B1/D_OUT_reg_7_
+		readReqFIFO_B1/D_OUT_reg_8_
+		readReqFIFO_B1/D_OUT_reg_9_
+
+ Clock Gating Bank : readReqFIFO_BTB1/clk_gate_D_OUT_reg
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = unlimited, OBS_DEPTH = 5 
+
+     TEST INFORMATION : 
+
+     INPUTS :
+         readReqFIFO_BTB1/clk_gate_D_OUT_reg/CLK = CLK 
+         readReqFIFO_BTB1/clk_gate_D_OUT_reg/EN = ENQ 
+
+     OUTPUTS :
+         readReqFIFO_BTB1/clk_gate_D_OUT_reg/ENCLK = net3149 
+
+     RELATED REGISTERS :
+		readReqFIFO_BTB1/D_OUT_reg_0_
+		readReqFIFO_BTB1/D_OUT_reg_1_
+		readReqFIFO_BTB1/D_OUT_reg_2_
+		readReqFIFO_BTB1/D_OUT_reg_3_
+		readReqFIFO_BTB1/D_OUT_reg_4_
+		readReqFIFO_BTB1/D_OUT_reg_5_
+		readReqFIFO_BTB1/D_OUT_reg_6_
+		readReqFIFO_BTB1/D_OUT_reg_7_
+		readReqFIFO_BTB1/D_OUT_reg_8_
+		readReqFIFO_BTB1/D_OUT_reg_9_
+
+ Clock Gating Bank : readReqFIFO_Input1/clk_gate_D_OUT_reg
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = unlimited, OBS_DEPTH = 5 
+
+     TEST INFORMATION : 
+
+     INPUTS :
+         readReqFIFO_Input1/clk_gate_D_OUT_reg/CLK = CLK 
+         readReqFIFO_Input1/clk_gate_D_OUT_reg/EN = ENQ 
+
+     OUTPUTS :
+         readReqFIFO_Input1/clk_gate_D_OUT_reg/ENCLK = net3149 
+
+     RELATED REGISTERS :
+		readReqFIFO_Input1/D_OUT_reg_9_
+		readReqFIFO_Input1/D_OUT_reg_0_
+		readReqFIFO_Input1/D_OUT_reg_1_
+		readReqFIFO_Input1/D_OUT_reg_2_
+		readReqFIFO_Input1/D_OUT_reg_3_
+		readReqFIFO_Input1/D_OUT_reg_4_
+		readReqFIFO_Input1/D_OUT_reg_5_
+		readReqFIFO_Input1/D_OUT_reg_6_
+		readReqFIFO_Input1/D_OUT_reg_7_
+		readReqFIFO_Input1/D_OUT_reg_8_
+
+ Clock Gating Bank : readRespFIFO_A1/clk_gate_D_OUT_reg
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = unlimited, OBS_DEPTH = 5 
+
+     TEST INFORMATION : 
+
+     INPUTS :
+         readRespFIFO_A1/clk_gate_D_OUT_reg/CLK = CLK 
+         readRespFIFO_A1/clk_gate_D_OUT_reg/EN = ENQ 
+
+     OUTPUTS :
+         readRespFIFO_A1/clk_gate_D_OUT_reg/ENCLK = net3134 
+
+     RELATED REGISTERS :
+		readRespFIFO_A1/D_OUT_reg_0_
+		readRespFIFO_A1/D_OUT_reg_1_
+		readRespFIFO_A1/D_OUT_reg_2_
+		readRespFIFO_A1/D_OUT_reg_3_
+		readRespFIFO_A1/D_OUT_reg_4_
+		readRespFIFO_A1/D_OUT_reg_5_
+		readRespFIFO_A1/D_OUT_reg_6_
+		readRespFIFO_A1/D_OUT_reg_7_
+		readRespFIFO_A1/D_OUT_reg_8_
+		readRespFIFO_A1/D_OUT_reg_9_
+		readRespFIFO_A1/D_OUT_reg_10_
+		readRespFIFO_A1/D_OUT_reg_11_
+		readRespFIFO_A1/D_OUT_reg_12_
+		readRespFIFO_A1/D_OUT_reg_13_
+		readRespFIFO_A1/D_OUT_reg_14_
+		readRespFIFO_A1/D_OUT_reg_15_
+		readRespFIFO_A1/D_OUT_reg_16_
+		readRespFIFO_A1/D_OUT_reg_17_
+		readRespFIFO_A1/D_OUT_reg_18_
+		readRespFIFO_A1/D_OUT_reg_19_
+		readRespFIFO_A1/D_OUT_reg_20_
+		readRespFIFO_A1/D_OUT_reg_21_
+		readRespFIFO_A1/D_OUT_reg_22_
+		readRespFIFO_A1/D_OUT_reg_23_
+		readRespFIFO_A1/D_OUT_reg_24_
+		readRespFIFO_A1/D_OUT_reg_25_
+		readRespFIFO_A1/D_OUT_reg_26_
+		readRespFIFO_A1/D_OUT_reg_27_
+		readRespFIFO_A1/D_OUT_reg_28_
+		readRespFIFO_A1/D_OUT_reg_29_
+		readRespFIFO_A1/D_OUT_reg_30_
+		readRespFIFO_A1/D_OUT_reg_31_
+
+ Clock Gating Bank : readRespFIFO_B1/clk_gate_D_OUT_reg
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = unlimited, OBS_DEPTH = 5 
+
+     TEST INFORMATION : 
+
+     INPUTS :
+         readRespFIFO_B1/clk_gate_D_OUT_reg/CLK = CLK 
+         readRespFIFO_B1/clk_gate_D_OUT_reg/EN = ENQ 
+
+     OUTPUTS :
+         readRespFIFO_B1/clk_gate_D_OUT_reg/ENCLK = net3134 
+
+     RELATED REGISTERS :
+		readRespFIFO_B1/D_OUT_reg_0_
+		readRespFIFO_B1/D_OUT_reg_1_
+		readRespFIFO_B1/D_OUT_reg_2_
+		readRespFIFO_B1/D_OUT_reg_3_
+		readRespFIFO_B1/D_OUT_reg_4_
+		readRespFIFO_B1/D_OUT_reg_5_
+		readRespFIFO_B1/D_OUT_reg_6_
+		readRespFIFO_B1/D_OUT_reg_7_
+		readRespFIFO_B1/D_OUT_reg_8_
+		readRespFIFO_B1/D_OUT_reg_9_
+		readRespFIFO_B1/D_OUT_reg_10_
+		readRespFIFO_B1/D_OUT_reg_11_
+		readRespFIFO_B1/D_OUT_reg_12_
+		readRespFIFO_B1/D_OUT_reg_13_
+		readRespFIFO_B1/D_OUT_reg_14_
+		readRespFIFO_B1/D_OUT_reg_15_
+		readRespFIFO_B1/D_OUT_reg_16_
+		readRespFIFO_B1/D_OUT_reg_17_
+		readRespFIFO_B1/D_OUT_reg_18_
+		readRespFIFO_B1/D_OUT_reg_19_
+		readRespFIFO_B1/D_OUT_reg_20_
+		readRespFIFO_B1/D_OUT_reg_21_
+		readRespFIFO_B1/D_OUT_reg_22_
+		readRespFIFO_B1/D_OUT_reg_23_
+		readRespFIFO_B1/D_OUT_reg_24_
+		readRespFIFO_B1/D_OUT_reg_25_
+		readRespFIFO_B1/D_OUT_reg_26_
+		readRespFIFO_B1/D_OUT_reg_27_
+		readRespFIFO_B1/D_OUT_reg_28_
+		readRespFIFO_B1/D_OUT_reg_29_
+		readRespFIFO_B1/D_OUT_reg_30_
+		readRespFIFO_B1/D_OUT_reg_31_
+
+ Clock Gating Bank : readRespFIFO_BTB1/clk_gate_D_OUT_reg
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = unlimited, OBS_DEPTH = 5 
+
+     TEST INFORMATION : 
+
+     INPUTS :
+         readRespFIFO_BTB1/clk_gate_D_OUT_reg/CLK = CLK 
+         readRespFIFO_BTB1/clk_gate_D_OUT_reg/EN = ENQ 
+
+     OUTPUTS :
+         readRespFIFO_BTB1/clk_gate_D_OUT_reg/ENCLK = net3134 
+
+     RELATED REGISTERS :
+		readRespFIFO_BTB1/D_OUT_reg_0_
+		readRespFIFO_BTB1/D_OUT_reg_1_
+		readRespFIFO_BTB1/D_OUT_reg_2_
+		readRespFIFO_BTB1/D_OUT_reg_3_
+		readRespFIFO_BTB1/D_OUT_reg_4_
+		readRespFIFO_BTB1/D_OUT_reg_5_
+		readRespFIFO_BTB1/D_OUT_reg_6_
+		readRespFIFO_BTB1/D_OUT_reg_7_
+		readRespFIFO_BTB1/D_OUT_reg_8_
+		readRespFIFO_BTB1/D_OUT_reg_9_
+		readRespFIFO_BTB1/D_OUT_reg_10_
+		readRespFIFO_BTB1/D_OUT_reg_11_
+		readRespFIFO_BTB1/D_OUT_reg_12_
+		readRespFIFO_BTB1/D_OUT_reg_13_
+		readRespFIFO_BTB1/D_OUT_reg_14_
+		readRespFIFO_BTB1/D_OUT_reg_15_
+		readRespFIFO_BTB1/D_OUT_reg_16_
+		readRespFIFO_BTB1/D_OUT_reg_17_
+		readRespFIFO_BTB1/D_OUT_reg_18_
+		readRespFIFO_BTB1/D_OUT_reg_19_
+		readRespFIFO_BTB1/D_OUT_reg_20_
+		readRespFIFO_BTB1/D_OUT_reg_21_
+		readRespFIFO_BTB1/D_OUT_reg_22_
+		readRespFIFO_BTB1/D_OUT_reg_23_
+		readRespFIFO_BTB1/D_OUT_reg_24_
+		readRespFIFO_BTB1/D_OUT_reg_25_
+		readRespFIFO_BTB1/D_OUT_reg_26_
+		readRespFIFO_BTB1/D_OUT_reg_27_
+		readRespFIFO_BTB1/D_OUT_reg_28_
+		readRespFIFO_BTB1/D_OUT_reg_29_
+		readRespFIFO_BTB1/D_OUT_reg_30_
+		readRespFIFO_BTB1/D_OUT_reg_31_
+
+ Clock Gating Bank : readRespFIFO_Input1/clk_gate_D_OUT_reg
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = unlimited, OBS_DEPTH = 5 
+
+     TEST INFORMATION : 
+
+     INPUTS :
+         readRespFIFO_Input1/clk_gate_D_OUT_reg/CLK = CLK 
+         readRespFIFO_Input1/clk_gate_D_OUT_reg/EN = ENQ 
+
+     OUTPUTS :
+         readRespFIFO_Input1/clk_gate_D_OUT_reg/ENCLK = net3134 
+
+     RELATED REGISTERS :
+		readRespFIFO_Input1/D_OUT_reg_0_
+		readRespFIFO_Input1/D_OUT_reg_1_
+		readRespFIFO_Input1/D_OUT_reg_2_
+		readRespFIFO_Input1/D_OUT_reg_3_
+		readRespFIFO_Input1/D_OUT_reg_4_
+		readRespFIFO_Input1/D_OUT_reg_5_
+		readRespFIFO_Input1/D_OUT_reg_6_
+		readRespFIFO_Input1/D_OUT_reg_7_
+		readRespFIFO_Input1/D_OUT_reg_8_
+		readRespFIFO_Input1/D_OUT_reg_9_
+		readRespFIFO_Input1/D_OUT_reg_10_
+		readRespFIFO_Input1/D_OUT_reg_11_
+		readRespFIFO_Input1/D_OUT_reg_12_
+		readRespFIFO_Input1/D_OUT_reg_13_
+		readRespFIFO_Input1/D_OUT_reg_14_
+		readRespFIFO_Input1/D_OUT_reg_15_
+		readRespFIFO_Input1/D_OUT_reg_16_
+		readRespFIFO_Input1/D_OUT_reg_17_
+		readRespFIFO_Input1/D_OUT_reg_18_
+		readRespFIFO_Input1/D_OUT_reg_19_
+		readRespFIFO_Input1/D_OUT_reg_20_
+		readRespFIFO_Input1/D_OUT_reg_21_
+		readRespFIFO_Input1/D_OUT_reg_22_
+		readRespFIFO_Input1/D_OUT_reg_23_
+		readRespFIFO_Input1/D_OUT_reg_24_
+		readRespFIFO_Input1/D_OUT_reg_25_
+		readRespFIFO_Input1/D_OUT_reg_26_
+		readRespFIFO_Input1/D_OUT_reg_27_
+		readRespFIFO_Input1/D_OUT_reg_28_
+		readRespFIFO_Input1/D_OUT_reg_29_
+		readRespFIFO_Input1/D_OUT_reg_30_
+		readRespFIFO_Input1/D_OUT_reg_31_
+
+ Clock Gating Bank : readRespFIFO_NM1/clk_gate_D_OUT_reg
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = unlimited, OBS_DEPTH = 5 
+
+     TEST INFORMATION : 
+
+     INPUTS :
+         readRespFIFO_NM1/clk_gate_D_OUT_reg/CLK = CLK 
+         readRespFIFO_NM1/clk_gate_D_OUT_reg/EN = ENQ 
+
+     OUTPUTS :
+         readRespFIFO_NM1/clk_gate_D_OUT_reg/ENCLK = net3134 
+
+     RELATED REGISTERS :
+		readRespFIFO_NM1/D_OUT_reg_0_
+		readRespFIFO_NM1/D_OUT_reg_5_
+		readRespFIFO_NM1/D_OUT_reg_4_
+		readRespFIFO_NM1/D_OUT_reg_6_
+		readRespFIFO_NM1/D_OUT_reg_2_
+		readRespFIFO_NM1/D_OUT_reg_3_
+		readRespFIFO_NM1/D_OUT_reg_1_
+		readRespFIFO_NM1/D_OUT_reg_7_
+		readRespFIFO_NM1/D_OUT_reg_8_
+		readRespFIFO_NM1/D_OUT_reg_9_
+		readRespFIFO_NM1/D_OUT_reg_10_
+		readRespFIFO_NM1/D_OUT_reg_11_
+		readRespFIFO_NM1/D_OUT_reg_12_
+		readRespFIFO_NM1/D_OUT_reg_13_
+		readRespFIFO_NM1/D_OUT_reg_14_
+		readRespFIFO_NM1/D_OUT_reg_15_
+		readRespFIFO_NM1/D_OUT_reg_16_
+		readRespFIFO_NM1/D_OUT_reg_17_
+		readRespFIFO_NM1/D_OUT_reg_18_
+		readRespFIFO_NM1/D_OUT_reg_19_
+		readRespFIFO_NM1/D_OUT_reg_20_
+		readRespFIFO_NM1/D_OUT_reg_21_
+		readRespFIFO_NM1/D_OUT_reg_22_
+		readRespFIFO_NM1/D_OUT_reg_23_
+		readRespFIFO_NM1/D_OUT_reg_24_
+		readRespFIFO_NM1/D_OUT_reg_25_
+		readRespFIFO_NM1/D_OUT_reg_26_
+		readRespFIFO_NM1/D_OUT_reg_27_
+		readRespFIFO_NM1/D_OUT_reg_28_
+		readRespFIFO_NM1/D_OUT_reg_29_
+		readRespFIFO_NM1/D_OUT_reg_30_
+		readRespFIFO_NM1/D_OUT_reg_31_
+
+ Clock Gating Bank : readRespFIFO_NM2/clk_gate_D_OUT_reg
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = unlimited, OBS_DEPTH = 5 
+
+     TEST INFORMATION : 
+
+     INPUTS :
+         readRespFIFO_NM2/clk_gate_D_OUT_reg/CLK = CLK 
+         readRespFIFO_NM2/clk_gate_D_OUT_reg/EN = ENQ 
+
+     OUTPUTS :
+         readRespFIFO_NM2/clk_gate_D_OUT_reg/ENCLK = net3134 
+
+     RELATED REGISTERS :
+		readRespFIFO_NM2/D_OUT_reg_0_
+		readRespFIFO_NM2/D_OUT_reg_1_
+		readRespFIFO_NM2/D_OUT_reg_2_
+		readRespFIFO_NM2/D_OUT_reg_3_
+		readRespFIFO_NM2/D_OUT_reg_4_
+		readRespFIFO_NM2/D_OUT_reg_5_
+		readRespFIFO_NM2/D_OUT_reg_6_
+		readRespFIFO_NM2/D_OUT_reg_7_
+		readRespFIFO_NM2/D_OUT_reg_8_
+		readRespFIFO_NM2/D_OUT_reg_9_
+		readRespFIFO_NM2/D_OUT_reg_10_
+		readRespFIFO_NM2/D_OUT_reg_11_
+		readRespFIFO_NM2/D_OUT_reg_12_
+		readRespFIFO_NM2/D_OUT_reg_13_
+		readRespFIFO_NM2/D_OUT_reg_14_
+		readRespFIFO_NM2/D_OUT_reg_15_
+		readRespFIFO_NM2/D_OUT_reg_16_
+		readRespFIFO_NM2/D_OUT_reg_17_
+		readRespFIFO_NM2/D_OUT_reg_18_
+		readRespFIFO_NM2/D_OUT_reg_19_
+		readRespFIFO_NM2/D_OUT_reg_20_
+		readRespFIFO_NM2/D_OUT_reg_21_
+		readRespFIFO_NM2/D_OUT_reg_22_
+		readRespFIFO_NM2/D_OUT_reg_23_
+		readRespFIFO_NM2/D_OUT_reg_24_
+		readRespFIFO_NM2/D_OUT_reg_25_
+		readRespFIFO_NM2/D_OUT_reg_26_
+		readRespFIFO_NM2/D_OUT_reg_27_
+		readRespFIFO_NM2/D_OUT_reg_28_
+		readRespFIFO_NM2/D_OUT_reg_29_
+		readRespFIFO_NM2/D_OUT_reg_30_
+		readRespFIFO_NM2/D_OUT_reg_31_
+
+ Clock Gating Bank : writeReqFIFO_BTB/clk_gate_D_OUT_reg
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = unlimited, OBS_DEPTH = 5 
+
+     TEST INFORMATION : 
+
+     INPUTS :
+         writeReqFIFO_BTB/clk_gate_D_OUT_reg/CLK = CLK 
+         writeReqFIFO_BTB/clk_gate_D_OUT_reg/EN = ENQ 
+
+     OUTPUTS :
+         writeReqFIFO_BTB/clk_gate_D_OUT_reg/ENCLK = net3119 
+
+     RELATED REGISTERS :
+		writeReqFIFO_BTB/D_OUT_reg_29_
+		writeReqFIFO_BTB/D_OUT_reg_28_
+		writeReqFIFO_BTB/D_OUT_reg_27_
+		writeReqFIFO_BTB/D_OUT_reg_6_
+		writeReqFIFO_BTB/D_OUT_reg_5_
+		writeReqFIFO_BTB/D_OUT_reg_26_
+		writeReqFIFO_BTB/D_OUT_reg_31_
+		writeReqFIFO_BTB/D_OUT_reg_32_
+		writeReqFIFO_BTB/D_OUT_reg_21_
+		writeReqFIFO_BTB/D_OUT_reg_20_
+		writeReqFIFO_BTB/D_OUT_reg_19_
+		writeReqFIFO_BTB/D_OUT_reg_18_
+		writeReqFIFO_BTB/D_OUT_reg_17_
+		writeReqFIFO_BTB/D_OUT_reg_16_
+		writeReqFIFO_BTB/D_OUT_reg_15_
+		writeReqFIFO_BTB/D_OUT_reg_14_
+		writeReqFIFO_BTB/D_OUT_reg_13_
+		writeReqFIFO_BTB/D_OUT_reg_12_
+		writeReqFIFO_BTB/D_OUT_reg_11_
+		writeReqFIFO_BTB/D_OUT_reg_10_
+		writeReqFIFO_BTB/D_OUT_reg_9_
+		writeReqFIFO_BTB/D_OUT_reg_8_
+		writeReqFIFO_BTB/D_OUT_reg_7_
+		writeReqFIFO_BTB/D_OUT_reg_25_
+		writeReqFIFO_BTB/D_OUT_reg_24_
+		writeReqFIFO_BTB/D_OUT_reg_23_
+		writeReqFIFO_BTB/D_OUT_reg_22_
+		writeReqFIFO_BTB/D_OUT_reg_4_
+		writeReqFIFO_BTB/D_OUT_reg_3_
+		writeReqFIFO_BTB/D_OUT_reg_2_
+		writeReqFIFO_BTB/D_OUT_reg_1_
+		writeReqFIFO_BTB/D_OUT_reg_0_
+		writeReqFIFO_BTB/D_OUT_reg_30_
+		writeReqFIFO_BTB/D_OUT_reg_33_
+		writeReqFIFO_BTB/D_OUT_reg_34_
+		writeReqFIFO_BTB/D_OUT_reg_35_
+		writeReqFIFO_BTB/D_OUT_reg_36_
+		writeReqFIFO_BTB/D_OUT_reg_37_
+		writeReqFIFO_BTB/D_OUT_reg_38_
+		writeReqFIFO_BTB/D_OUT_reg_39_
+		writeReqFIFO_BTB/D_OUT_reg_40_
+		writeReqFIFO_BTB/D_OUT_reg_41_
+
+ Clock Gating Bank : writeReqFIFO_Output/clk_gate_D_OUT_reg
+-------------------
+
+     STYLE = latch, MIN = 3, MAX = unlimited, OBS_DEPTH = 5 
+
+     TEST INFORMATION : 
+
+     INPUTS :
+         writeReqFIFO_Output/clk_gate_D_OUT_reg/CLK = CLK 
+         writeReqFIFO_Output/clk_gate_D_OUT_reg/EN = ENQ 
+
+     OUTPUTS :
+         writeReqFIFO_Output/clk_gate_D_OUT_reg/ENCLK = net3104 
+
+     RELATED REGISTERS :
+		writeReqFIFO_Output/D_OUT_reg_4_
+		writeReqFIFO_Output/D_OUT_reg_3_
+		writeReqFIFO_Output/D_OUT_reg_2_
+		writeReqFIFO_Output/D_OUT_reg_1_
+		writeReqFIFO_Output/D_OUT_reg_0_
+		writeReqFIFO_Output/D_OUT_reg_31_
+		writeReqFIFO_Output/D_OUT_reg_30_
+		writeReqFIFO_Output/D_OUT_reg_29_
+		writeReqFIFO_Output/D_OUT_reg_28_
+		writeReqFIFO_Output/D_OUT_reg_27_
+		writeReqFIFO_Output/D_OUT_reg_26_
+		writeReqFIFO_Output/D_OUT_reg_25_
+		writeReqFIFO_Output/D_OUT_reg_24_
+		writeReqFIFO_Output/D_OUT_reg_23_
+		writeReqFIFO_Output/D_OUT_reg_22_
+		writeReqFIFO_Output/D_OUT_reg_21_
+		writeReqFIFO_Output/D_OUT_reg_20_
+		writeReqFIFO_Output/D_OUT_reg_5_
+		writeReqFIFO_Output/D_OUT_reg_34_
+		writeReqFIFO_Output/D_OUT_reg_33_
+		writeReqFIFO_Output/D_OUT_reg_32_
+		writeReqFIFO_Output/D_OUT_reg_35_
+		writeReqFIFO_Output/D_OUT_reg_6_
+		writeReqFIFO_Output/D_OUT_reg_7_
+		writeReqFIFO_Output/D_OUT_reg_8_
+		writeReqFIFO_Output/D_OUT_reg_9_
+		writeReqFIFO_Output/D_OUT_reg_10_
+		writeReqFIFO_Output/D_OUT_reg_11_
+		writeReqFIFO_Output/D_OUT_reg_12_
+		writeReqFIFO_Output/D_OUT_reg_13_
+		writeReqFIFO_Output/D_OUT_reg_14_
+		writeReqFIFO_Output/D_OUT_reg_15_
+		writeReqFIFO_Output/D_OUT_reg_16_
+		writeReqFIFO_Output/D_OUT_reg_17_
+		writeReqFIFO_Output/D_OUT_reg_18_
+		writeReqFIFO_Output/D_OUT_reg_19_
+		writeReqFIFO_Output/D_OUT_reg_36_
+		writeReqFIFO_Output/D_OUT_reg_37_
+		writeReqFIFO_Output/D_OUT_reg_38_
+		writeReqFIFO_Output/D_OUT_reg_39_
+		writeReqFIFO_Output/D_OUT_reg_40_
+		writeReqFIFO_Output/D_OUT_reg_41_
+		writeReqFIFO_Output/D_OUT_reg_42_
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+                             Gated Register Report
+--------------------------------------------------------------------------------
+            Clock Gating Bank                    |         Gated Register 
+--------------------------------------------------------------------------------
+                                                 |
+ clk_gate_traceBackTime_reg                      |       currTraceState_reg_4_
+                                                 |       currTraceState_reg_3_
+                                                 |       currTraceState_reg_2_
+                                                 |       currTraceState_reg_1_
+                                                 |       currTraceState_reg_0_
+                                                 |       traceBackTime_reg_0_
+                                                 |       traceBackTime_reg_1_
+                                                 |       traceBackTime_reg_2_
+                                                 |       traceBackTime_reg_3_
+                                                 |       traceBackTime_reg_4_
+                                                 |       traceBackTime_reg_5_
+                                                 |       traceBackTime_reg_6_
+                                                 |       traceBackTime_reg_7_
+                                                 |       traceBackTime_reg_8_
+                                                 |       traceBackTime_reg_9_
+                                                 |
+ clk_gate_timeStep_reg                           |       timeStep_reg_0_
+                                                 |       timeStep_reg_1_
+                                                 |       timeStep_reg_9_
+                                                 |       timeStep_reg_2_
+                                                 |       timeStep_reg_4_
+                                                 |       timeStep_reg_3_
+                                                 |       timeStep_reg_5_
+                                                 |       timeStep_reg_6_
+                                                 |       timeStep_reg_7_
+                                                 |       timeStep_reg_8_
+                                                 |
+ clk_gate_stateIndex_reg                         |       stateIndex_reg_0_
+                                                 |       stateIndex_reg_1_
+                                                 |       stateIndex_reg_2_
+                                                 |       stateIndex_reg_3_
+                                                 |       stateIndex_reg_4_
+                                                 |
+ clk_gate_stateCount_reg                         |       stateCount_reg_4_
+                                                 |       stateCount_reg_3_
+                                                 |       stateCount_reg_1_
+                                                 |       stateCount_reg_2_
+                                                 |       stateCount_reg_0_
+                                                 |
+ clk_gate_prevStateIndex_reg                     |       prevStateIndex_reg_4_
+                                                 |       prevStateIndex_reg_3_
+                                                 |       prevStateIndex_reg_0_
+                                                 |       prevStateIndex_reg_2_
+                                                 |       prevStateIndex_reg_1_
+                                                 |
+ clk_gate_prevProb_reg                           |       prevProb_reg_24_
+                                                 |       prevProb_reg_23_
+                                                 |       prevProb_reg_25_
+                                                 |       prevProb_reg_0_
+                                                 |       prevProb_reg_1_
+                                                 |       prevProb_reg_2_
+                                                 |       prevProb_reg_3_
+                                                 |       prevProb_reg_4_
+                                                 |       prevProb_reg_5_
+                                                 |       prevProb_reg_6_
+                                                 |       prevProb_reg_7_
+                                                 |       prevProb_reg_8_
+                                                 |       prevProb_reg_9_
+                                                 |       prevProb_reg_10_
+                                                 |       prevProb_reg_11_
+                                                 |       prevProb_reg_12_
+                                                 |       prevProb_reg_13_
+                                                 |       prevProb_reg_14_
+                                                 |       prevProb_reg_15_
+                                                 |       prevProb_reg_16_
+                                                 |       prevProb_reg_17_
+                                                 |       prevProb_reg_18_
+                                                 |       prevProb_reg_19_
+                                                 |       prevProb_reg_20_
+                                                 |       prevProb_reg_21_
+                                                 |       prevProb_reg_22_
+                                                 |       prevProb_reg_26_
+                                                 |       prevProb_reg_27_
+                                                 |       prevProb_reg_28_
+                                                 |       prevProb_reg_29_
+                                                 |       prevProb_reg_30_
+                                                 |
+ clk_gate_outputOffset_reg                       |       outputOffset_reg_0_
+                                                 |       outputOffset_reg_1_
+                                                 |       outputOffset_reg_2_
+                                                 |       outputOffset_reg_3_
+                                                 |       outputOffset_reg_4_
+                                                 |       outputOffset_reg_5_
+                                                 |       outputOffset_reg_6_
+                                                 |       outputOffset_reg_7_
+                                                 |       outputOffset_reg_8_
+                                                 |       outputOffset_reg_9_
+                                                 |       outputOffset_reg_10_
+                                                 |
+ clk_gate_nValue_reg                             |       nValue_reg_3_
+                                                 |       nValue_reg_1_
+                                                 |       nValue_reg_2_
+                                                 |       maxInputSeqLength_reg_1_
+                                                 |       maxInputSeqLength_reg_8_
+                                                 |       maxInputSeqLength_reg_7_
+                                                 |       mValue_reg_30_
+                                                 |       mValue_reg_27_
+                                                 |       mValue_reg_22_
+                                                 |       mValue_reg_18_
+                                                 |       mValue_reg_12_
+                                                 |       mValue_reg_10_
+                                                 |       mValue_reg_3_
+                                                 |       mValue_reg_29_
+                                                 |       mValue_reg_25_
+                                                 |       mValue_reg_19_
+                                                 |       mValue_reg_17_
+                                                 |       mValue_reg_14_
+                                                 |       mValue_reg_9_
+                                                 |       mValue_reg_7_
+                                                 |       mValue_reg_1_
+                                                 |       mValue_reg_2_
+                                                 |       mValue_reg_26_
+                                                 |       mValue_reg_24_
+                                                 |       mValue_reg_16_
+                                                 |       mValue_reg_13_
+                                                 |       mValue_reg_8_
+                                                 |       mValue_reg_6_
+                                                 |       mValue_reg_31_
+                                                 |       mValue_reg_28_
+                                                 |       mValue_reg_23_
+                                                 |       mValue_reg_20_
+                                                 |       mValue_reg_15_
+                                                 |       mValue_reg_11_
+                                                 |       mValue_reg_5_
+                                                 |       mValue_reg_4_
+                                                 |       baseAddrVCurr_reg_1_
+                                                 |       nValue_reg_5_
+                                                 |       nValue_reg_4_
+                                                 |       baseAddrVPrev_reg_9_
+                                                 |       maxInputSeqLength_reg_9_
+                                                 |       maxInputSeqLength_reg_6_
+                                                 |       maxInputSeqLength_reg_5_
+                                                 |       maxInputSeqLength_reg_4_
+                                                 |       maxInputSeqLength_reg_3_
+                                                 |       maxInputSeqLength_reg_2_
+                                                 |       maxInputSeqLength_reg_0_
+                                                 |       nValue_reg_9_
+                                                 |       baseAddrVCurr_reg_9_
+                                                 |       nValue_reg_8_
+                                                 |       baseAddrVCurr_reg_8_
+                                                 |       nValue_reg_7_
+                                                 |       baseAddrVCurr_reg_7_
+                                                 |       nValue_reg_6_
+                                                 |       baseAddrVCurr_reg_6_
+                                                 |       baseAddrVCurr_reg_5_
+                                                 |       baseAddrVCurr_reg_4_
+                                                 |       baseAddrVCurr_reg_3_
+                                                 |       baseAddrVCurr_reg_2_
+                                                 |       mValue_reg_21_
+                                                 |       mValue_reg_0_
+                                                 |
+ clk_gate_minIdx_reg                             |       minIdx_reg_4_
+                                                 |       minIdx_reg_3_
+                                                 |       minIdx_reg_2_
+                                                 |       minIdx_reg_1_
+                                                 |       minIdx_reg_0_
+                                                 |
+ clk_gate_maxProb_reg                            |       maxProb_reg_8_
+                                                 |       maxProb_reg_7_
+                                                 |       maxProb_reg_23_
+                                                 |       maxProb_reg_30_
+                                                 |       maxProb_reg_27_
+                                                 |       maxProb_reg_20_
+                                                 |       maxProb_reg_29_
+                                                 |       maxProb_reg_9_
+                                                 |       maxProb_reg_10_
+                                                 |       maxProb_reg_5_
+                                                 |       maxProb_reg_28_
+                                                 |       maxProb_reg_4_
+                                                 |       bestPrevState_reg_0_
+                                                 |       bestPrevState_reg_1_
+                                                 |       bestPrevState_reg_2_
+                                                 |       bestPrevState_reg_3_
+                                                 |       bestPrevState_reg_4_
+                                                 |       maxProb_reg_0_
+                                                 |       maxProb_reg_1_
+                                                 |       maxProb_reg_2_
+                                                 |       maxProb_reg_3_
+                                                 |       maxProb_reg_6_
+                                                 |       maxProb_reg_11_
+                                                 |       maxProb_reg_12_
+                                                 |       maxProb_reg_13_
+                                                 |       maxProb_reg_14_
+                                                 |       maxProb_reg_15_
+                                                 |       maxProb_reg_16_
+                                                 |       maxProb_reg_17_
+                                                 |       maxProb_reg_18_
+                                                 |       maxProb_reg_19_
+                                                 |       maxProb_reg_21_
+                                                 |       maxProb_reg_22_
+                                                 |       maxProb_reg_24_
+                                                 |       maxProb_reg_25_
+                                                 |       maxProb_reg_26_
+                                                 |       maxProb_reg_31_
+                                                 |
+ clk_gate_inputValue_reg                         |       inputValue_reg_7_
+                                                 |       inputValue_reg_3_
+                                                 |       inputValue_reg_9_
+                                                 |       inputValue_reg_5_
+                                                 |       inputValue_reg_8_
+                                                 |       inputValue_reg_4_
+                                                 |       inputValue_reg_6_
+                                                 |       inputValue_reg_0_
+                                                 |       inputValue_reg_1_
+                                                 |       inputValue_reg_2_
+                                                 |
+ clk_gate_inputIndex_reg                         |       inputIndex_reg_8_
+                                                 |       inputIndex_reg_0_
+                                                 |       inputIndex_reg_1_
+                                                 |       inputIndex_reg_2_
+                                                 |       inputIndex_reg_3_
+                                                 |       inputIndex_reg_4_
+                                                 |       inputIndex_reg_5_
+                                                 |       inputIndex_reg_6_
+                                                 |       inputIndex_reg_7_
+                                                 |       inputIndex_reg_9_
+                                                 |
+ clk_gate_fpAddResult1_reg                       |       fpAddResult1_reg_8_
+                                                 |       fpAddResult1_reg_1_
+                                                 |       fpAddResult1_reg_3_
+                                                 |       fpAddResult1_reg_16_
+                                                 |       fpAddResult1_reg_0_
+                                                 |       fpAddResult1_reg_2_
+                                                 |       fpAddResult1_reg_21_
+                                                 |       fpAddResult1_reg_4_
+                                                 |       fpAddResult1_reg_5_
+                                                 |       fpAddResult1_reg_6_
+                                                 |       fpAddResult1_reg_7_
+                                                 |       fpAddResult1_reg_9_
+                                                 |       fpAddResult1_reg_10_
+                                                 |       fpAddResult1_reg_11_
+                                                 |       fpAddResult1_reg_12_
+                                                 |       fpAddResult1_reg_13_
+                                                 |       fpAddResult1_reg_14_
+                                                 |       fpAddResult1_reg_15_
+                                                 |       fpAddResult1_reg_17_
+                                                 |       fpAddResult1_reg_18_
+                                                 |       fpAddResult1_reg_19_
+                                                 |       fpAddResult1_reg_20_
+                                                 |       fpAddResult1_reg_22_
+                                                 |       fpAddResult1_reg_23_
+                                                 |       fpAddResult1_reg_24_
+                                                 |       fpAddResult1_reg_25_
+                                                 |       fpAddResult1_reg_26_
+                                                 |       fpAddResult1_reg_27_
+                                                 |       fpAddResult1_reg_28_
+                                                 |       fpAddResult1_reg_29_
+                                                 |       fpAddResult1_reg_30_
+                                                 |       fpAddResult1_reg_31_
+                                                 |
+ clk_gate_finalMaxProb_reg                       |       finalMaxProb_reg_0_
+                                                 |       finalMaxProb_reg_1_
+                                                 |       finalMaxProb_reg_4_
+                                                 |       finalMaxProb_reg_3_
+                                                 |       finalMaxProb_reg_2_
+                                                 |       bestFinalState_reg_0_
+                                                 |       bestFinalState_reg_1_
+                                                 |       bestFinalState_reg_2_
+                                                 |       bestFinalState_reg_3_
+                                                 |       bestFinalState_reg_4_
+                                                 |       finalMaxProb_reg_5_
+                                                 |       finalMaxProb_reg_6_
+                                                 |       finalMaxProb_reg_7_
+                                                 |       finalMaxProb_reg_8_
+                                                 |       finalMaxProb_reg_9_
+                                                 |       finalMaxProb_reg_10_
+                                                 |       finalMaxProb_reg_11_
+                                                 |       finalMaxProb_reg_12_
+                                                 |       finalMaxProb_reg_13_
+                                                 |       finalMaxProb_reg_14_
+                                                 |       finalMaxProb_reg_15_
+                                                 |       finalMaxProb_reg_16_
+                                                 |       finalMaxProb_reg_17_
+                                                 |       finalMaxProb_reg_18_
+                                                 |       finalMaxProb_reg_19_
+                                                 |       finalMaxProb_reg_20_
+                                                 |       finalMaxProb_reg_21_
+                                                 |       finalMaxProb_reg_22_
+                                                 |       finalMaxProb_reg_23_
+                                                 |       finalMaxProb_reg_24_
+                                                 |       finalMaxProb_reg_25_
+                                                 |       finalMaxProb_reg_26_
+                                                 |       finalMaxProb_reg_27_
+                                                 |       finalMaxProb_reg_28_
+                                                 |       finalMaxProb_reg_29_
+                                                 |       finalMaxProb_reg_30_
+                                                 |       finalMaxProb_reg_31_
+                                                 |
+ clk_gate_currState_reg                          |       currState_reg_4_
+                                                 |       currState_reg_0_
+                                                 |       currState_reg_2_
+                                                 |       currState_reg_1_
+                                                 |       currState_reg_3_
+                                                 |       rg_fp_err_reg
+                                                 |       rg_input_err_reg
+                                                 |       currState_reg_5_
+                                                 |
+ clk_gate_bestMinIdx_reg                         |       bestMin_reg_31_
+                                                 |       bestMin_reg_30_
+                                                 |       bestMin_reg_29_
+                                                 |       bestMin_reg_28_
+                                                 |       bestMin_reg_27_
+                                                 |       bestMin_reg_26_
+                                                 |       bestMin_reg_25_
+                                                 |       bestMin_reg_24_
+                                                 |       bestMin_reg_23_
+                                                 |       bestMin_reg_22_
+                                                 |       bestMin_reg_21_
+                                                 |       bestMin_reg_20_
+                                                 |       bestMin_reg_19_
+                                                 |       bestMin_reg_18_
+                                                 |       bestMin_reg_17_
+                                                 |       bestMin_reg_16_
+                                                 |       bestMin_reg_15_
+                                                 |       bestMin_reg_14_
+                                                 |       bestMin_reg_13_
+                                                 |       bestMin_reg_12_
+                                                 |       bestMin_reg_11_
+                                                 |       bestMin_reg_10_
+                                                 |       bestMin_reg_9_
+                                                 |       bestMin_reg_8_
+                                                 |       bestMin_reg_7_
+                                                 |       bestMin_reg_6_
+                                                 |       bestMin_reg_5_
+                                                 |       bestMin_reg_4_
+                                                 |       bestMin_reg_3_
+                                                 |       bestMin_reg_2_
+                                                 |       bestMin_reg_1_
+                                                 |       bestMin_reg_0_
+                                                 |       bestMinIdx_reg_4_
+                                                 |       bestMinIdx_reg_3_
+                                                 |       bestMinIdx_reg_2_
+                                                 |       bestMinIdx_reg_1_
+                                                 |       bestMinIdx_reg_0_
+                                                 |
+ clk_gate_bValue_reg                             |       bValue_reg_30_
+                                                 |       bValue_reg_0_
+                                                 |       bValue_reg_1_
+                                                 |       bValue_reg_2_
+                                                 |       bValue_reg_3_
+                                                 |       bValue_reg_4_
+                                                 |       bValue_reg_5_
+                                                 |       bValue_reg_6_
+                                                 |       bValue_reg_7_
+                                                 |       bValue_reg_8_
+                                                 |       bValue_reg_9_
+                                                 |       bValue_reg_10_
+                                                 |       bValue_reg_11_
+                                                 |       bValue_reg_12_
+                                                 |       bValue_reg_13_
+                                                 |       bValue_reg_14_
+                                                 |       bValue_reg_15_
+                                                 |       bValue_reg_16_
+                                                 |       bValue_reg_17_
+                                                 |       bValue_reg_18_
+                                                 |       bValue_reg_19_
+                                                 |       bValue_reg_20_
+                                                 |       bValue_reg_21_
+                                                 |       bValue_reg_22_
+                                                 |       bValue_reg_23_
+                                                 |       bValue_reg_24_
+                                                 |       bValue_reg_25_
+                                                 |       bValue_reg_26_
+                                                 |       bValue_reg_27_
+                                                 |       bValue_reg_28_
+                                                 |       bValue_reg_29_
+                                                 |
+ clk_gate_aValue_reg                             |       aValue_reg_28_
+                                                 |       aValue_reg_24_
+                                                 |       aValue_reg_29_
+                                                 |       aValue_reg_23_
+                                                 |       aValue_reg_22_
+                                                 |       aValue_reg_1_
+                                                 |       aValue_reg_2_
+                                                 |       aValue_reg_3_
+                                                 |       aValue_reg_4_
+                                                 |       aValue_reg_5_
+                                                 |       aValue_reg_6_
+                                                 |       aValue_reg_7_
+                                                 |       aValue_reg_8_
+                                                 |       aValue_reg_9_
+                                                 |       aValue_reg_10_
+                                                 |       aValue_reg_11_
+                                                 |       aValue_reg_12_
+                                                 |       aValue_reg_13_
+                                                 |       aValue_reg_14_
+                                                 |       aValue_reg_15_
+                                                 |       aValue_reg_16_
+                                                 |       aValue_reg_17_
+                                                 |       aValue_reg_18_
+                                                 |       aValue_reg_19_
+                                                 |       aValue_reg_20_
+                                                 |       aValue_reg_21_
+                                                 |       aValue_reg_25_
+                                                 |       aValue_reg_26_
+                                                 |       aValue_reg_27_
+                                                 |       aValue_reg_30_
+                                                 |       aValue_reg_0_
+                                                 |
+ readReqFIFO_A1/clk_gate_D_OUT_reg               |       readReqFIFO_A1/D_OUT_reg_0_
+                                                 |       readReqFIFO_A1/D_OUT_reg_1_
+                                                 |       readReqFIFO_A1/D_OUT_reg_2_
+                                                 |       readReqFIFO_A1/D_OUT_reg_3_
+                                                 |       readReqFIFO_A1/D_OUT_reg_4_
+                                                 |       readReqFIFO_A1/D_OUT_reg_5_
+                                                 |       readReqFIFO_A1/D_OUT_reg_6_
+                                                 |       readReqFIFO_A1/D_OUT_reg_7_
+                                                 |       readReqFIFO_A1/D_OUT_reg_8_
+                                                 |       readReqFIFO_A1/D_OUT_reg_9_
+                                                 |
+ readReqFIFO_B1/clk_gate_D_OUT_reg               |       readReqFIFO_B1/D_OUT_reg_0_
+                                                 |       readReqFIFO_B1/D_OUT_reg_1_
+                                                 |       readReqFIFO_B1/D_OUT_reg_2_
+                                                 |       readReqFIFO_B1/D_OUT_reg_3_
+                                                 |       readReqFIFO_B1/D_OUT_reg_4_
+                                                 |       readReqFIFO_B1/D_OUT_reg_5_
+                                                 |       readReqFIFO_B1/D_OUT_reg_6_
+                                                 |       readReqFIFO_B1/D_OUT_reg_7_
+                                                 |       readReqFIFO_B1/D_OUT_reg_8_
+                                                 |       readReqFIFO_B1/D_OUT_reg_9_
+                                                 |
+ readReqFIFO_BTB1/clk_gate_D_OUT_reg             |       readReqFIFO_BTB1/D_OUT_reg_0_
+                                                 |       readReqFIFO_BTB1/D_OUT_reg_1_
+                                                 |       readReqFIFO_BTB1/D_OUT_reg_2_
+                                                 |       readReqFIFO_BTB1/D_OUT_reg_3_
+                                                 |       readReqFIFO_BTB1/D_OUT_reg_4_
+                                                 |       readReqFIFO_BTB1/D_OUT_reg_5_
+                                                 |       readReqFIFO_BTB1/D_OUT_reg_6_
+                                                 |       readReqFIFO_BTB1/D_OUT_reg_7_
+                                                 |       readReqFIFO_BTB1/D_OUT_reg_8_
+                                                 |       readReqFIFO_BTB1/D_OUT_reg_9_
+                                                 |
+ readReqFIFO_Input1/clk_gate_D_OUT_reg           |       readReqFIFO_Input1/D_OUT_reg_9_
+                                                 |       readReqFIFO_Input1/D_OUT_reg_0_
+                                                 |       readReqFIFO_Input1/D_OUT_reg_1_
+                                                 |       readReqFIFO_Input1/D_OUT_reg_2_
+                                                 |       readReqFIFO_Input1/D_OUT_reg_3_
+                                                 |       readReqFIFO_Input1/D_OUT_reg_4_
+                                                 |       readReqFIFO_Input1/D_OUT_reg_5_
+                                                 |       readReqFIFO_Input1/D_OUT_reg_6_
+                                                 |       readReqFIFO_Input1/D_OUT_reg_7_
+                                                 |       readReqFIFO_Input1/D_OUT_reg_8_
+                                                 |
+ readRespFIFO_A1/clk_gate_D_OUT_reg              |       readRespFIFO_A1/D_OUT_reg_0_
+                                                 |       readRespFIFO_A1/D_OUT_reg_1_
+                                                 |       readRespFIFO_A1/D_OUT_reg_2_
+                                                 |       readRespFIFO_A1/D_OUT_reg_3_
+                                                 |       readRespFIFO_A1/D_OUT_reg_4_
+                                                 |       readRespFIFO_A1/D_OUT_reg_5_
+                                                 |       readRespFIFO_A1/D_OUT_reg_6_
+                                                 |       readRespFIFO_A1/D_OUT_reg_7_
+                                                 |       readRespFIFO_A1/D_OUT_reg_8_
+                                                 |       readRespFIFO_A1/D_OUT_reg_9_
+                                                 |       readRespFIFO_A1/D_OUT_reg_10_
+                                                 |       readRespFIFO_A1/D_OUT_reg_11_
+                                                 |       readRespFIFO_A1/D_OUT_reg_12_
+                                                 |       readRespFIFO_A1/D_OUT_reg_13_
+                                                 |       readRespFIFO_A1/D_OUT_reg_14_
+                                                 |       readRespFIFO_A1/D_OUT_reg_15_
+                                                 |       readRespFIFO_A1/D_OUT_reg_16_
+                                                 |       readRespFIFO_A1/D_OUT_reg_17_
+                                                 |       readRespFIFO_A1/D_OUT_reg_18_
+                                                 |       readRespFIFO_A1/D_OUT_reg_19_
+                                                 |       readRespFIFO_A1/D_OUT_reg_20_
+                                                 |       readRespFIFO_A1/D_OUT_reg_21_
+                                                 |       readRespFIFO_A1/D_OUT_reg_22_
+                                                 |       readRespFIFO_A1/D_OUT_reg_23_
+                                                 |       readRespFIFO_A1/D_OUT_reg_24_
+                                                 |       readRespFIFO_A1/D_OUT_reg_25_
+                                                 |       readRespFIFO_A1/D_OUT_reg_26_
+                                                 |       readRespFIFO_A1/D_OUT_reg_27_
+                                                 |       readRespFIFO_A1/D_OUT_reg_28_
+                                                 |       readRespFIFO_A1/D_OUT_reg_29_
+                                                 |       readRespFIFO_A1/D_OUT_reg_30_
+                                                 |       readRespFIFO_A1/D_OUT_reg_31_
+                                                 |
+ readRespFIFO_B1/clk_gate_D_OUT_reg              |       readRespFIFO_B1/D_OUT_reg_0_
+                                                 |       readRespFIFO_B1/D_OUT_reg_1_
+                                                 |       readRespFIFO_B1/D_OUT_reg_2_
+                                                 |       readRespFIFO_B1/D_OUT_reg_3_
+                                                 |       readRespFIFO_B1/D_OUT_reg_4_
+                                                 |       readRespFIFO_B1/D_OUT_reg_5_
+                                                 |       readRespFIFO_B1/D_OUT_reg_6_
+                                                 |       readRespFIFO_B1/D_OUT_reg_7_
+                                                 |       readRespFIFO_B1/D_OUT_reg_8_
+                                                 |       readRespFIFO_B1/D_OUT_reg_9_
+                                                 |       readRespFIFO_B1/D_OUT_reg_10_
+                                                 |       readRespFIFO_B1/D_OUT_reg_11_
+                                                 |       readRespFIFO_B1/D_OUT_reg_12_
+                                                 |       readRespFIFO_B1/D_OUT_reg_13_
+                                                 |       readRespFIFO_B1/D_OUT_reg_14_
+                                                 |       readRespFIFO_B1/D_OUT_reg_15_
+                                                 |       readRespFIFO_B1/D_OUT_reg_16_
+                                                 |       readRespFIFO_B1/D_OUT_reg_17_
+                                                 |       readRespFIFO_B1/D_OUT_reg_18_
+                                                 |       readRespFIFO_B1/D_OUT_reg_19_
+                                                 |       readRespFIFO_B1/D_OUT_reg_20_
+                                                 |       readRespFIFO_B1/D_OUT_reg_21_
+                                                 |       readRespFIFO_B1/D_OUT_reg_22_
+                                                 |       readRespFIFO_B1/D_OUT_reg_23_
+                                                 |       readRespFIFO_B1/D_OUT_reg_24_
+                                                 |       readRespFIFO_B1/D_OUT_reg_25_
+                                                 |       readRespFIFO_B1/D_OUT_reg_26_
+                                                 |       readRespFIFO_B1/D_OUT_reg_27_
+                                                 |       readRespFIFO_B1/D_OUT_reg_28_
+                                                 |       readRespFIFO_B1/D_OUT_reg_29_
+                                                 |       readRespFIFO_B1/D_OUT_reg_30_
+                                                 |       readRespFIFO_B1/D_OUT_reg_31_
+                                                 |
+ readRespFIFO_BTB1/clk_gate_D_OUT_reg            |       readRespFIFO_BTB1/D_OUT_reg_0_
+                                                 |       readRespFIFO_BTB1/D_OUT_reg_1_
+                                                 |       readRespFIFO_BTB1/D_OUT_reg_2_
+                                                 |       readRespFIFO_BTB1/D_OUT_reg_3_
+                                                 |       readRespFIFO_BTB1/D_OUT_reg_4_
+                                                 |       readRespFIFO_BTB1/D_OUT_reg_5_
+                                                 |       readRespFIFO_BTB1/D_OUT_reg_6_
+                                                 |       readRespFIFO_BTB1/D_OUT_reg_7_
+                                                 |       readRespFIFO_BTB1/D_OUT_reg_8_
+                                                 |       readRespFIFO_BTB1/D_OUT_reg_9_
+                                                 |       readRespFIFO_BTB1/D_OUT_reg_10_
+                                                 |       readRespFIFO_BTB1/D_OUT_reg_11_
+                                                 |       readRespFIFO_BTB1/D_OUT_reg_12_
+                                                 |       readRespFIFO_BTB1/D_OUT_reg_13_
+                                                 |       readRespFIFO_BTB1/D_OUT_reg_14_
+                                                 |       readRespFIFO_BTB1/D_OUT_reg_15_
+                                                 |       readRespFIFO_BTB1/D_OUT_reg_16_
+                                                 |       readRespFIFO_BTB1/D_OUT_reg_17_
+                                                 |       readRespFIFO_BTB1/D_OUT_reg_18_
+                                                 |       readRespFIFO_BTB1/D_OUT_reg_19_
+                                                 |       readRespFIFO_BTB1/D_OUT_reg_20_
+                                                 |       readRespFIFO_BTB1/D_OUT_reg_21_
+                                                 |       readRespFIFO_BTB1/D_OUT_reg_22_
+                                                 |       readRespFIFO_BTB1/D_OUT_reg_23_
+                                                 |       readRespFIFO_BTB1/D_OUT_reg_24_
+                                                 |       readRespFIFO_BTB1/D_OUT_reg_25_
+                                                 |       readRespFIFO_BTB1/D_OUT_reg_26_
+                                                 |       readRespFIFO_BTB1/D_OUT_reg_27_
+                                                 |       readRespFIFO_BTB1/D_OUT_reg_28_
+                                                 |       readRespFIFO_BTB1/D_OUT_reg_29_
+                                                 |       readRespFIFO_BTB1/D_OUT_reg_30_
+                                                 |       readRespFIFO_BTB1/D_OUT_reg_31_
+                                                 |
+ readRespFIFO_Input1/clk_gate_D_OUT_reg          |       readRespFIFO_Input1/D_OUT_reg_0_
+                                                 |       readRespFIFO_Input1/D_OUT_reg_1_
+                                                 |       readRespFIFO_Input1/D_OUT_reg_2_
+                                                 |       readRespFIFO_Input1/D_OUT_reg_3_
+                                                 |       readRespFIFO_Input1/D_OUT_reg_4_
+                                                 |       readRespFIFO_Input1/D_OUT_reg_5_
+                                                 |       readRespFIFO_Input1/D_OUT_reg_6_
+                                                 |       readRespFIFO_Input1/D_OUT_reg_7_
+                                                 |       readRespFIFO_Input1/D_OUT_reg_8_
+                                                 |       readRespFIFO_Input1/D_OUT_reg_9_
+                                                 |       readRespFIFO_Input1/D_OUT_reg_10_
+                                                 |       readRespFIFO_Input1/D_OUT_reg_11_
+                                                 |       readRespFIFO_Input1/D_OUT_reg_12_
+                                                 |       readRespFIFO_Input1/D_OUT_reg_13_
+                                                 |       readRespFIFO_Input1/D_OUT_reg_14_
+                                                 |       readRespFIFO_Input1/D_OUT_reg_15_
+                                                 |       readRespFIFO_Input1/D_OUT_reg_16_
+                                                 |       readRespFIFO_Input1/D_OUT_reg_17_
+                                                 |       readRespFIFO_Input1/D_OUT_reg_18_
+                                                 |       readRespFIFO_Input1/D_OUT_reg_19_
+                                                 |       readRespFIFO_Input1/D_OUT_reg_20_
+                                                 |       readRespFIFO_Input1/D_OUT_reg_21_
+                                                 |       readRespFIFO_Input1/D_OUT_reg_22_
+                                                 |       readRespFIFO_Input1/D_OUT_reg_23_
+                                                 |       readRespFIFO_Input1/D_OUT_reg_24_
+                                                 |       readRespFIFO_Input1/D_OUT_reg_25_
+                                                 |       readRespFIFO_Input1/D_OUT_reg_26_
+                                                 |       readRespFIFO_Input1/D_OUT_reg_27_
+                                                 |       readRespFIFO_Input1/D_OUT_reg_28_
+                                                 |       readRespFIFO_Input1/D_OUT_reg_29_
+                                                 |       readRespFIFO_Input1/D_OUT_reg_30_
+                                                 |       readRespFIFO_Input1/D_OUT_reg_31_
+                                                 |
+ readRespFIFO_NM1/clk_gate_D_OUT_reg             |       readRespFIFO_NM1/D_OUT_reg_0_
+                                                 |       readRespFIFO_NM1/D_OUT_reg_5_
+                                                 |       readRespFIFO_NM1/D_OUT_reg_4_
+                                                 |       readRespFIFO_NM1/D_OUT_reg_6_
+                                                 |       readRespFIFO_NM1/D_OUT_reg_2_
+                                                 |       readRespFIFO_NM1/D_OUT_reg_3_
+                                                 |       readRespFIFO_NM1/D_OUT_reg_1_
+                                                 |       readRespFIFO_NM1/D_OUT_reg_7_
+                                                 |       readRespFIFO_NM1/D_OUT_reg_8_
+                                                 |       readRespFIFO_NM1/D_OUT_reg_9_
+                                                 |       readRespFIFO_NM1/D_OUT_reg_10_
+                                                 |       readRespFIFO_NM1/D_OUT_reg_11_
+                                                 |       readRespFIFO_NM1/D_OUT_reg_12_
+                                                 |       readRespFIFO_NM1/D_OUT_reg_13_
+                                                 |       readRespFIFO_NM1/D_OUT_reg_14_
+                                                 |       readRespFIFO_NM1/D_OUT_reg_15_
+                                                 |       readRespFIFO_NM1/D_OUT_reg_16_
+                                                 |       readRespFIFO_NM1/D_OUT_reg_17_
+                                                 |       readRespFIFO_NM1/D_OUT_reg_18_
+                                                 |       readRespFIFO_NM1/D_OUT_reg_19_
+                                                 |       readRespFIFO_NM1/D_OUT_reg_20_
+                                                 |       readRespFIFO_NM1/D_OUT_reg_21_
+                                                 |       readRespFIFO_NM1/D_OUT_reg_22_
+                                                 |       readRespFIFO_NM1/D_OUT_reg_23_
+                                                 |       readRespFIFO_NM1/D_OUT_reg_24_
+                                                 |       readRespFIFO_NM1/D_OUT_reg_25_
+                                                 |       readRespFIFO_NM1/D_OUT_reg_26_
+                                                 |       readRespFIFO_NM1/D_OUT_reg_27_
+                                                 |       readRespFIFO_NM1/D_OUT_reg_28_
+                                                 |       readRespFIFO_NM1/D_OUT_reg_29_
+                                                 |       readRespFIFO_NM1/D_OUT_reg_30_
+                                                 |       readRespFIFO_NM1/D_OUT_reg_31_
+                                                 |
+ readRespFIFO_NM2/clk_gate_D_OUT_reg             |       readRespFIFO_NM2/D_OUT_reg_0_
+                                                 |       readRespFIFO_NM2/D_OUT_reg_1_
+                                                 |       readRespFIFO_NM2/D_OUT_reg_2_
+                                                 |       readRespFIFO_NM2/D_OUT_reg_3_
+                                                 |       readRespFIFO_NM2/D_OUT_reg_4_
+                                                 |       readRespFIFO_NM2/D_OUT_reg_5_
+                                                 |       readRespFIFO_NM2/D_OUT_reg_6_
+                                                 |       readRespFIFO_NM2/D_OUT_reg_7_
+                                                 |       readRespFIFO_NM2/D_OUT_reg_8_
+                                                 |       readRespFIFO_NM2/D_OUT_reg_9_
+                                                 |       readRespFIFO_NM2/D_OUT_reg_10_
+                                                 |       readRespFIFO_NM2/D_OUT_reg_11_
+                                                 |       readRespFIFO_NM2/D_OUT_reg_12_
+                                                 |       readRespFIFO_NM2/D_OUT_reg_13_
+                                                 |       readRespFIFO_NM2/D_OUT_reg_14_
+                                                 |       readRespFIFO_NM2/D_OUT_reg_15_
+                                                 |       readRespFIFO_NM2/D_OUT_reg_16_
+                                                 |       readRespFIFO_NM2/D_OUT_reg_17_
+                                                 |       readRespFIFO_NM2/D_OUT_reg_18_
+                                                 |       readRespFIFO_NM2/D_OUT_reg_19_
+                                                 |       readRespFIFO_NM2/D_OUT_reg_20_
+                                                 |       readRespFIFO_NM2/D_OUT_reg_21_
+                                                 |       readRespFIFO_NM2/D_OUT_reg_22_
+                                                 |       readRespFIFO_NM2/D_OUT_reg_23_
+                                                 |       readRespFIFO_NM2/D_OUT_reg_24_
+                                                 |       readRespFIFO_NM2/D_OUT_reg_25_
+                                                 |       readRespFIFO_NM2/D_OUT_reg_26_
+                                                 |       readRespFIFO_NM2/D_OUT_reg_27_
+                                                 |       readRespFIFO_NM2/D_OUT_reg_28_
+                                                 |       readRespFIFO_NM2/D_OUT_reg_29_
+                                                 |       readRespFIFO_NM2/D_OUT_reg_30_
+                                                 |       readRespFIFO_NM2/D_OUT_reg_31_
+                                                 |
+ writeReqFIFO_BTB/clk_gate_D_OUT_reg             |       writeReqFIFO_BTB/D_OUT_reg_29_
+                                                 |       writeReqFIFO_BTB/D_OUT_reg_28_
+                                                 |       writeReqFIFO_BTB/D_OUT_reg_27_
+                                                 |       writeReqFIFO_BTB/D_OUT_reg_6_
+                                                 |       writeReqFIFO_BTB/D_OUT_reg_5_
+                                                 |       writeReqFIFO_BTB/D_OUT_reg_26_
+                                                 |       writeReqFIFO_BTB/D_OUT_reg_31_
+                                                 |       writeReqFIFO_BTB/D_OUT_reg_32_
+                                                 |       writeReqFIFO_BTB/D_OUT_reg_21_
+                                                 |       writeReqFIFO_BTB/D_OUT_reg_20_
+                                                 |       writeReqFIFO_BTB/D_OUT_reg_19_
+                                                 |       writeReqFIFO_BTB/D_OUT_reg_18_
+                                                 |       writeReqFIFO_BTB/D_OUT_reg_17_
+                                                 |       writeReqFIFO_BTB/D_OUT_reg_16_
+                                                 |       writeReqFIFO_BTB/D_OUT_reg_15_
+                                                 |       writeReqFIFO_BTB/D_OUT_reg_14_
+                                                 |       writeReqFIFO_BTB/D_OUT_reg_13_
+                                                 |       writeReqFIFO_BTB/D_OUT_reg_12_
+                                                 |       writeReqFIFO_BTB/D_OUT_reg_11_
+                                                 |       writeReqFIFO_BTB/D_OUT_reg_10_
+                                                 |       writeReqFIFO_BTB/D_OUT_reg_9_
+                                                 |       writeReqFIFO_BTB/D_OUT_reg_8_
+                                                 |       writeReqFIFO_BTB/D_OUT_reg_7_
+                                                 |       writeReqFIFO_BTB/D_OUT_reg_25_
+                                                 |       writeReqFIFO_BTB/D_OUT_reg_24_
+                                                 |       writeReqFIFO_BTB/D_OUT_reg_23_
+                                                 |       writeReqFIFO_BTB/D_OUT_reg_22_
+                                                 |       writeReqFIFO_BTB/D_OUT_reg_4_
+                                                 |       writeReqFIFO_BTB/D_OUT_reg_3_
+                                                 |       writeReqFIFO_BTB/D_OUT_reg_2_
+                                                 |       writeReqFIFO_BTB/D_OUT_reg_1_
+                                                 |       writeReqFIFO_BTB/D_OUT_reg_0_
+                                                 |       writeReqFIFO_BTB/D_OUT_reg_30_
+                                                 |       writeReqFIFO_BTB/D_OUT_reg_33_
+                                                 |       writeReqFIFO_BTB/D_OUT_reg_34_
+                                                 |       writeReqFIFO_BTB/D_OUT_reg_35_
+                                                 |       writeReqFIFO_BTB/D_OUT_reg_36_
+                                                 |       writeReqFIFO_BTB/D_OUT_reg_37_
+                                                 |       writeReqFIFO_BTB/D_OUT_reg_38_
+                                                 |       writeReqFIFO_BTB/D_OUT_reg_39_
+                                                 |       writeReqFIFO_BTB/D_OUT_reg_40_
+                                                 |       writeReqFIFO_BTB/D_OUT_reg_41_
+                                                 |
+ writeReqFIFO_Output/clk_gate_D_OUT_reg          |       writeReqFIFO_Output/D_OUT_reg_4_
+                                                 |       writeReqFIFO_Output/D_OUT_reg_3_
+                                                 |       writeReqFIFO_Output/D_OUT_reg_2_
+                                                 |       writeReqFIFO_Output/D_OUT_reg_1_
+                                                 |       writeReqFIFO_Output/D_OUT_reg_0_
+                                                 |       writeReqFIFO_Output/D_OUT_reg_31_
+                                                 |       writeReqFIFO_Output/D_OUT_reg_30_
+                                                 |       writeReqFIFO_Output/D_OUT_reg_29_
+                                                 |       writeReqFIFO_Output/D_OUT_reg_28_
+                                                 |       writeReqFIFO_Output/D_OUT_reg_27_
+                                                 |       writeReqFIFO_Output/D_OUT_reg_26_
+                                                 |       writeReqFIFO_Output/D_OUT_reg_25_
+                                                 |       writeReqFIFO_Output/D_OUT_reg_24_
+                                                 |       writeReqFIFO_Output/D_OUT_reg_23_
+                                                 |       writeReqFIFO_Output/D_OUT_reg_22_
+                                                 |       writeReqFIFO_Output/D_OUT_reg_21_
+                                                 |       writeReqFIFO_Output/D_OUT_reg_20_
+                                                 |       writeReqFIFO_Output/D_OUT_reg_5_
+                                                 |       writeReqFIFO_Output/D_OUT_reg_34_
+                                                 |       writeReqFIFO_Output/D_OUT_reg_33_
+                                                 |       writeReqFIFO_Output/D_OUT_reg_32_
+                                                 |       writeReqFIFO_Output/D_OUT_reg_35_
+                                                 |       writeReqFIFO_Output/D_OUT_reg_6_
+                                                 |       writeReqFIFO_Output/D_OUT_reg_7_
+                                                 |       writeReqFIFO_Output/D_OUT_reg_8_
+                                                 |       writeReqFIFO_Output/D_OUT_reg_9_
+                                                 |       writeReqFIFO_Output/D_OUT_reg_10_
+                                                 |       writeReqFIFO_Output/D_OUT_reg_11_
+                                                 |       writeReqFIFO_Output/D_OUT_reg_12_
+                                                 |       writeReqFIFO_Output/D_OUT_reg_13_
+                                                 |       writeReqFIFO_Output/D_OUT_reg_14_
+                                                 |       writeReqFIFO_Output/D_OUT_reg_15_
+                                                 |       writeReqFIFO_Output/D_OUT_reg_16_
+                                                 |       writeReqFIFO_Output/D_OUT_reg_17_
+                                                 |       writeReqFIFO_Output/D_OUT_reg_18_
+                                                 |       writeReqFIFO_Output/D_OUT_reg_19_
+                                                 |       writeReqFIFO_Output/D_OUT_reg_36_
+                                                 |       writeReqFIFO_Output/D_OUT_reg_37_
+                                                 |       writeReqFIFO_Output/D_OUT_reg_38_
+                                                 |       writeReqFIFO_Output/D_OUT_reg_39_
+                                                 |       writeReqFIFO_Output/D_OUT_reg_40_
+                                                 |       writeReqFIFO_Output/D_OUT_reg_41_
+                                                 |       writeReqFIFO_Output/D_OUT_reg_42_
+                                                 |
+--------------------------------------------------------------------------------
+
+
+                             Clock Gating Summary
+          ------------------------------------------------------------
+          |    Number of Clock gating elements    |       30         |
+          |                                       |                  |
+          |    Number of Gated registers          |   698 (97.76%)   |
+          |                                       |                  |
+          |    Number of Ungated registers        |    16 (2.24%)    |
+          |                                       |                  |
+          |    Total number of registers          |      714         |
+          ------------------------------------------------------------
+
+
+
+                             Clock Gating Report by Origin
+          +-------------------------------------------------+------------------+
+          |                                                 |    Actual (%)    |
+          |                                                 |    Count         |
+          +-------------------------------------------------+------------------+
+          |  Number of tool-inserted clock gating elements  |    30 (100.00%)  |
+          |                                                 |                  |
+          |  Number of pre-existing clock gating elements   |     0 (0.00%)    |
+          |                                                 |                  |
+          |  Number of gated registers                      |   698 (97.76%)   |
+          |                                                 |                  |
+          |  Number of tool-inserted gated registers        |   698 (97.76%)   |
+          |                                                 |                  |
+          |  Number of pre-existing gated registers         |     0 (0.00%)    |
+          |                                                 |                  |
+          |  Number of ungated registers                    |    16 (2.24%)    |
+          |                                                 |                  |
+          |  Number of registers                            |      714         |
+          +-------------------------------------------------+------------------+
+
+
+
+1
