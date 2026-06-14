@@ -1,0 +1,636 @@
+=== Generated schedule for mkViterbiDecoder ===
+
+Method schedule
+---------------
+Method: start
+Ready signal: ! rg_start
+Conflict-free: done,
+	       inputError,
+	       fpError,
+	       readReq_NM1,
+	       readResp_NM1,
+	       readReq_NM2,
+	       readResp_NM2,
+	       readReq_A1,
+	       readResp_A1,
+	       readReq_B1,
+	       readResp_B1,
+	       readReq_Input1,
+	       readResp_Input1,
+	       writeReq_Output,
+	       readReq_BTB1,
+	       readResp_BTB1,
+	       writeReq_BTB
+Conflicts: start
+ 
+Method: done
+Ready signal: True
+Conflict-free: start,
+	       done,
+	       inputError,
+	       fpError,
+	       readReq_NM1,
+	       readResp_NM1,
+	       readReq_NM2,
+	       readResp_NM2,
+	       readReq_A1,
+	       readResp_A1,
+	       readReq_B1,
+	       readResp_B1,
+	       readReq_Input1,
+	       readResp_Input1,
+	       writeReq_Output,
+	       readReq_BTB1,
+	       readResp_BTB1,
+	       writeReq_BTB
+ 
+Method: inputError
+Ready signal: True
+Conflict-free: start,
+	       done,
+	       inputError,
+	       fpError,
+	       readReq_NM1,
+	       readResp_NM1,
+	       readReq_NM2,
+	       readResp_NM2,
+	       readReq_A1,
+	       readResp_A1,
+	       readReq_B1,
+	       readResp_B1,
+	       readReq_Input1,
+	       readResp_Input1,
+	       writeReq_Output,
+	       readReq_BTB1,
+	       readResp_BTB1,
+	       writeReq_BTB
+ 
+Method: fpError
+Ready signal: True
+Conflict-free: start,
+	       done,
+	       inputError,
+	       fpError,
+	       readReq_NM1,
+	       readResp_NM1,
+	       readReq_NM2,
+	       readResp_NM2,
+	       readReq_A1,
+	       readResp_A1,
+	       readReq_B1,
+	       readResp_B1,
+	       readReq_Input1,
+	       readResp_Input1,
+	       writeReq_Output,
+	       readReq_BTB1,
+	       readResp_BTB1,
+	       writeReq_BTB
+ 
+Method: readReq_NM1
+Ready signal: readReqFIFO_NM1.i_notEmpty
+Conflict-free: start,
+	       done,
+	       inputError,
+	       fpError,
+	       readResp_NM1,
+	       readReq_NM2,
+	       readResp_NM2,
+	       readReq_A1,
+	       readResp_A1,
+	       readReq_B1,
+	       readResp_B1,
+	       readReq_Input1,
+	       readResp_Input1,
+	       writeReq_Output,
+	       readReq_BTB1,
+	       readResp_BTB1,
+	       writeReq_BTB
+Conflicts: readReq_NM1
+ 
+Method: readResp_NM1
+Ready signal: readRespFIFO_NM1.i_notFull
+Conflict-free: start,
+	       done,
+	       inputError,
+	       fpError,
+	       readReq_NM1,
+	       readReq_NM2,
+	       readResp_NM2,
+	       readReq_A1,
+	       readResp_A1,
+	       readReq_B1,
+	       readResp_B1,
+	       readReq_Input1,
+	       readResp_Input1,
+	       writeReq_Output,
+	       readReq_BTB1,
+	       readResp_BTB1,
+	       writeReq_BTB
+Conflicts: readResp_NM1
+ 
+Method: readReq_NM2
+Ready signal: readReqFIFO_NM2.i_notEmpty
+Conflict-free: start,
+	       done,
+	       inputError,
+	       fpError,
+	       readReq_NM1,
+	       readResp_NM1,
+	       readResp_NM2,
+	       readReq_A1,
+	       readResp_A1,
+	       readReq_B1,
+	       readResp_B1,
+	       readReq_Input1,
+	       readResp_Input1,
+	       writeReq_Output,
+	       readReq_BTB1,
+	       readResp_BTB1,
+	       writeReq_BTB
+Conflicts: readReq_NM2
+ 
+Method: readResp_NM2
+Ready signal: readRespFIFO_NM2.i_notFull
+Conflict-free: start,
+	       done,
+	       inputError,
+	       fpError,
+	       readReq_NM1,
+	       readResp_NM1,
+	       readReq_NM2,
+	       readReq_A1,
+	       readResp_A1,
+	       readReq_B1,
+	       readResp_B1,
+	       readReq_Input1,
+	       readResp_Input1,
+	       writeReq_Output,
+	       readReq_BTB1,
+	       readResp_BTB1,
+	       writeReq_BTB
+Conflicts: readResp_NM2
+ 
+Method: readReq_A1
+Ready signal: readReqFIFO_A1.i_notEmpty
+Conflict-free: start,
+	       done,
+	       inputError,
+	       fpError,
+	       readReq_NM1,
+	       readResp_NM1,
+	       readReq_NM2,
+	       readResp_NM2,
+	       readResp_A1,
+	       readReq_B1,
+	       readResp_B1,
+	       readReq_Input1,
+	       readResp_Input1,
+	       writeReq_Output,
+	       readReq_BTB1,
+	       readResp_BTB1,
+	       writeReq_BTB
+Conflicts: readReq_A1
+ 
+Method: readResp_A1
+Ready signal: readRespFIFO_A1.i_notFull
+Conflict-free: start,
+	       done,
+	       inputError,
+	       fpError,
+	       readReq_NM1,
+	       readResp_NM1,
+	       readReq_NM2,
+	       readResp_NM2,
+	       readReq_A1,
+	       readReq_B1,
+	       readResp_B1,
+	       readReq_Input1,
+	       readResp_Input1,
+	       writeReq_Output,
+	       readReq_BTB1,
+	       readResp_BTB1,
+	       writeReq_BTB
+Conflicts: readResp_A1
+ 
+Method: readReq_B1
+Ready signal: readReqFIFO_B1.i_notEmpty
+Conflict-free: start,
+	       done,
+	       inputError,
+	       fpError,
+	       readReq_NM1,
+	       readResp_NM1,
+	       readReq_NM2,
+	       readResp_NM2,
+	       readReq_A1,
+	       readResp_A1,
+	       readResp_B1,
+	       readReq_Input1,
+	       readResp_Input1,
+	       writeReq_Output,
+	       readReq_BTB1,
+	       readResp_BTB1,
+	       writeReq_BTB
+Conflicts: readReq_B1
+ 
+Method: readResp_B1
+Ready signal: readRespFIFO_B1.i_notFull
+Conflict-free: start,
+	       done,
+	       inputError,
+	       fpError,
+	       readReq_NM1,
+	       readResp_NM1,
+	       readReq_NM2,
+	       readResp_NM2,
+	       readReq_A1,
+	       readResp_A1,
+	       readReq_B1,
+	       readReq_Input1,
+	       readResp_Input1,
+	       writeReq_Output,
+	       readReq_BTB1,
+	       readResp_BTB1,
+	       writeReq_BTB
+Conflicts: readResp_B1
+ 
+Method: readReq_Input1
+Ready signal: readReqFIFO_Input1.i_notEmpty
+Conflict-free: start,
+	       done,
+	       inputError,
+	       fpError,
+	       readReq_NM1,
+	       readResp_NM1,
+	       readReq_NM2,
+	       readResp_NM2,
+	       readReq_A1,
+	       readResp_A1,
+	       readReq_B1,
+	       readResp_B1,
+	       readResp_Input1,
+	       writeReq_Output,
+	       readReq_BTB1,
+	       readResp_BTB1,
+	       writeReq_BTB
+Conflicts: readReq_Input1
+ 
+Method: readResp_Input1
+Ready signal: readRespFIFO_Input1.i_notFull
+Conflict-free: start,
+	       done,
+	       inputError,
+	       fpError,
+	       readReq_NM1,
+	       readResp_NM1,
+	       readReq_NM2,
+	       readResp_NM2,
+	       readReq_A1,
+	       readResp_A1,
+	       readReq_B1,
+	       readResp_B1,
+	       readReq_Input1,
+	       writeReq_Output,
+	       readReq_BTB1,
+	       readResp_BTB1,
+	       writeReq_BTB
+Conflicts: readResp_Input1
+ 
+Method: writeReq_Output
+Ready signal: writeReqFIFO_Output.i_notEmpty
+Conflict-free: start,
+	       done,
+	       inputError,
+	       fpError,
+	       readReq_NM1,
+	       readResp_NM1,
+	       readReq_NM2,
+	       readResp_NM2,
+	       readReq_A1,
+	       readResp_A1,
+	       readReq_B1,
+	       readResp_B1,
+	       readReq_Input1,
+	       readResp_Input1,
+	       readReq_BTB1,
+	       readResp_BTB1,
+	       writeReq_BTB
+Conflicts: writeReq_Output
+ 
+Method: readReq_BTB1
+Ready signal: readReqFIFO_BTB1.i_notEmpty
+Conflict-free: start,
+	       done,
+	       inputError,
+	       fpError,
+	       readReq_NM1,
+	       readResp_NM1,
+	       readReq_NM2,
+	       readResp_NM2,
+	       readReq_A1,
+	       readResp_A1,
+	       readReq_B1,
+	       readResp_B1,
+	       readReq_Input1,
+	       readResp_Input1,
+	       writeReq_Output,
+	       readResp_BTB1,
+	       writeReq_BTB
+Conflicts: readReq_BTB1
+ 
+Method: readResp_BTB1
+Ready signal: readRespFIFO_BTB1.i_notFull
+Conflict-free: start,
+	       done,
+	       inputError,
+	       fpError,
+	       readReq_NM1,
+	       readResp_NM1,
+	       readReq_NM2,
+	       readResp_NM2,
+	       readReq_A1,
+	       readResp_A1,
+	       readReq_B1,
+	       readResp_B1,
+	       readReq_Input1,
+	       readResp_Input1,
+	       writeReq_Output,
+	       readReq_BTB1,
+	       writeReq_BTB
+Conflicts: readResp_BTB1
+ 
+Method: writeReq_BTB
+Ready signal: writeReqFIFO_BTB.i_notEmpty
+Conflict-free: start,
+	       done,
+	       inputError,
+	       fpError,
+	       readReq_NM1,
+	       readResp_NM1,
+	       readReq_NM2,
+	       readResp_NM2,
+	       readReq_A1,
+	       readResp_A1,
+	       readReq_B1,
+	       readResp_B1,
+	       readReq_Input1,
+	       readResp_Input1,
+	       writeReq_Output,
+	       readReq_BTB1,
+	       readResp_BTB1
+Conflicts: writeReq_BTB
+ 
+Rule schedule
+-------------
+Rule: rl_IDLE
+Predicate: rg_start && (currState == 6'd0)
+Blocking rules: (none)
+ 
+Rule: rl_START
+Predicate: currState == 6'd1
+Blocking rules: (none)
+ 
+Rule: rl_INIT_GET_NM
+Predicate: readReqFIFO_NM1.i_notFull && readReqFIFO_NM2.i_notFull &&
+	   (currState == 6'd2)
+Blocking rules: (none)
+ 
+Rule: rl_DONE_GET_NM
+Predicate: readRespFIFO_NM1.i_notEmpty && readRespFIFO_NM2.i_notEmpty &&
+	   (currState == 6'd3)
+Blocking rules: (none)
+ 
+Rule: rl_V1_CALC_START
+Predicate: readReqFIFO_Input1.i_notFull && (currState == 6'd4)
+Blocking rules: (none)
+ 
+Rule: rl_GET_INPUT_V1
+Predicate: readRespFIFO_Input1.i_notEmpty && (currState == 6'd5)
+Blocking rules: (none)
+ 
+Rule: rl_INIT_COMPUTE_V1
+Predicate: currState == 6'd6
+Blocking rules: (none)
+ 
+Rule: rl_LOOP_V1_INIT_GET_AB
+Predicate: readReqFIFO_A1.i_notFull && readReqFIFO_B1.i_notFull &&
+	   (currState == 6'd7)
+Blocking rules: (none)
+ 
+Rule: rl_LOOP_V1_DONE_GET_AB
+Predicate: readRespFIFO_A1.i_notEmpty && readRespFIFO_B1.i_notEmpty &&
+	   (currState == 6'd8)
+Blocking rules: (none)
+ 
+Rule: rl_LOOP_V1_INIT_FP_ADD
+Predicate: currState == 6'd9
+Blocking rules: (none)
+ 
+Rule: rl_LOOP_V1_DONE_FP_ADD
+Predicate: writeReqFIFO_BTB.i_notFull && (currState == 6'd10)
+Blocking rules: (none)
+ 
+Rule: rl_LOOP_V1_NEXT_STATE
+Predicate: currState == 6'd11
+Blocking rules: (none)
+ 
+Rule: rl_V1_CALC_END
+Predicate: currState == 6'd12
+Blocking rules: (none)
+ 
+Rule: rl_SWAP_INIT
+Predicate: currState == 6'd37
+Blocking rules: (none)
+ 
+Rule: rl_SWAP_READ_VCURR
+Predicate: readReqFIFO_BTB1.i_notFull && (currState == 6'd38)
+Blocking rules: (none)
+ 
+Rule: rl_SWAP_WRITE_VPREV
+Predicate: writeReqFIFO_BTB.i_notFull && readRespFIFO_BTB1.i_notEmpty &&
+	   (currState == 6'd39)
+Blocking rules: (none)
+ 
+Rule: rl_VT_CALC_START
+Predicate: readReqFIFO_Input1.i_notFull && (currState == 6'd13)
+Blocking rules: (none)
+ 
+Rule: rl_VT_GET_INPUT
+Predicate: readRespFIFO_Input1.i_notEmpty && (currState == 6'd14)
+Blocking rules: (none)
+ 
+Rule: rl_VT_INIT_J_LOOP
+Predicate: currState == 6'd15
+Blocking rules: (none)
+ 
+Rule: rl_VT_INIT_I_LOOP
+Predicate: currState == 6'd16
+Blocking rules: (none)
+ 
+Rule: rl_VT_GET_PREV_PROB
+Predicate: readReqFIFO_BTB1.i_notFull && (currState == 6'd17)
+Blocking rules: (none)
+ 
+Rule: rl_VT_READ_VPREV_WAIT
+Predicate: readRespFIFO_BTB1.i_notEmpty && (currState == 6'd36)
+Blocking rules: (none)
+ 
+Rule: rl_VT_INIT_GET_AB
+Predicate: readReqFIFO_A1.i_notFull && (currState == 6'd18)
+Blocking rules: (none)
+ 
+Rule: rl_VT_DONE_GET_AB
+Predicate: readRespFIFO_A1.i_notEmpty && (currState == 6'd19)
+Blocking rules: (none)
+ 
+Rule: rl_VT_INIT_FP_ADD
+Predicate: currState == 6'd20
+Blocking rules: (none)
+ 
+Rule: rl_VT_DONE_FP_ADD
+Predicate: currState == 6'd21
+Blocking rules: (none)
+ 
+Rule: rl_VT_LOOP_I_LOOP
+Predicate: currState == 6'd22
+Blocking rules: (none)
+ 
+Rule: rl_VT_SAVE_STATE
+Predicate: readReqFIFO_B1.i_notFull && (currState == 6'd23)
+Blocking rules: (none)
+ 
+Rule: rl_VT_GET_B_AND_ADD
+Predicate: readRespFIFO_B1.i_notEmpty && (currState == 6'd24)
+Blocking rules: (none)
+ 
+Rule: rl_VT_ADD_B_TO_MAX
+Predicate: currState == 6'd25
+Blocking rules: (none)
+ 
+Rule: rl_VT_STORE_RESULT
+Predicate: writeReqFIFO_BTB.i_notFull && (currState == 6'd26)
+Blocking rules: (none)
+ 
+Rule: rl_VT_STORE_BTB
+Predicate: writeReqFIFO_BTB.i_notFull && (currState == 6'd27)
+Blocking rules: (none)
+ 
+Rule: rl_VT_LOOP_J_LOOP
+Predicate: currState == 6'd28
+Blocking rules: (none)
+ 
+Rule: rl_VT_MIN_INIT
+Predicate: currState == 6'd29
+Blocking rules: (none)
+ 
+Rule: rl_VT_MIN_READ
+Predicate: readReqFIFO_BTB1.i_notFull && (currState == 6'd30)
+Blocking rules: (none)
+ 
+Rule: rl_VT_MIN_WAIT
+Predicate: readRespFIFO_BTB1.i_notEmpty && (currState == 6'd31)
+Blocking rules: (none)
+ 
+Rule: rl_VT_MIN_DONE
+Predicate: currState == 6'd32
+Blocking rules: (none)
+ 
+Rule: rl_TRACEBACK_CALC_START
+Predicate: currState == 6'd40
+Blocking rules: (none)
+ 
+Rule: rl_TRACEBACK_LOOP_START
+Predicate: writeReqFIFO_Output.i_notFull && readReqFIFO_BTB1.i_notFull &&
+	   (currState == 6'd41)
+Blocking rules: (none)
+ 
+Rule: rl_TRACEBACK_LOOP_EXEC
+Predicate: readRespFIFO_BTB1.i_notEmpty && (currState == 6'd42)
+Blocking rules: (none)
+ 
+Rule: rl_TRACEBACK_WRITE_FINAL_PROB
+Predicate: writeReqFIFO_Output.i_notFull && (currState == 6'd43)
+Blocking rules: (none)
+ 
+Rule: rl_WRITE_FF_MARKER
+Predicate: writeReqFIFO_Output.i_notFull && (currState == 6'd44)
+Blocking rules: (none)
+ 
+Rule: rl_INPUT_ERROR
+Predicate: currState == 6'd46
+Blocking rules: (none)
+ 
+Rule: rl_FP_ERROR
+Predicate: currState == 6'd47
+Blocking rules: (none)
+ 
+Rule: rl_DONE
+Predicate: writeReqFIFO_Output.i_notFull &&
+	   (currState == 6'd45) && rg_start && (! rg_done)
+Blocking rules: (none)
+ 
+Logical execution order: start,
+			 done,
+			 inputError,
+			 fpError,
+			 readReq_NM1,
+			 readResp_NM1,
+			 readReq_NM2,
+			 readResp_NM2,
+			 readReq_A1,
+			 readResp_A1,
+			 readReq_B1,
+			 readResp_B1,
+			 readReq_Input1,
+			 readResp_Input1,
+			 writeReq_Output,
+			 readReq_BTB1,
+			 readResp_BTB1,
+			 writeReq_BTB,
+			 rl_IDLE,
+			 rl_START,
+			 rl_INIT_GET_NM,
+			 rl_DONE_GET_NM,
+			 rl_V1_CALC_START,
+			 rl_GET_INPUT_V1,
+			 rl_INIT_COMPUTE_V1,
+			 rl_LOOP_V1_INIT_GET_AB,
+			 rl_LOOP_V1_DONE_GET_AB,
+			 rl_LOOP_V1_INIT_FP_ADD,
+			 rl_LOOP_V1_DONE_FP_ADD,
+			 rl_LOOP_V1_NEXT_STATE,
+			 rl_V1_CALC_END,
+			 rl_SWAP_INIT,
+			 rl_SWAP_READ_VCURR,
+			 rl_SWAP_WRITE_VPREV,
+			 rl_VT_CALC_START,
+			 rl_VT_GET_INPUT,
+			 rl_VT_INIT_J_LOOP,
+			 rl_VT_INIT_I_LOOP,
+			 rl_VT_GET_PREV_PROB,
+			 rl_VT_READ_VPREV_WAIT,
+			 rl_VT_INIT_GET_AB,
+			 rl_VT_DONE_GET_AB,
+			 rl_VT_INIT_FP_ADD,
+			 rl_VT_DONE_FP_ADD,
+			 rl_VT_LOOP_I_LOOP,
+			 rl_VT_SAVE_STATE,
+			 rl_VT_GET_B_AND_ADD,
+			 rl_VT_ADD_B_TO_MAX,
+			 rl_VT_STORE_RESULT,
+			 rl_VT_STORE_BTB,
+			 rl_VT_LOOP_J_LOOP,
+			 rl_VT_MIN_INIT,
+			 rl_VT_MIN_READ,
+			 rl_VT_MIN_WAIT,
+			 rl_VT_MIN_DONE,
+			 rl_TRACEBACK_CALC_START,
+			 rl_TRACEBACK_LOOP_START,
+			 rl_TRACEBACK_LOOP_EXEC,
+			 rl_TRACEBACK_WRITE_FINAL_PROB,
+			 rl_WRITE_FF_MARKER,
+			 rl_INPUT_ERROR,
+			 rl_FP_ERROR,
+			 rl_DONE
+
+================================================
